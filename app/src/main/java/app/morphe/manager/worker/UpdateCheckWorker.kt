@@ -13,6 +13,7 @@ import app.morphe.manager.R
 import app.morphe.manager.domain.manager.PreferencesManager
 import app.morphe.manager.domain.repository.PatchBundleRepository
 import app.morphe.manager.network.api.MorpheAPI
+import app.morphe.manager.util.MANAGER_UPDATES_ENABLED
 import app.morphe.manager.util.UpdateNotificationManager
 import app.morphe.manager.util.tag
 import kotlinx.coroutines.flow.first
@@ -95,6 +96,7 @@ class UpdateCheckWorker(
      * prerelease logic and fetching from the correct branch.
      */
     private suspend fun checkForManagerUpdate() {
+        if (!MANAGER_UPDATES_ENABLED) return
         val update = runCatching {
             morpheAPI.getAppUpdate()
         }.getOrNull() ?: return

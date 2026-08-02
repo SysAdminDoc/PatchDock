@@ -245,7 +245,7 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         /** Action other apps use to queue a batch patch run. */
-        const val ACTION_BATCH_PATCH = "app.morphe.manager.action.BATCH_PATCH"
+        const val ACTION_BATCH_PATCH = "app.patchdock.manager.action.BATCH_PATCH"
 
         /** Package names to patch, either a string array or a comma-separated string. */
         const val EXTRA_BATCH_PACKAGES = "packages"
@@ -531,7 +531,7 @@ private fun MorpheManager(vm: MainViewModel) {
                 }
 
                 HomeScreen(
-                    onSettingsClick = { navController.navigate(Settings) },
+                    onSettingsClick = { navController.navigate(Settings) { launchSingleTop = true } },
                     onboardingState = if (showOnboarding && onboardingPhase == OnboardingPhase.HOME) homeOnboardingState else null,
                     globalOnboardingState = if (showOnboarding) globalOnboardingState else null,
                     onStartQuickPatch = { params ->
@@ -608,6 +608,7 @@ private fun MorpheManager(vm: MainViewModel) {
             ) {
                 SettingsScreen(
                     homeViewModel = homeViewModel,
+                    onBackClick = { navController.popBackStack() },
                     globalOnboardingState = if (showOnboarding) globalOnboardingState else null,
                     onStartTour = if (!showOnboarding) {
                         {

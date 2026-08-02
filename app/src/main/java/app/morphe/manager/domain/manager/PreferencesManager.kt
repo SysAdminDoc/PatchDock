@@ -102,11 +102,11 @@ class PreferencesManager(
     )
 
     // System tab
-    val installerPrimary = stringPreference("installer_primary", InstallerPreferenceTokens.INTERNAL)
+    val installerPrimary = stringPreference("installer_primary", InstallerPreferenceTokens.SHIZUKU)
     val promptInstallerOnInstall = booleanPreference("prompt_installer_on_install", false)
     val installerCustomComponents = stringSetPreference("installer_custom_components", emptySet())
     val installerHiddenComponents = stringSetPreference("installer_hidden_components", emptySet())
-    val autoInstallWithShizuku = booleanPreference("auto_install_with_shizuku", false)
+    val autoInstallWithShizuku = booleanPreference("auto_install_with_shizuku", true)
     val autoUninstallWithShizuku = booleanPreference("auto_uninstall_with_shizuku", false)
 
     val useProcessRuntime = booleanPreference(

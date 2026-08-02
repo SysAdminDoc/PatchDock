@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-08-01T17:22:58",
-  "description": "# [1.25.0-dev.12](https://github.com/MorpheApp/morphe-manager/compare/v1.25.0-dev.11...v1.25.0-dev.12) (2026-08-01)\n\n\n### Bug Fixes\n\n* Put the queue counter inside the patcher layout ([4a4ed2f](https://github.com/MorpheApp/morphe-manager/commit/4a4ed2f65aa7c2f48c2b610eea15bf2219ac59af))\n* Round stepped slider values instead of truncating them ([b4f0c56](https://github.com/MorpheApp/morphe-manager/commit/b4f0c56602eccff113a202e958b85086337a6260))\n* Stop the install queue failing the item it just started ([e333e6b](https://github.com/MorpheApp/morphe-manager/commit/e333e6b63c164d1e6690c27ffc11ce00c54e7b87))\n* Tell an unsupported version apart from an app with no patches ([cd5701b](https://github.com/MorpheApp/morphe-manager/commit/cd5701b417cb1ef7e9f13960cead44dee146c254))",
-  "download_url": "https://github.com/MorpheApp/morphe-manager/releases/download/v1.25.0-dev.12/morphe-manager-1.25.0-dev.12.apk",
-  "signature_download_url": "https://github.com/MorpheApp/morphe-manager/releases/download/v1.25.0-dev.12/morphe-manager-1.25.0-dev.12.apk.asc",
-  "version": "1.25.0-dev.12"
+  "created_at": "2026-08-01T20:52:04-04:00",
+  "description": "PatchDock 0.2.2 replaces the clipped puzzle-and-dock artwork with a professional 59dp precision-splice identity, including adaptive, themed, monochrome, dark, wordmark, and Google Play assets verified at launcher scale.",
+  "download_url": "https://github.com/SysAdminDoc/patchdock-manager/releases/download/v0.2.2/patchdock-manager-0.2.2.apk",
+  "signature_download_url": "",
+  "version": "0.2.2"
 }

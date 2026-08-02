@@ -200,7 +200,7 @@ enum class Theme(val displayName: Int) {
 
 @Serializable
 enum class ThemeStyle(val displayName: Int) {
-    MORPHE(R.string.settings_appearance_style_morphe),
+    MORPHE(R.string.settings_appearance_style_patchdock),
     MATERIAL_YOU(R.string.settings_appearance_dynamic),
     MONOCHROME(R.string.settings_appearance_monochrome);
 }

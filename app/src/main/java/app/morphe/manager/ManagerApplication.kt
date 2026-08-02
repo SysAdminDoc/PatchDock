@@ -10,24 +10,26 @@ import android.os.Bundle
 import android.util.Log
 import androidx.core.content.pm.ShortcutInfoCompat
 import androidx.core.content.pm.ShortcutManagerCompat
+import androidx.core.content.edit
 import androidx.core.graphics.drawable.IconCompat
 import androidx.core.graphics.drawable.toBitmap
 import app.morphe.manager.data.platform.Filesystem
 import app.morphe.manager.data.room.apps.installed.InstalledApp
 import app.morphe.manager.di.*
+import app.morphe.manager.domain.catalog.PatchDockCatalog
 import app.morphe.manager.domain.repository.InstalledAppRepository
 import app.morphe.manager.domain.bundles.PatchBundleSource.Extensions.avatarUrls
+import app.morphe.manager.domain.bundles.RemotePatchBundle
 import app.morphe.manager.domain.manager.PreferencesManager
 import app.morphe.manager.domain.repository.BlocklistRepository
 import app.morphe.manager.domain.repository.PatchBundleRepository
 import app.morphe.manager.domain.repository.PatchBundleRepository.Companion.DEFAULT_SOURCE_UID
+import app.morphe.manager.ui.viewmodel.BundleSnapshot
 import app.morphe.manager.util.*
 import app.morphe.manager.worker.AutoPatchWorker
 import app.morphe.manager.worker.UpdateCheckWorker
 import coil.Coil
 import coil.ImageLoader
-import com.google.android.gms.common.ConnectionResult
-import com.google.android.gms.common.GoogleApiAvailability
 import com.topjohnwu.superuser.Shell
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.MainScope
@@ -64,6 +66,8 @@ class ManagerApplication : Application() {
         private const val MIN_SHORTCUT_SLOTS = 2
         private const val MAX_SHORTCUT_SLOTS = 4
         private const val SHORTCUT_ICON_PX = 192
+        private const val PATCHDOCK_BOOTSTRAP_PREFERENCES = "patchdock_bootstrap"
+        private const val PATCHDOCK_SOURCE_CATALOG_KEY = "source_catalog_version"
     }
     private val scope = MainScope()
     private val prefs: PreferencesManager by inject()
@@ -134,21 +138,13 @@ class ManagerApplication : Application() {
             // Patches FCM topic is determined by the default bundle (uid=0) prerelease toggle
             val usePatchesPrereleases = prefs.bundlePrereleasesEnabled.get().contains(DEFAULT_SOURCE_UID.toString())
 
-            // On GMS devices FCM is the primary delivery channel - WorkManager is not needed.
-            // Cancel any previously scheduled jobs on GMS devices
-            val hasGms = GoogleApiAvailability.getInstance()
-                .isGooglePlayServicesAvailable(this@ManagerApplication) == ConnectionResult.SUCCESS
-
-            if (notificationsEnabled && !hasGms) {
+            // PatchDock deliberately has no Firebase project. WorkManager is the update channel
+            // on every device, including devices with Google Play Services.
+            if (notificationsEnabled) {
                 UpdateCheckWorker.schedule(this@ManagerApplication, prefs.updateCheckInterval.get())
             } else {
                 UpdateCheckWorker.cancel(this@ManagerApplication)
             }
-            syncFcmTopics(
-                notificationsEnabled = notificationsEnabled,
-                useManagerPrereleases = useManagerPrereleases,
-                usePatchesPrereleases = usePatchesPrereleases,
-            )
 
             // Re-register automatic re-patching, so a manager update or a wiped WorkManager
             // database does not silently stop the schedule
@@ -166,7 +162,11 @@ class ManagerApplication : Application() {
         scope.launch(Dispatchers.Default) {
             with(patchBundleRepository) {
                 reload()
-                updateCheck()
+                // importCustomBundles starts the initial source download itself. Do not also
+                // start a general update in the same process turn: both jobs would temporarily
+                // make the same DEX-backed bundle writable and Android 16 refuses that race.
+                val sourceImportStarted = bootstrapBundledPatchSources()
+                if (!sourceImportStarted) updateCheck()
             }
         }
 
@@ -340,4 +340,72 @@ class ManagerApplication : Application() {
             fs.logStorageContents()
         }
     }
+
+    /**
+     * Adds newly bundled sources once per catalog revision. The completed revision is persisted
+     * separately from the source database so a user can still delete the source afterwards
+     * without PatchDock recreating it on every launch.
+     */
+    private suspend fun bootstrapBundledPatchSources(): Boolean {
+        val bootstrapPreferences = getSharedPreferences(
+            PATCHDOCK_BOOTSTRAP_PREFERENCES,
+            Context.MODE_PRIVATE,
+        )
+        if (bootstrapPreferences.getInt(PATCHDOCK_SOURCE_CATALOG_KEY, 0) >=
+            PatchDockCatalog.BUNDLED_SOURCE_CATALOG_VERSION
+        ) {
+            return false
+        }
+
+        val source = PatchDockCatalog.officialMorphePatches
+        val sourceAlreadyExists = patchBundleRepository.exportCustomBundles().any {
+            it.source.equals(source.manifestUrl, ignoreCase = true)
+        }
+        if (sourceAlreadyExists) {
+            markBundledSourceCatalogApplied(bootstrapPreferences)
+            return false
+        }
+
+        patchBundleRepository.importCustomBundles(
+            listOf(
+                BundleSnapshot(
+                    name = source.displayName,
+                    displayName = source.displayName,
+                    source = source.manifestUrl,
+                    autoUpdate = true,
+                    enabled = true,
+                    sortOrder = 1,
+                ),
+            ),
+        )
+
+        // Store.dispatch is intentionally asynchronous. Wait only for the source row/state to
+        // appear; its own initial download continues in the repository update job.
+        val sourceExists = kotlinx.coroutines.withTimeoutOrNull(10_000L) {
+            patchBundleRepository.sources.first { sources ->
+                sources.filterIsInstance<RemotePatchBundle>().any {
+                    it.endpoint.equals(source.manifestUrl, ignoreCase = true)
+                }
+            }
+        } != null
+        if (sourceExists) {
+            markBundledSourceCatalogApplied(bootstrapPreferences)
+        } else {
+            Log.w(tag, "Bundled patch source was not persisted; bootstrap will retry next launch")
+        }
+
+        // An import was dispatched even if the bounded observation timed out. Skipping this
+        // launch's general update prevents a late import from racing another download.
+        return true
+    }
+
+    private fun markBundledSourceCatalogApplied(preferences: android.content.SharedPreferences) {
+        preferences.edit {
+            putInt(
+                PATCHDOCK_SOURCE_CATALOG_KEY,
+                PatchDockCatalog.BUNDLED_SOURCE_CATALOG_VERSION,
+            )
+        }
+    }
+
 }

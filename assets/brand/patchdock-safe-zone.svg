@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-labelledby="title desc">
+  <title id="title">PatchDock adaptive-icon safe-zone proof</title>
+  <desc id="desc">The 59 dp mark bounds remain inside Android&#x27;s 66 dp non-clipping safe zone.</desc>
+  <rect width="512" height="512" fill="#FFFFFF"/>
+<rect x="100" y="100" width="312" height="312" rx="2" fill="none" stroke="#00A878" stroke-width="4" stroke-dasharray="12 10"/>
+<rect x="116" y="116" width="280" height="280" fill="none" stroke="#005FAC" stroke-width="3"/>
+<g><path fill="#005FAC" d="M148 116H364L396 148V244H278L246 212H116V148Z"/><path fill="#FF6B35" d="M116 268H234L266 300H396V364L364 396H148L116 364Z"/></g>
+<text x="256" y="56" text-anchor="middle" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="24" font-weight="600">108 dp adaptive canvas</text>
+<text x="256" y="454" text-anchor="middle" fill="#51677A" font-family="Segoe UI, sans-serif" font-size="19">green: 66 dp safe zone · blue: 59 dp mark bounds</text>
+</svg>

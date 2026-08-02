@@ -21,7 +21,11 @@ import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.outlined.Sort
 import androidx.compose.material.icons.outlined.*
+import androidx.compose.material3.FilterChip
+import androidx.compose.material3.FilterChipDefaults
+import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButtonDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -230,12 +234,6 @@ fun SectionsLayout(
                     onBundlesClick = chromeActions.onBundlesClick,
                     onSettingsClick = chromeActions.onSettingsClick,
                     isExpertModeEnabled = chromeFlags.isExpertModeEnabled,
-                    showSearchButton = chromeFlags.showSearchButton,
-                    showSortButton = chromeFlags.showSortButton,
-                    sortMode = apps.sortMode,
-                    searchActive = searchState.visible,
-                    onSearchClick = searchState.onToggle,
-                    onSortClick = { showSortDialog = true },
                     onSourcesPositioned = onboardingState?.let { s -> { b -> s.sourcesButtonBounds = b } },
                     onSettingsPositioned = onboardingState?.let { s -> { b -> s.settingsButtonBounds = b } }
                 )
@@ -381,6 +379,16 @@ private fun AdaptiveContent(
                     Spacer(modifier = Modifier.height(24.dp))
                 }
 
+                HomeUtilityBar(
+                    showSearch = chromeFlags.showSearchButton,
+                    searchActive = searchState.visible,
+                    showSort = chromeFlags.showSortButton,
+                    sortMode = apps.sortMode,
+                    onSearchClick = searchState.onToggle,
+                    onSortClick = onSortClick,
+                    modifier = Modifier.padding(horizontal = contentPadding)
+                )
+
                 // Section 3: Scrollable app buttons
                 Box(modifier = Modifier.weight(1f, fill = isGroupedAppView)) {
                     MainAppsSection(
@@ -416,6 +424,62 @@ private fun AdaptiveContent(
                         .fillMaxWidth()
                 )
             }
+        }
+    }
+}
+
+/**
+ * Search and sort change the current app list; they are tools, not destinations. Keeping them
+ * above the list preserves that relationship and leaves the bottom bar for navigation only.
+ */
+@Composable
+internal fun HomeUtilityBar(
+    showSearch: Boolean,
+    searchActive: Boolean,
+    showSort: Boolean,
+    sortMode: HomeAppSortMode,
+    onSearchClick: () -> Unit,
+    onSortClick: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    if (!showSearch && !showSort) return
+
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(bottom = 8.dp),
+        horizontalArrangement = Arrangement.spacedBy(8.dp, Alignment.End),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        if (showSearch) {
+            FilterChip(
+                selected = searchActive,
+                onClick = onSearchClick,
+                label = { Text(stringResource(R.string.search)) },
+                leadingIcon = {
+                    Icon(
+                        imageVector = if (searchActive) Icons.Outlined.SearchOff else Icons.Outlined.Search,
+                        contentDescription = null,
+                        modifier = Modifier.size(FilterChipDefaults.IconSize)
+                    )
+                }
+            )
+        }
+        if (showSort) {
+            val sortLabel = stringResource(sortMode.labelRes)
+            FilterChip(
+                selected = sortMode != HomeAppSortMode.MANUAL,
+                onClick = onSortClick,
+                label = { Text(stringResource(R.string.sort)) },
+                leadingIcon = {
+                    Icon(
+                        imageVector = Icons.AutoMirrored.Outlined.Sort,
+                        contentDescription = null,
+                        modifier = Modifier.size(FilterChipDefaults.IconSize)
+                    )
+                },
+                modifier = Modifier.semantics { stateDescription = sortLabel }
+            )
         }
     }
 }

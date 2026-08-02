@@ -1,157 +1,85 @@
-<div align="center"> 
-<picture>
-    <source
-      width="512px"
-      media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/MorpheApp/.github/refs/heads/main/profile/assets/morphe-wordmark/morphe_wordmark_dark.svg"
-    />
-    <img 
-      width="512px"
-      alt="Morphe"
-      src="https://raw.githubusercontent.com/MorpheApp/.github/refs/heads/main/profile/assets/morphe-wordmark/morphe_wordmark_light.svg"
-    />
-</picture>
+# PatchDock
 
-[![Website badge](https://img.shields.io/badge/Website-gray.svg?logo=data:image/svg%2bxml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ29weXJpZ2h0IDIwMjUgTW9ycGhlLiBUaGlzIGlzIGNvcHlyaWdodGVkIGNvbnRlbnQsIGFuZCBub3QgbGljZW5zZWQgdW5kZXIgb3BlbiBzb3VyY2UgdGVybXMuCiAgICAgU2VlIGh0dHBzOi8vZ2l0aHViLmNvbS9Nb3JwaGVBcHAvbW9ycGhlLWJyYW5kaW5nIC0tPgoKPHN2ZwogICB3aWR0aD0iNTEyIgogICBoZWlnaHQ9IjUxMiIKICAgdmlld0JveD0iMCAwIDUxMiA1MTIiCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZzIiCiAgIHNvZGlwb2RpOmRvY25hbWU9Im1vcnBoZV9sb2dvX2xpZ2h0LnN2ZyIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMS40LjIgKGViZjBlOTQwZDAsIDIwMjUtMDUtMDgpIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0ibmFtZWR2aWV3MiIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiMwMDAwMDAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMC4yNSIKICAgICBpbmtzY2FwZTpzaG93cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgICAgaW5rc2NhcGU6ZGVza2NvbG9yPSIjZDFkMWQxIgogICAgIGlua3NjYXBlOnpvb209IjEuMTU0Mjk2OSIKICAgICBpbmtzY2FwZTpjeD0iMjU2IgogICAgIGlua3NjYXBlOmN5PSIyNTYiCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxNDQwIgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjgzNiIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iMCIKICAgICBpbmtzY2FwZTp3aW5kb3cteT0iMCIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZzIiPgogICAgPGlua3NjYXBlOnBhZ2UKICAgICAgIHg9IjAiCiAgICAgICB5PSIwIgogICAgICAgd2lkdGg9IjUxMiIKICAgICAgIGhlaWdodD0iNTEyIgogICAgICAgaWQ9InBhZ2UyIgogICAgICAgbWFyZ2luPSIwIgogICAgICAgYmxlZWQ9IjAiIC8+CiAgPC9zb2RpcG9kaTpuYW1lZHZpZXc+CiAgPGRlZnMKICAgICBpZD0iZGVmczIiIC8+CiAgPCEtLSBMZXR0ZXIgLS0+CiAgPGcKICAgICBpZD0iTGV0dGVyIgogICAgIHN0eWxlPSJmaWxsOiNmZmZmZmY7ZmlsbC1vcGFjaXR5OjEiPgogICAgPHBhdGgKICAgICAgIGlkPSJMZWZ0IgogICAgICAgZD0ibSAxMjMsMTQwIGMgLTIxLDAgLTM5LDE3IC00MCwzOCB2IDE5MiBjIDEsMjEgMTksMzggNDAsMzggMjEsMCAzOSwtMTcgNDAsLTM4IFYgMTc4IGMgLTEsLTIxIC0xOSwtMzggLTQwLC0zOCB6IgogICAgICAgZmlsbD0iIzFFNUFBOCIKICAgICAgIHN0eWxlPSJmaWxsOiNmZmZmZmY7ZmlsbC1vcGFjaXR5OjEiIC8+CiAgICA8cGF0aAogICAgICAgaWQ9IlJpZ2h0IgogICAgICAgZD0ibSAzNDksMjg1IHYgODUgYyAxLDIxIDE5LDM4IDQwLDM4IDIxLDAgMzksLTE3IDQwLC0zOCBWIDE4MiBjIC0xMSwtMTQgLTc0LDYzIC04MCwxMDMgeiIKICAgICAgIGZpbGw9IiMwMEFGQUUiCiAgICAgICBzdHlsZT0iZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxIiAvPgogICAgPHBhdGgKICAgICAgIGlkPSJNaWRkbGUiCiAgICAgICBkPSJtIDEyNywxMDggYyAtMzQsMCAtNDQsMjUgLTQ0LDQwIHYgNTQgYyAzMCwtMzMgNzUsMjcgODAsMzMgMjgsMzIgNDQsODcgOTMsODkgNDgsLTIgNjcsLTU2IDkzLC04OSAwLDAgNDUsLTc0IDgwLC04MCAwLC0yOCAtMTEsLTQ3IC00NCwtNDcgLTM0LDAgLTU4LDUwIC03NSw3MiAtMTcsMjIgLTI1LDQ2IC01NCw0NiAtMjksMCAtMzgsLTI1IC01NCwtNDYgLTE3LC0yMiAtNDEsLTcyIC03NSwtNzIgeiIKICAgICAgIGZpbGw9InVybCgjbGluZWFyR3JhZGllbnQyKSIKICAgICAgIHN0eWxlPSJmaWxsOiNmZmZmZmY7ZmlsbC1vcGFjaXR5OjEiIC8+CiAgPC9nPgo8L3N2Zz4K&style=for-the-badge)](https://morphe.software) [![Documentation badge](https://img.shields.io/badge/Documentation-gray?style=for-the-badge&logo=github)](https://github.com/MorpheApp/morphe-documentation#readme) [![Guides badge](https://img.shields.io/badge/Guides-gray?style=for-the-badge&logo=bookstack&logoColor=white)](docs/README.md) [![Subreddit badge](https://img.shields.io/badge/Reddit-gray?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/r/MorpheApp) [![Crowdin badge](https://img.shields.io/badge/Translations-gray?style=for-the-badge&logo=crowdin)](https://morphe.software/translate)
-<br>
-</div>
-
-&nbsp;
 <p align="center">
-  <a href="https://morphe.software" title="Download Morphe">
-    <img src="https://raw.githubusercontent.com/MorpheApp/.github/refs/heads/main/profile/assets/download-morphe.svg" alt="Download Morphe" width="240"/>
-  </a>
+  <img src="assets/brand/patchdock-lockup.svg" alt="PatchDock" width="620" />
 </p>
-&nbsp;
 
-# 💊 Morphe
+PatchDock is an Android manager for finding, verifying, patching, signing, and installing supported stock apps without moving the workflow to a PC. It ships with the TikTok patches from [`icysymmetra/tiktok-patches-for-morphe`](https://github.com/icysymmetra/tiktok-patches-for-morphe) and the official [`MorpheApp/morphe-patches`](https://github.com/MorpheApp/morphe-patches) bundle.
 
-> Want to watch ads? Us neither.
+PatchDock is a distinctly branded derivative of [Morphe Manager](https://github.com/MorpheApp/morphe-manager). It is not an official MorpheApp, Google, Reddit, TikTok, ByteDance, APKMirror, ReVanced, or Shizuku product.
 
-Morphe is an Android app that patches YouTube, YouTube Music, and Reddit - stripping ads and giving you back control over your experience. No root required.
+## Supported apps
 
-## ✨ Why Morphe?
+PatchDock 0.2.2 exposes every app target in its two built-in patch bundles:
 
-Modern apps are full of ads and dark patterns designed to grab your attention. Morphe patches them at the bytecode level - modifying the app directly on your device, without any of your data leaving it. The result is a cleaner version of the app you already know, exactly the way you want it.
+| App | Android package | Input required by the current bundle |
+|---|---|---|
+| TikTok | `com.zhiliaoapp.musically` | Exact plain APK for 43.8.3 |
+| YouTube | `com.google.android.youtube` | Plain APK |
+| YouTube Music | `com.google.android.apps.youtube.music` | Plain APK |
+| Reddit | `com.reddit.frontpage` | APKM/split archive preferred by the current bundle |
 
-## 📲 Download
+The compatible versions are read from the installed patch bundle instead of being duplicated in UI code. PatchDock also works with user-added Morphe patch bundles: a target automatically gains the secure in-app APKMirror flow when the bundle declares an exact version and at least one valid stock signing-certificate SHA-256 fingerprint.
 
-**[→ Download at morphe.software](https://morphe.software)**
+Third-party bundles are never silently installed. Patch bundles execute modification code locally, and some popular community bundles do not publish stock-certificate fingerprints in their compatibility metadata. Those sources remain explicit user choices and fall back to manual file selection when PatchDock cannot establish a certificate-pinned download policy.
 
-The website will guide you to the latest release for your device. No account needed.
+## What this build does
 
-## 🚀 How it works
+1. Loads the two built-in GitHub manifests and accepts only release hashes embedded in the manager.
+2. Reads each bundle's package, compatible-version, required-file-type, and publisher-certificate metadata.
+3. Opens either an exact result or a focused search inside an HTTPS APKMirror-only WebView.
+4. Lets the user initiate APKMirror's normal download flow.
+5. Verifies package name, exact version, required APK/split shape, and publisher certificate before patching. Every APK module in a split archive must agree on package/version and share a trusted certificate.
+6. Applies the selected `.mpp` patches locally on the Android device.
+7. Signs the result with PatchDock's private on-device keystore.
+8. Installs through Shizuku by default, with the standard Android package installer available as a fallback.
 
-1. **Install Morphe** from [morphe.software](https://morphe.software).
-2. **Pick an app** - YouTube, YouTube Music, or Reddit are supported out of the box.
-3. **Choose your mode:**
-    - **Simple mode** - designed for a one-tap experience. Just tap Patch and Morphe handles the rest with sensible defaults. No configuration needed.
-    - **Expert mode** - gives you full control. Choose exactly which of the 100+ patches to apply, configure per-patch options (colors, toggles, and more), and fine-tune everything before patching.
-4. **Provide the APK** - Morphe guides you through obtaining the original app file via step-by-step dialogs. The patching itself happens entirely on your device.
-5. **Install and enjoy** - once patching is complete, install the result like any normal APK.
+PatchDock never uploads the APK or app data. Downloads are capped at 1.5 GB, redirects are re-checked after following them, and TLS errors are always cancelled rather than bypassed.
 
-Everything happens locally. Morphe never uploads your APKs or personal data anywhere.
+## Trust model
 
-## 📖 Guides
+There are two artifact policies:
 
-Step-by-step walkthroughs with screenshots, covering patching in both modes, installers, updates, patch sources, backups, and customization: **[→ Morphe guides](docs/README.md)**
+- **Exact artifact pin:** TikTok 43.8.3 is checked byte-for-byte, including version code, file length, full APK SHA-256, package shape, and publisher certificate.
+- **Bundle-derived target:** apps with several legitimate APKMirror variants are checked against the exact package/version, bundle-required package shape, and all publisher certificates declared by the enabled patch bundle. File length and full-file hash are not pinned because valid architecture/DPI variants differ.
 
-## 🔧 Features
+Built-in patch releases remain fail-closed. A newly published `.mpp` is not accepted until its version and SHA-256 are included in a reviewed PatchDock update.
 
-**Patching**
-- Simple mode for one-tap patching with curated defaults
-- Expert mode for full patch selection, per-patch configuration, and experimental version support
-- Expert mode also shows an expanded patching screen with real-time logs and live RAM usage monitoring during patching
-- 100+ patches for YouTube, YouTube Music, and Reddit
-- Support for split APKs
-- Optional "Optimize for device architecture" mode - skips split APK modules for unsupported CPU architectures, locales, and screen densities during merge, and strips native libraries for unsupported architectures from plain APKs after patching
-- Sends a notification the moment patching finishes, so you don't have to keep the app open
-- Optional completion sound, with a distinct tone for success and failure
-- Optional auto-install with Shizuku right after patching completes
-- Batch patching - select several apps and patch them in one queue, with every question asked
-  up front so the run never stops to wait for you
-- Optional automatic re-patching in the background when a patch source releases changes for
-  your apps, with silent progress and result notifications
+### Current built-in pins
 
-**Patch options** *(Simple mode: available in the Advanced tab; Expert mode: available on the patch selection screen)*
-- Custom app display name, launcher icon, and header logo per app, with built-in creators that generate every density variant for you
-- App theme colors (background color presets)
-- Hide Shorts app shortcut and widget (YouTube)
-- And more, depending on installed patch bundles
+| Item | Pinned value |
+|---|---|
+| TikTok package/version | `com.zhiliaoapp.musically` 43.8.3 (`2024308030`) |
+| TikTok stock APK SHA-256 | `ff30d4d43eb2e5764a6ea1cd022168811553052c3a37b5b65caba079ba026bb9` |
+| TikTok stock certificate SHA-256 | `9041803e91bcb814b4b4399fb5c85a91640b755e5e8ba76813814bf4cf2ab5ba` |
+| TikTok patches | 0.4.1 — `58510605b618b6b5fe7bf9ae2d284857a07aa7c359cea189dcfb09efc7bb147c` |
+| Official Morphe patches | 1.38.0 — `31d088b81414c65b9294e33feb3d5d7f14de3c694d84d74388ca3b22afc331f0` |
 
-**Patch sources**
-- Add any compatible patch bundle via GitHub URL or deep link
-- Per-source pre-release toggle to get early patch access
-- Automatic background update notifications (even when the app is closed)
-- Sort your app list and patch sources however you like (name, install date, and more)
+The machine-readable values live in `PatchDockCatalog.kt` and are covered by unit tests.
 
-**Installer**
-- Standard Android installer
-- Root installer with Magisk module support (mount-based, no data loss on update)
-- Play Store installer variants, so Google Play recognizes itself as the install source (with a warning about the trade-off - Play Store may then offer updates that would overwrite your patched build)
-- Any third-party installer apps detected on the system are also available as an option
-- Prompt-on-install option to choose per session
-- On rooted devices, Morphe asks whether you want a Root Mount install or a Standard install before patching starts, and adjusts the applied patches to match your choice
+## Building
 
-**Appearance**
-- System / Light / Dark / Material You themes
-- Pure Black mode for OLED screens
-- Accent color selection
-- Animated backgrounds - pick one you like, or let Morphe shuffle them for you on each launch, daily, or every three days
-- App icon selection
+Requirements:
 
-**Home screen**
-- Friendly time-of-day greeting when you open the app
-- Rearrange your app list into the order that suits you
-- Group your apps by patch source or your own categories
-- Hide apps you never patch, and bring them back whenever you like
-- Home cards for apps patched with universal patches, not just app-specific ones
-- Multi-select and bulk actions for cleaning up saved APKs and patch selections, and for
-  patching several apps in one queue
-- Launcher shortcuts for re-patching outdated apps, checking for updates, and jumping straight
-  into patching a recently patched app
-- Floating scroll-to-top button when your lists get long
-- A short guided tour after your first patch, so you know where everything lives
+- JDK 17
+- Android SDK with API 37 and Build Tools
+- the compatible `morphe-library` and fixed `morphe-patcher` composite builds next to this repository
+- the Morphe `jadb` 1.2.3 artifact in the local Maven repository
 
-**Advanced**
-- Import/export your Morphe settings as JSON, with a Replace or Merge choice on import
-- Import/export your signing keystore
-- Manage saved original APKs and patched APKs
-- Manage saved patch selections per app
-- GitHub Personal Access Token support for higher API rate limits
-- Process runtime - run patching in a separate process for better stability, with configurable memory limit
-- Bytecode processing mode - controls how bytecode is processed during patching, affecting patching speed, memory usage, and output APK size
-- Built-in file picker as an alternative to the system one, with an option to show hidden files
-- Optional external trigger, so automation apps can queue a batch through an intent, gated by
-  a per-app confirmation
-- Export debug logs for troubleshooting
+For the exact dependency revisions and the reason for the patcher fork, see [`DEPENDENCIES.md`](DEPENDENCIES.md). Then run:
 
-## ❓ New to GitHub?
+```powershell
+.\gradlew.bat :app:testDebugUnitTest :app:assembleRelease -PsignAsDebug
+```
 
-If you ended up here but aren't sure what to do next - no worries. Here's the short version:
+Android requires APKs to have a signing identity. Development artifacts use Gradle's throwaway debug key; no production code-signing certificate is used or included. A user's APK-patching keystore is separate and remains in the app's private storage.
 
-1. Go to the **[Releases page](https://github.com/MorpheApp/morphe-manager/releases/latest)**.
-2. Under **Assets**, tap the file ending in `.apk` to download it.
-3. Open the downloaded file on your Android device and tap **Install**.
-4. If Android asks you to allow installs from unknown sources, follow the prompt to enable it - this is required for any app not from the Play Store.
+## Updating a built-in source
 
-That's it. Once Morphe is installed, everything else happens inside the app - the **[guides](docs/README.md)** above walk you through the first patch.
+Never update only a visible version or mutable manifest URL. Fetch the released `.mpp`, verify the release-asset SHA-256 independently, add the version/hash to `PatchDockCatalog.kt`, update tests, and exercise at least one declared app target. Stock-artifact pins must be updated as a single reviewed unit.
 
-For FAQs and troubleshooting, visit **[morphe.software](https://morphe.software)** or join the community on **[Reddit](https://www.reddit.com/r/MorpheApp)**.
+## License and origin
 
-## 📙 Contributing
+PatchDock is licensed under the [GNU General Public License v3.0](LICENSE), including the additional Section 7 terms carried by Morphe Manager. The original copyright headers, contributors, license texts, and [NOTICE](NOTICE) are retained. PatchDock uses a new name, application ID, colors, and icon and makes its derivative origin explicit.
 
-Thank you for considering contributing to Morphe.
-You can find the contribution guidelines [here](CONTRIBUTING.md).
-
-## ❗ About
-
-Morphe is built on the foundation of [ReVanced Manager](https://github.com/ReVanced/revanced-manager) and [URV](https://github.com/Jman-Github/Universal-ReVanced-Manager). All changes made by Morphe are documented in the Git history.
-
-## 📜 License
-
-Morphe is licensed under the [GNU General Public License v3.0](LICENSE), with additional conditions under GPLv3 Section 7:
-
-- **Name & Branding Restrictions (7c & 7e):** Derivative works must use their own distinct branding. The **"Morphe"** name, logos, and trademarks may not be used for the branding or title of derivative works (e.g., names like *"Morphe Plus"*, *"Morphe Expanded"*, or *"Morphe UserXYZ"* are strictly prohibited).
-
-See the [LICENSE](LICENSE) file for the full GPLv3 terms and the [NOTICE](NOTICE) file for full conditions of GPLv3 Section 7.
+Morphe Manager itself builds on [Universal ReVanced Manager](https://github.com/Jman-Github/Universal-ReVanced-Manager) and [ReVanced Manager](https://github.com/ReVanced/revanced-manager). Each patch bundle has its own authors and license; review a third-party repository before adding it.

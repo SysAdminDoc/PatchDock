@@ -63,7 +63,7 @@ fun ImportExportSection(
             // Manager Settings
             ImportExportRow(
                 leadingContent = { MorpheIcon(icon = Icons.Outlined.Settings) },
-                title = stringResource(R.string.settings_system_morphe_settings),
+                title = stringResource(R.string.settings_system_patchdock_settings),
                 description = stringResource(R.string.settings_system_import_manager_settings_description),
                 onImport = onImportSettings,
                 onExport = onExportSettings

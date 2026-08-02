@@ -97,7 +97,7 @@ fun ThemeStyleSelector(
             Triple(
                 ThemeStyle.MORPHE,
                 Icons.Outlined.Palette,
-                stringResource(R.string.settings_appearance_style_morphe)
+                stringResource(R.string.settings_appearance_style_patchdock)
             )
         )
         if (supportsDynamicColor) {

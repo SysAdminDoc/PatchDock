@@ -24,6 +24,7 @@ import app.morphe.manager.ui.screen.shared.MorpheSettingsDivider
 import app.morphe.manager.ui.screen.shared.SettingsGroup
 import app.morphe.manager.ui.screen.shared.SettingsItem
 import app.morphe.manager.ui.viewmodel.UpdateViewModel
+import app.morphe.manager.util.MANAGER_REPO_URL
 import app.morphe.manager.util.isolateLtr
 import app.morphe.manager.util.toast
 import com.google.accompanist.drawablepainter.rememberDrawablePainter
@@ -85,7 +86,7 @@ fun AboutSection(
                 runCatching {
                     val shareIntent = Intent(Intent.ACTION_SEND).apply {
                         type = "text/plain"
-                        putExtra(Intent.EXTRA_TEXT, "https://morphe.software")
+                        putExtra(Intent.EXTRA_TEXT, MANAGER_REPO_URL)
                     }
                     context.startActivity(
                         Intent.createChooser(

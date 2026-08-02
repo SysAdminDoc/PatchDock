@@ -1,3 +1,40 @@
+# 0.2.2 (2026-08-01)
+
+### Brand identity
+
+* Replace the clipped app-tile and puzzle-piece artwork with the original PatchDock precision-splice symbol.
+* Keep the 59.06dp launcher mark inside Android's guaranteed 66dp adaptive-icon safe zone across every icon variant.
+* Add purpose-built full-color, dark, monochrome, themed, horizontal, reversed, and Google Play assets.
+* Add deterministic asset generation plus mask, grayscale, theme, and 24–128px QA proofs.
+* Align package-file, notification, loading, launcher, splash, and project-documentation branding to the new mark.
+
+# 0.2.1 (2026-08-01)
+
+### User interface
+
+* Replace Home's compact icon strip with a three-destination labelled navigation bar and a selected Home anchor.
+* Move Search and Sort into a clearly separate tool row above the app list.
+* Give Settings a visible Back action, screen title, and fully labelled section tabs.
+* Add explicit Close and labelled Add controls to patch-source management.
+* Keep patching actions labelled, remove empty action slots, and preserve Home alongside Install.
+* Add an explicit Close affordance to titled full-screen dialogs.
+* Introduce the official PatchDock app-tile, fitted-patch, and dock logo across launcher, themed-icon, splash, loading, and project-brand surfaces.
+
+# 0.2.0 (2026-08-01)
+
+### Features
+
+* Add the hash-pinned official Morphe patch bundle with YouTube, YouTube Music, and Reddit targets.
+* Generalize the restricted APKMirror downloader for any enabled bundle target that declares exact version and publisher-certificate metadata.
+* Accept and retain APK, APKM, APKS, and XAPK downloads according to bundle file-type policy.
+
+### Security
+
+* Verify every consumed split-APK module has consistent package/version metadata and a common trusted publisher certificate.
+* Keep exact byte, size, version-code, and certificate pins for TikTok 43.8.3.
+* Cap generic downloads and expanded split inspection, re-check redirect hosts, and continue to cancel all TLS errors.
+* Serialize first-run source bootstrap with update checks so Android 16 never observes a writable DEX bundle.
+
 # [1.25.0-dev.12](https://github.com/MorpheApp/morphe-manager/compare/v1.25.0-dev.11...v1.25.0-dev.12) (2026-08-01)
 
 

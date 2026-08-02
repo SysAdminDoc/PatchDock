@@ -11,6 +11,8 @@ import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.Close
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -20,12 +22,14 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.input.pointer.PointerEventPass
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalView
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import androidx.compose.ui.window.DialogWindowProvider
+import app.morphe.manager.R
 import app.morphe.manager.util.isDarkBackground
 import kotlin.time.Duration.Companion.milliseconds
 
@@ -63,6 +67,8 @@ enum class DialogTitleActionStyle {
  * @param onDismissRequest Called when user dismisses the dialog.
  * @param title Optional title displayed at the top.
  * @param titleTrailingContent Optional content displayed after the title.
+ * @param showDismissAction Shows an explicit Close action beside a title. Full-screen dialogs
+ * should not require users to discover the system Back gesture in order to leave.
  * @param footer Optional footer content.
  * @param dismissOnClickOutside Whether clicking outside dismisses the dialog.
  * @param scrollable Whether to wrap content in verticalScroll and draw a [ListScrollbar] and [ScrollToTopButton] over it.
@@ -76,6 +82,7 @@ fun MorpheDialog(
     onDismissRequest: () -> Unit,
     title: String? = null,
     titleTrailingContent: (@Composable () -> Unit)? = null,
+    showDismissAction: Boolean = true,
     footer: (@Composable () -> Unit)? = null,
     dismissOnClickOutside: Boolean = false,
     scrollable: Boolean = true,
@@ -136,6 +143,8 @@ fun MorpheDialog(
                 DialogContent(
                     title = title,
                     titleTrailingContent = titleTrailingContent,
+                    showDismissAction = showDismissAction,
+                    onDismissRequest = onDismissRequest,
                     footer = footer,
                     isDarkTheme = isDarkTheme,
                     scrollable = scrollable,
@@ -274,6 +283,8 @@ fun DialogTitleAction(
 private fun DialogContent(
     title: String?,
     titleTrailingContent: (@Composable () -> Unit)?,
+    showDismissAction: Boolean,
+    onDismissRequest: () -> Unit,
     footer: (@Composable () -> Unit)?,
     isDarkTheme: Boolean,
     scrollable: Boolean,
@@ -360,11 +371,20 @@ private fun DialogContent(
                             text = title,
                             style = MaterialTheme.typography.headlineMedium,
                             fontWeight = FontWeight.Bold,
-                            textAlign = if (titleTrailingContent != null) TextAlign.Start else TextAlign.Center,
+                            textAlign = TextAlign.Start,
                             color = textColor,
                             modifier = Modifier.weight(1f)
                         )
                         if (titleTrailingContent != null) titleTrailingContent()
+                        if (showDismissAction) {
+                            IconButton(onClick = onDismissRequest) {
+                                Icon(
+                                    imageVector = Icons.Outlined.Close,
+                                    contentDescription = stringResource(R.string.close),
+                                    tint = textColor
+                                )
+                            }
+                        }
                     }
                 }
 

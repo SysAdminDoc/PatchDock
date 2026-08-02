@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1510 1060" width="1510" height="1060" role="img" aria-labelledby="title desc">
+  <title id="title">PatchDock icon quality-assurance sheet</title>
+  <desc id="desc">Mask, theme, grayscale, and tiny-size checks for the PatchDock adaptive icon.</desc>
+  <rect width="1510" height="1060" fill="#FFFFFF"/>
+<text x="70" y="64" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="38" font-weight="700">PatchDock icon QA</text>
+<text x="70" y="100" fill="#51677A" font-family="Segoe UI, sans-serif" font-size="20">59 dp mark · 66 dp guaranteed safe zone · flat two-shape system</text>
+<text x="70" y="135" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="20" font-weight="600">Adaptive masks</text>
+
+<defs><clipPath id="clip-circle"><circle cx="160" cy="240" r="90"/></clipPath></defs>
+<g clip-path="url(#clip-circle)">
+  <rect x="70" y="150" width="180" height="180" fill="#F4F7FB"/>
+  <g transform="translate(70 150) scale(0.35156250)"><path fill="#005FAC" d="M148 116H364L396 148V244H278L246 212H116V148Z"/><path fill="#FF6B35" d="M116 268H234L266 300H396V364L364 396H148L116 364Z"/></g>
+</g>
+<text x="160" y="361" text-anchor="middle" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600">Circle</text>
+
+<defs><clipPath id="clip-squircle"><path d="M390 150C454 150 480 176 480 240S454 330 390 330S300 304 300 240S326 150 390 150Z"/></clipPath></defs>
+<g clip-path="url(#clip-squircle)">
+  <rect x="300" y="150" width="180" height="180" fill="#F4F7FB"/>
+  <g transform="translate(300 150) scale(0.35156250)"><path fill="#005FAC" d="M148 116H364L396 148V244H278L246 212H116V148Z"/><path fill="#FF6B35" d="M116 268H234L266 300H396V364L364 396H148L116 364Z"/></g>
+</g>
+<text x="390" y="361" text-anchor="middle" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600">Squircle</text>
+
+<defs><clipPath id="clip-rounded-square"><rect x="530" y="150" width="180" height="180" rx="40"/></clipPath></defs>
+<g clip-path="url(#clip-rounded-square)">
+  <rect x="530" y="150" width="180" height="180" fill="#F4F7FB"/>
+  <g transform="translate(530 150) scale(0.35156250)"><path fill="#005FAC" d="M148 116H364L396 148V244H278L246 212H116V148Z"/><path fill="#FF6B35" d="M116 268H234L266 300H396V364L364 396H148L116 364Z"/></g>
+</g>
+<text x="620" y="361" text-anchor="middle" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600">Rounded square</text>
+
+<defs><clipPath id="clip-teardrop"><path d="M850 150C905 150 940 188 940 243V330H847C794 330 760 295 760 240C760 186 796 150 850 150Z"/></clipPath></defs>
+<g clip-path="url(#clip-teardrop)">
+  <rect x="760" y="150" width="180" height="180" fill="#F4F7FB"/>
+  <g transform="translate(760 150) scale(0.35156250)"><path fill="#005FAC" d="M148 116H364L396 148V244H278L246 212H116V148Z"/><path fill="#FF6B35" d="M116 268H234L266 300H396V364L364 396H148L116 364Z"/></g>
+</g>
+<text x="850" y="361" text-anchor="middle" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600">Teardrop</text>
+
+<defs><clipPath id="clip-square"><rect x="990" y="150" width="180" height="180"/></clipPath></defs>
+<g clip-path="url(#clip-square)">
+  <rect x="990" y="150" width="180" height="180" fill="#F4F7FB"/>
+  <g transform="translate(990 150) scale(0.35156250)"><path fill="#005FAC" d="M148 116H364L396 148V244H278L246 212H116V148Z"/><path fill="#FF6B35" d="M116 268H234L266 300H396V364L364 396H148L116 364Z"/></g>
+</g>
+<text x="1080" y="361" text-anchor="middle" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600">Square</text>
+
+<defs><clipPath id="clip-full-bleed"><rect x="1220" y="150" width="180" height="180"/></clipPath></defs>
+<g clip-path="url(#clip-full-bleed)">
+  <rect x="1220" y="150" width="180" height="180" fill="#F4F7FB"/>
+  <g transform="translate(1220 150) scale(0.35156250)"><path fill="#005FAC" d="M148 116H364L396 148V244H278L246 212H116V148Z"/><path fill="#FF6B35" d="M116 268H234L266 300H396V364L364 396H148L116 364Z"/></g>
+</g>
+<text x="1310" y="361" text-anchor="middle" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600">Full bleed</text>
+
+<text x="70" y="455" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="20" font-weight="600">Color, grayscale, and themed-icon behavior</text>
+
+<defs><clipPath id="clip-color-/-light"><path d="M160 470C224 470 250 496 250 560S224 650 160 650S70 624 70 560S96 470 160 470Z"/></clipPath></defs>
+<g clip-path="url(#clip-color-/-light)">
+  <rect x="70" y="470" width="180" height="180" fill="#F4F7FB"/>
+  <g transform="translate(70 470) scale(0.35156250)"><path fill="#005FAC" d="M148 116H364L396 148V244H278L246 212H116V148Z"/><path fill="#FF6B35" d="M116 268H234L266 300H396V364L364 396H148L116 364Z"/></g>
+</g>
+<text x="160" y="681" text-anchor="middle" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600">Color / light</text>
+
+<defs><clipPath id="clip-color-/-dark"><path d="M390 470C454 470 480 496 480 560S454 650 390 650S300 624 300 560S326 470 390 470Z"/></clipPath></defs>
+<g clip-path="url(#clip-color-/-dark)">
+  <rect x="300" y="470" width="180" height="180" fill="#071827"/>
+  <g transform="translate(300 470) scale(0.35156250)"><path fill="#A4C9FF" d="M148 116H364L396 148V244H278L246 212H116V148Z"/><path fill="#FF9B73" d="M116 268H234L266 300H396V364L364 396H148L116 364Z"/></g>
+</g>
+<text x="390" y="681" text-anchor="middle" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600">Color / dark</text>
+
+<defs><clipPath id="clip-grayscale"><path d="M620 470C684 470 710 496 710 560S684 650 620 650S530 624 530 560S556 470 620 470Z"/></clipPath></defs>
+<g clip-path="url(#clip-grayscale)">
+  <rect x="530" y="470" width="180" height="180" fill="#EFEFEF"/>
+  <g transform="translate(530 470) scale(0.35156250)"><path fill="#383838" d="M148 116H364L396 148V244H278L246 212H116V148Z"/><path fill="#777777" d="M116 268H234L266 300H396V364L364 396H148L116 364Z"/></g>
+</g>
+<text x="620" y="681" text-anchor="middle" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600">Grayscale</text>
+
+<defs><clipPath id="clip-themed-/-light"><path d="M850 470C914 470 940 496 940 560S914 650 850 650S760 624 760 560S786 470 850 470Z"/></clipPath></defs>
+<g clip-path="url(#clip-themed-/-light)">
+  <rect x="760" y="470" width="180" height="180" fill="#D7E9FF"/>
+  <g transform="translate(760 470) scale(0.35156250)"><path fill="#0052A5" d="M148 116H364L396 148V244H278L246 212H116V148Z"/><path fill="#0052A5" d="M116 268H234L266 300H396V364L364 396H148L116 364Z"/></g>
+</g>
+<text x="850" y="681" text-anchor="middle" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600">Themed / light</text>
+
+<defs><clipPath id="clip-monochrome"><path d="M1080 470C1144 470 1170 496 1170 560S1144 650 1080 650S990 624 990 560S1016 470 1080 470Z"/></clipPath></defs>
+<g clip-path="url(#clip-monochrome)">
+  <rect x="990" y="470" width="180" height="180" fill="#FFFFFF"/>
+  <g transform="translate(990 470) scale(0.35156250)"><path fill="#111111" d="M148 116H364L396 148V244H278L246 212H116V148Z"/><path fill="#111111" d="M116 268H234L266 300H396V364L364 396H148L116 364Z"/></g>
+</g>
+<text x="1080" y="681" text-anchor="middle" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600">Monochrome</text>
+
+<defs><clipPath id="clip-themed-/-dark"><path d="M1310 470C1374 470 1400 496 1400 560S1374 650 1310 650S1220 624 1220 560S1246 470 1310 470Z"/></clipPath></defs>
+<g clip-path="url(#clip-themed-/-dark)">
+  <rect x="1220" y="470" width="180" height="180" fill="#153153"/>
+  <g transform="translate(1220 470) scale(0.35156250)"><path fill="#B8D8FF" d="M148 116H364L396 148V244H278L246 212H116V148Z"/><path fill="#B8D8FF" d="M116 268H234L266 300H396V364L364 396H148L116 364Z"/></g>
+</g>
+<text x="1310" y="681" text-anchor="middle" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600">Themed / dark</text>
+
+<text x="70" y="795" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="20" font-weight="600">Raster-size legibility</text>
+<g transform="translate(70 820)"><rect width="128" height="128" fill="#F4F7FB" rx="28.2"/><g transform="scale(0.25000000)"><path fill="#005FAC" d="M148 116H364L396 148V244H278L246 212H116V148Z"/><path fill="#FF6B35" d="M116 268H234L266 300H396V364L364 396H148L116 364Z"/></g><text x="64.0" y="158" text-anchor="middle" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="16">128px</text></g><g transform="translate(268 820)"><rect width="64" height="64" fill="#F4F7FB" rx="14.1"/><g transform="scale(0.12500000)"><path fill="#005FAC" d="M148 116H364L396 148V244H278L246 212H116V148Z"/><path fill="#FF6B35" d="M116 268H234L266 300H396V364L364 396H148L116 364Z"/></g><text x="32.0" y="94" text-anchor="middle" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="16">64px</text></g><g transform="translate(402 820)"><rect width="48" height="48" fill="#F4F7FB" rx="10.6"/><g transform="scale(0.09375000)"><path fill="#005FAC" d="M148 116H364L396 148V244H278L246 212H116V148Z"/><path fill="#FF6B35" d="M116 268H234L266 300H396V364L364 396H148L116 364Z"/></g><text x="24.0" y="78" text-anchor="middle" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="16">48px</text></g><g transform="translate(520 820)"><rect width="32" height="32" fill="#F4F7FB" rx="7.0"/><g transform="scale(0.06250000)"><path fill="#005FAC" d="M148 116H364L396 148V244H278L246 212H116V148Z"/><path fill="#FF6B35" d="M116 268H234L266 300H396V364L364 396H148L116 364Z"/></g><text x="16.0" y="62" text-anchor="middle" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="16">32px</text></g><g transform="translate(622 820)"><rect width="24" height="24" fill="#F4F7FB" rx="5.3"/><g transform="scale(0.04687500)"><path fill="#005FAC" d="M148 116H364L396 148V244H278L246 212H116V148Z"/><path fill="#FF6B35" d="M116 268H234L266 300H396V364L364 396H148L116 364Z"/></g><text x="12.0" y="54" text-anchor="middle" fill="#102A43" font-family="Segoe UI, sans-serif" font-size="16">24px</text></g>
+<line x1="70" y1="1006" x2="1440" y2="1006" stroke="#D9E4EE" stroke-width="2"/>
+<text x="70" y="1038" fill="#51677A" font-family="Segoe UI, sans-serif" font-size="17">Production geometry rendered directly from the same two paths used by Android resources.</text>
+</svg>

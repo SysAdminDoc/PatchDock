@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 220" role="img" aria-labelledby="title desc">
+  <title id="title">PatchDock editable wordmark</title>
+  <desc id="desc">Editable text source for the PatchDock wordmark, set in Segoe UI Semibold.</desc>
+  <text x="20" y="174" font-family="Segoe UI Semibold, Segoe UI, sans-serif" font-size="160" font-weight="600" letter-spacing="-3"><tspan fill="#102A43">Patch</tspan><tspan fill="#005FAC">Dock</tspan></text>
+</svg>

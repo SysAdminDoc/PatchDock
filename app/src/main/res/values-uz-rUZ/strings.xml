@@ -13,10 +13,10 @@
     <string name="android_11_bug_dialog_title">Android 11 muammosi</string>
     <string name="android_11_bug_dialog_description">Android 11 tizimidagi xatoni oldini olish uchun ilova o‘rnatish ruxsatini oldindan bering</string>
     <string name="deep_link_add_source_title">Manba qo‘shish</string>
-    <string name="deep_link_add_source_message">Ushbu patch manbasi Morphe\'ga qo‘shilsinmi?</string>
+    <string name="deep_link_add_source_message">Ushbu patch manbasi PatchDock\'ga qo‘shilsinmi?</string>
     <string name="deep_link_add_source_warning">Faqat ishonchli manbalarni qo‘shing</string>
     <!-- Home Screen - Update Notifications -->
-    <string name="home_update_available">Morphe\'da yangilanish mavjud</string>
+    <string name="home_update_available">PatchDock\'da yangilanish mavjud</string>
     <string name="home_update_available_subtitle">Yangi versiya o‘rnatishga tayyor</string>
     <string name="home_blocked_source_title">Bloklangan patch manbasi aniqlandi</string>
     <string name="home_blocked_source_subtitle">Tekshirish va olib tashlash uchun bosing</string>
@@ -179,11 +179,11 @@
     <string name="home_download_instructions_download_button_toast_3">Amaliyot mukammal qiladi va siz o\'zingizni kutayapsiz 💪</string>
     <string name="home_download_instructions_download_button_toast_4">Hali ham yo\'q... hali ham yo\'q... 🙈</string>
     <string name="home_download_instructions_download_button_toast_5">OK, bag\'ishlanishga hurmat</string>
-    <string name="home_download_instructions_download_button_toast_6">Siz endi Morphe tugmachasini sinovdan o\'tkazuvchi edingiz 🏅</string>
+    <string name="home_download_instructions_download_button_toast_6">Siz endi PatchDock tugmachasini sinovdan o\'tkazuvchi edingiz 🏅</string>
     <string name="home_download_instructions_step3">Yuklashish yakunlanishini kuting va &lt;b&gt;o\'rnatmang&lt;/b&gt; APK faylini</string>
     <string name="home_download_instructions_step3_mount">Yuklab olish tugagandan so‘ng &lt;b&gt;APK ni o‘rnating&lt;/b&gt;</string>
-    <string name="home_download_instructions_step4">Yuklab olish tugagandan so\'ng, Morphe ga qayting</string>
-    <string name="home_download_instructions_step4_mount">Asl APKni o\'rnatgandan so\'ng Morphe ga qayting</string>
+    <string name="home_download_instructions_step4">Yuklab olish tugagandan so\'ng, PatchDock ga qayting</string>
+    <string name="home_download_instructions_step4_mount">Asl APKni o\'rnatgandan so\'ng PatchDock ga qayting</string>
     <string name="home_download_instructions_continue">APKMirror.com saytiga o‘ting</string>
     <!-- Home Screen - Dialog 3: File Picker Prompt -->
     <string name="home_file_picker_prompt_title">Yuklab olingan APKni tanlang</string>
@@ -236,8 +236,8 @@ Eng yaxshi natijalar uchun ushbu ilova to‘liq &lt;b&gt;APK&lt;/b&gt;ni patchla
     <string name="home_split_apk_warning_pick_another">Boshqa APKni tanlang</string>
     <string name="home_dialog_unsupported_version_experimental_label">Tajribali</string>
     <string name="home_dialog_unsupported_version_experimental_description">Bu versiya eksperimental qo‘llab-quvvatlashga ega va barqaror yoki to‘liq bo‘lmasligi mumkin</string>
-    <string name="morphe_experimental_app_version_dialog_title">Tajriba qilishni xohlaysizmi? 🧪</string>
-    <string name="morphe_experimental_app_version_dialog_message">&lt;b&gt;%s&lt;/b&gt; ning bu versiyasi dastlabki eksperimental qo‘llab-quvvatlashga ega&lt;br/&gt;&lt;br/&gt;🔧 Ushbu ilova versiyasi uchun patchlar aniqlanadigan bo‘lganda, ilovaning g‘alati ishlashi yoki aniqlanmagan xatolar kutilishi mumkin</string>
+    <string name="patchdock_experimental_app_version_dialog_title">Tajriba qilishni xohlaysizmi? 🧪</string>
+    <string name="patchdock_experimental_app_version_dialog_message">&lt;b&gt;%s&lt;/b&gt; ning bu versiyasi dastlabki eksperimental qo‘llab-quvvatlashga ega&lt;br/&gt;&lt;br/&gt;🔧 Ushbu ilova versiyasi uchun patchlar aniqlanadigan bo‘lganda, ilovaning g‘alati ishlashi yoki aniqlanmagan xatolar kutilishi mumkin</string>
     <string name="home_dialog_unsupported_version_dialog_title">Qo\'llab-quvvatlanmaydigan versiya</string>
     <string name="home_dialog_unsupported_version_dialog_description">Mavjud emas</string>
     <string name="home_dialog_unsupported_version_dialog_proceed">Baribir davom etish</string>
@@ -367,7 +367,7 @@ Chekka hudud (chizikli): launcher niqobi tomonidan kesilishi mumkin - muhim tafs
     <string name="home_app_info_patch_update_available">Tuzatish yangilanishi mavjud</string>
     <string name="home_app_info_patch_update_available_description">Yangilashlar mavjud</string>
     <string name="home_app_info_app_deleted_warning">Ilova o\'rnatilmagan</string>
-    <string name="home_app_info_app_deleted_description">Ushbu ilova Morphe tashqarisida o\'rnatilmagan. Funksiyalarni qayta tiklash uchun patchlang</string>
+    <string name="home_app_info_app_deleted_description">Ushbu ilova PatchDock tashqarisida o\'rnatilmagan. Funksiyalarni qayta tiklash uchun patchlang</string>
     <string name="home_app_info_apk_size">APK hajmi</string>
     <string name="home_app_info_cpu_arch">CPU arxitekturasi</string>
     <!-- Home Screen - Root Mode -->
@@ -377,7 +377,7 @@ Chekka hudud (chizikli): launcher niqobi tomonidan kesilishi mumkin - muhim tafs
     <string name="root_pre_patch_installer_description">Sizning qurilmangizda root huquqiga ega. Ushbu ilovaning root mount uchun yoki standart o\'rnatish uchun patch ekanligini tanlang</string>
     <string name="root_pre_patch_installer_mount_title">Root mount rejimi</string>
     <string name="root_pre_patch_installer_mount_description">Root mount uchun patchlar, keyin APK mos keladigan to\'plam ilovasi ustidan o\'rnatiladi. GmsCore kerak emas</string>
-    <string name="root_mount_module_unmount_warning">Agar KernelSU da Dismount modullari avtomatik ravishda yoqilgan bo\'lsa, KernelSU > Superuser > siz o\'rnatgan ilova > Profile > Maxsus sozlamalar oching va Dismount modullarini o\'chiring. Aks holda, o\'rnatilgan o\'zgartirilgan APK ishlamasligi mumkin, hatto Morphe uni o\'rnatilgan deb ko\'rsatsa ham</string>
+    <string name="root_mount_module_unmount_warning">Agar KernelSU da Dismount modullari avtomatik ravishda yoqilgan bo\'lsa, KernelSU > Superuser > siz o\'rnatgan ilova > Profile > Maxsus sozlamalar oching va Dismount modullarini o\'chiring. Aks holda, o\'rnatilgan o\'zgartirilgan APK ishlamasligi mumkin, hatto PatchDock uni o\'rnatilgan deb ko\'rsatsa ham</string>
     <string name="root_pre_patch_installer_standard_title">Standart oʻrnatish rejimi</string>
     <string name="root_pre_patch_installer_standard_description">GmsCore qoʻllab-quvvati bilan oddiy APK sifatida patchlar. Patchdan keyin sizning oʻrnatish sozlamangiz ishlatiladi</string>
     <string name="root_pre_patch_installer_hint">Ushbu patch rejimi sozlamalar &gt; tizim &gt; oʻrnatuvchidan mustaqil va patchdan keyin oʻzgartirib boʻlmaydi</string>
@@ -405,7 +405,7 @@ Chekka hudud (chizikli): launcher niqobi tomonidan kesilishi mumkin - muhim tafs
     <string name="patcher_conflict_subtitle">Mavjud versiyani o‘chirib tashlashingiz kerak</string>
     <string name="patcher_conflict_hint">Patchlangan ilova o‘rnatilgan versiyadan boshqa sertifikatdan foydalanadi. Ilova ma\'lumotlarini o‘chirish barcha ilova ma\'lumotlarini o‘chiradi</string>
     <string name="patcher_installed_conflict_title">O‘rnatish talab qilinadi</string>
-    <string name="patcher_installed_conflict_body">"Morphe patchlangan ilovalarni o‘z sertifikati bilan imzolaydi, bu aslidan farq qiladi. Android patchlangan ilovani o‘rnatishdan oldin mavjud versiyani olib tashlashni talab qiladi.
+    <string name="patcher_installed_conflict_body">"PatchDock patchlangan ilovalarni o‘z sertifikati bilan imzolaydi, bu aslidan farq qiladi. Android patchlangan ilovani o‘rnatishdan oldin mavjud versiyani olib tashlashni talab qiladi.
 O‘rnatish barcha ilova ma'lumotlarini o‘chiradi"</string>
     <string name="patcher_install_error_title">O‘rnatish xatoligi</string>
     <string name="patcher_install_error_subtitle">Qayta o‘chirishni va o‘rnatishni urinib ko‘ring</string>
@@ -413,16 +413,16 @@ O‘rnatish barcha ilova ma'lumotlarini o‘chiradi"</string>
     <string name="patcher_ready_to_mount_subtitle">Ulanish uchun quyidagi tugmani bosing</string>
     <string name="patcher_storage_permission_dialog_title">Haqida</string>
     <string name="patcher_incompatible_patcher_title">Yangilash talab qilinadi</string>
-    <string name="patcher_incompatible_patcher_description">&lt;b&gt;%1$s&lt;/b&gt; to‘plami patcher versiyasi &lt;b&gt;%2$s&lt;/b&gt; yoki undan yangiroqni talab qiladi. Ushbu ilovani patchlash uchun Morphe ni yangilang</string>
-    <string name="patcher_incompatible_patcher_update_button">Morphe ni yuklab oling va yangilang</string>
-    <string name="patcher_storage_permission_description_api30">Bir nechta patch opsiyalari Morphe o\'qiy olmaydigan yo\'llarga ishorat qiladi. Xotira ruxsatini bering va keyin patchlash avtomatik ravishda boshlanadi</string>
-    <string name="patcher_storage_permission_description_legacy">Bir nechta patch opsiyalari Morphe o\'qiy olmaydigan yo\'llarga ishorat qiladi. Xotira ruxsatini bering va tugmani bosing, keyin patchlash avtomatik ravishda boshlanadi</string>
+    <string name="patcher_incompatible_patcher_description">&lt;b&gt;%1$s&lt;/b&gt; to‘plami patcher versiyasi &lt;b&gt;%2$s&lt;/b&gt; yoki undan yangiroqni talab qiladi. Ushbu ilovani patchlash uchun PatchDock ni yangilang</string>
+    <string name="patcher_incompatible_patcher_update_button">PatchDock ni yuklab oling va yangilang</string>
+    <string name="patcher_storage_permission_description_api30">Bir nechta patch opsiyalari PatchDock o\'qiy olmaydigan yo\'llarga ishorat qiladi. Xotira ruxsatini bering va keyin patchlash avtomatik ravishda boshlanadi</string>
+    <string name="patcher_storage_permission_description_legacy">Bir nechta patch opsiyalari PatchDock o\'qiy olmaydigan yo\'llarga ishorat qiladi. Xotira ruxsatini bering va tugmani bosing, keyin patchlash avtomatik ravishda boshlanadi</string>
     <string name="patcher_storage_permission_grant">Xotira ruxsatini bering</string>
     <string name="patcher_storage_permission_denied_warning">Xotira ruxsati rad etildi. Ushbu yo\'ldan foydalanish uchun ruxsat bering yoki fayllarni ilovaning maxsus katalogiga ko\'chiring</string>
     <string name="patcher_storage_permission_open_settings">Qidirish</string>
     <string name="patcher_storage_badge_denied">Ruxsat rad etildi</string>
     <string name="patcher_storage_badge_missing">Topilmadi</string>
-    <string name="patcher_storage_permission_hint">Maslahat: Fayllarni /Android/data/app.morphe.manager/files/ ga ko\'chiring - qo\'shimcha ruxsatlar kerak emas</string>
+    <string name="patcher_storage_permission_hint">Maslahat: Fayllarni /Android/data/app.patchdock.manager/files/ ga ko\'chiring - qo\'shimcha ruxsatlar kerak emas</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Tayyorlanmoqda</string>
     <string name="patcher_step_load_patches">Patchlarni yuklamoqda</string>
@@ -434,7 +434,7 @@ O‘rnatish barcha ilova ma'lumotlarini o‘chiradi"</string>
     <string name="patcher_step_sign_apk">Patchlangan APK faylini imzolash</string>
     <!-- Battery optimization pre-flight dialog -->
     <string name="battery_optimization_dialog_title">Patchlashni himoya qilish</string>
-    <string name="battery_optimization_dialog_description">Ba\'zi moslamalar ilovani minimallashtirganda patcherni to‘xtatishi mumkin. Patchlash ishonchli bajarilishini ta\'minlash uchun Morphe batareyani cheklashsiz ishlay olishiga ruxsat bering</string>
+    <string name="battery_optimization_dialog_description">Ba\'zi moslamalar ilovani minimallashtirganda patcherni to‘xtatishi mumkin. Patchlash ishonchli bajarilishini ta\'minlash uchun PatchDock batareyani cheklashsiz ishlay olishiga ruxsat bering</string>
     <string name="battery_optimization_not_now">Hozir emas</string>
     <!-- Patcher Screen - Patcher Worker -->
     <string name="patcher_notification_title">Patchlash jarayonida…</string>
@@ -450,7 +450,7 @@ O‘rnatish barcha ilova ma'lumotlarini o‘chiradi"</string>
     <string name="patcher_message_6">Tashqariga qarang, havoning ajoyibligi… 🌤️</string>
     <string name="patcher_message_7">1 va 0larni sozlayapmiz… 🤖</string>
     <string name="patcher_message_8">Raqamli spagettini yechayapmiz… 🍝</string>
-    <!-- Morphe patches fix YouTube bugs that Google still has not fixed. -->
+    <!-- PatchDock patches fix YouTube bugs that Google still has not fixed. -->
     <string name="patcher_message_9">Tuzatishlar patlayotgan ilovalardagi xatoliklarni tuzatmoqda 🐛</string>
     <string name="patcher_message_10">Ajoyib patchlar kutishga arziydi… ⏳</string>
     <string name="patcher_message_11">Piksellarni yorqinlik uchun sayqallayapmiz… 💎</string>
@@ -581,9 +581,9 @@ O‘rnatish barcha ilova ma'lumotlarini o‘chiradi"</string>
     <string name="settings_advanced_updates">O\'chirish</string>
     <string name="settings_advanced_patcher">Patcher</string>
     <string name="settings_advanced_updates_use_prereleases">Yangilashdan oldin versiyalar</string>
-    <string name="settings_advanced_updates_use_prereleases_description">Morphe ilovasining yangilanishlariga imkoniyat beradi. Yangilashdan oldin manbalar bo‘yicha sahifalarga tashrif buyuring</string>
+    <string name="settings_advanced_updates_use_prereleases_description">PatchDock ilovasining yangilanishlariga imkoniyat beradi. Yangilashdan oldin manbalar bo‘yicha sahifalarga tashrif buyuring</string>
     <string name="settings_advanced_updates_allow_metered">Mobil ma\'lumotlardan yangilash</string>
-    <string name="settings_advanced_updates_allow_metered_description">Morphe va patchlardan yangilashni mobil ma\'lumotlar orqali yuklab olishga ruxsat bering</string>
+    <string name="settings_advanced_updates_allow_metered_description">PatchDock va patchlardan yangilashni mobil ma\'lumotlar orqali yuklab olishga ruxsat bering</string>
     <string name="settings_advanced_updates_background_notifications">Orqa fonda yangilanish bildirishnomalari</string>
     <string name="settings_advanced_updates_background_notifications_description">Yangilanishlar mavjud bo\'lganda bildirishnomalar olish uchun</string>
     <string name="settings_advanced_updates_background_notifications_description_fcm">Yangi chiqishlar uchun push-bildirishnoma olish</string>
@@ -606,32 +606,32 @@ O‘rnatish barcha ilova ma'lumotlarini o‘chiradi"</string>
     <string name="settings_advanced_external_batch_patch">Tashqi hodisalarni ruxsat berish</string>
     <string name="settings_advanced_external_batch_patch_description">Avtomatlashtirish ilovalariga maqsadli kod bilan ommaviy ta’mirlashni boshlash imkonini beradi. Har bir so‘rov oldindan tasdiqlanadi</string>
     <string name="external_batch_patch_title">Ommaviy ta’mirlashni boshlash kerakmi?</string>
-    <string name="external_batch_patch_description">%s Morphe ga ilovalarni ta’mirlash va o‘rnatishni boshlashni xohlaydi</string>
+    <string name="external_batch_patch_description">%s PatchDock ga ilovalarni ta’mirlash va o‘rnatishni boshlashni xohlaydi</string>
     <string name="external_batch_patch_trust_caller">Ushbu ilovaga har doim ruxsat berish</string>
     <string name="external_batch_patch_unknown_caller">Noma’lum ilova</string>
     <!-- Notification content -->
     <string name="notification_auto_patch_title">Avtomatik qayta ta’mirlash tugadi</string>
     <string name="notification_auto_patch_running_title">Ilovalarni qayta ta’mirlash</string>
     <string name="notification_auto_patch_blocked_title">Avtomatik qayta ta’mirlash ishlamadi</string>
-    <string name="notification_auto_patch_blocked_battery">Batareya optimallashtirishidan Morpheni chetlashtiring, aks holda Android ishlamay qolishidan oldin to‘xtaydi</string>
-    <string name="notification_auto_patch_blocked_foreground">Android fon rejimida ta’mirlashni boshlashga ruxsat bermadi. Morpheni oching va ilovadan ta’mirlang</string>
+    <string name="notification_auto_patch_blocked_battery">Batareya optimallashtirishidan PatchDockni chetlashtiring, aks holda Android ishlamay qolishidan oldin to‘xtaydi</string>
+    <string name="notification_auto_patch_blocked_foreground">Android fon rejimida ta’mirlashni boshlashga ruxsat bermadi. PatchDockni oching va ilovadan ta’mirlang</string>
     <string name="notification_channel_auto_patch">Avtomatik qayta ta’mirlash</string>
     <string name="notification_channel_auto_patch_description">Jadval bo‘yicha qayta ta’mirlash uchun jim xabarlar va natijalar</string>
-    <string name="notification_manager_update_title">Morphe yangilanishi mavjud</string>
+    <string name="notification_manager_update_title">PatchDock yangilanishi mavjud</string>
     <string name="notification_bundle_update_title">Yangi patchlar mavjud</string>
     <string name="notification_update_text">Versiya %s yuklab olish uchun tayyor</string>
-    <string name="notification_bundle_update_text_unversioned">Morphe ni ochish uchun tugmani bosing va yangilanishni o\'rnating</string>
+    <string name="notification_bundle_update_text_unversioned">PatchDock ni ochish uchun tugmani bosing va yangilanishni o\'rnating</string>
     <string name="notification_permission_dialog_title">Bildirishnomalarga ruxsat bering</string>
-    <string name="notification_permission_dialog_description">Morphe sizga yangilanishlar mavjud bo\'lganda bildirishnoma olish uchun bildirishnoma ruxsatini olishi kerak</string>
+    <string name="notification_permission_dialog_description">PatchDock sizga yangilanishlar mavjud bo\'lganda bildirishnoma olish uchun bildirishnoma ruxsatini olishi kerak</string>
     <string name="notification_post_patch_dialog_title">Yangilanishlar mavjud bo\'lganda bildirishnoma olmoqchi edingizmi?</string>
     <string name="notification_channel_fcm_updates">Yangilash bildirishnomalari</string>
-    <string name="notification_channel_fcm_updates_description">Morphe va patch versiyalarining yangi chastotalari haqida bildirishnomalar</string>
+    <string name="notification_channel_fcm_updates_description">PatchDock va patch versiyalarining yangi chastotalari haqida bildirishnomalar</string>
     <string name="notification_channel_patcher">Patchlash</string>
-    <string name="notification_channel_patcher_description">Morphe orqa fonda ilovani patchlayotganda ko\'rsatildi</string>
+    <string name="notification_channel_patcher_description">PatchDock orqa fonda ilovani patchlayotganda ko\'rsatildi</string>
     <!-- Settings - Advanced Tab - Expert settings Section -->
     <string name="settings_advanced_expert">O\'qish</string>
     <string name="settings_advanced_expert_mode">Ekspert rejimi</string>
-    <string name="settings_advanced_expert_mode_description">Morphe patchlash sozlamalarini va sozlash imkoniyatlarini ochish</string>
+    <string name="settings_advanced_expert_mode_description">PatchDock patchlash sozlamalarini va sozlash imkoniyatlarini ochish</string>
     <string name="settings_advanced_expert_mode_dialog_title">Ekspert rejimini yoqishni xohlaysizmi?</string>
     <string name="settings_advanced_expert_mode_dialog_message">Ekspert rejimi patchlarni qo\'llashni boshqarishda ko\'proq kontrolni beradi, lekin ekspert rejimida sozlamalarni noto\'g\'ri sozlash ilovaning ishlamasligiga olib kelishi mumkin</string>
     <string name="settings_advanced_strip_unused_libs">Moslamaning arxitekturasiga moslab optimallashtirish</string>
@@ -649,11 +649,11 @@ O‘rnatish barcha ilova ma'lumotlarini o‘chiradi"</string>
     <string name="settings_advanced_github_pat_description">Mesh</string>
     <string name="settings_advanced_github_pat_configured">Qanday token olish kerak</string>
     <string name="settings_advanced_github_pat_how_to_get">GitHub shaxsiy kirish tokenini sozlang</string>
-    <string name="settings_advanced_github_pat_dialog_title">PATni eksport qilingan Morphe sozlamalariga kiritish</string>
+    <string name="settings_advanced_github_pat_dialog_title">PATni eksport qilingan PatchDock sozlamalariga kiritish</string>
     <string name="settings_advanced_github_pat_dialog_description">"Tashqi manbalar sifatida pull so‘rovlarini qo‘shish imkoniyatiga ega bo‘lish uchun GitHub Shaxsiy Kirish Tokenini o‘rnating. 
 %s da public_repo doirasiga ega PAT yarating"</string>
-    <string name="settings_advanced_github_pat_export_include_label">Ushbu PATni eksport qilingan Morphe sozlamalariga kiritmang</string>
-    <string name="settings_advanced_github_pat_export_include_supporting">Ushbu PATni eksport qilingan Morphe sozlamalariga qo\'shadi</string>
+    <string name="settings_advanced_github_pat_export_include_label">Ushbu PATni eksport qilingan PatchDock sozlamalariga kiritmang</string>
+    <string name="settings_advanced_github_pat_export_include_supporting">Ushbu PATni eksport qilingan PatchDock sozlamalariga qo\'shadi</string>
     <string name="settings_advanced_github_pat_export_warning">O\'zgarishlarni tekshiring</string>
     <!-- Settings - Advanced Tab - Patch Options Section -->
     <string name="settings_advanced_patch_options">Tuzatish imkoniyatlari</string>
@@ -686,8 +686,8 @@ Papkada quyidagi papkalardan biri yoki bir nechtasi bo‘lishi kerak, bu moslama
 - mipmap-xxxhdpi
 
 Har bir papkada quyidagi fayllar bo‘lishi kerak:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+patchdock_adaptive_background_custom.png
+patchdock_adaptive_foreground_custom.png
 
 Tasvir o‘lchamlari quyidagicha bo‘lishi kerak:
 - mipmap-mdpi: 108x108 px
@@ -697,17 +697,17 @@ Tasvir o‘lchamlari quyidagicha bo‘lishi kerak:
 - mipmap-xxxhdpi: 432x432 px
 
 Ixtiyoriy ravishda, yo‘lda \"drawable\" papkasi quyidagi bir rangdagi ikon fayli bilan mavjud bo‘lishi mumkin:
-morphe_adaptive_monochrome_custom.xml
+patchdock_adaptive_monochrome_custom.xml
 
 Ixtiyoriy ravishda, yo‘lda quyidagi formatlardan biri bildirishnoma ikoni mavjud bo‘lishi mumkin:
 - \"drawable\" dagi XML vektor chizig‘i:
-  morphe_notification_icon_custom.xml
+  patchdock_notification_icon_custom.xml
 - \"drawable-dpi\" papkalaridagi PNG raster tasvirlari:
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/patchdock_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/patchdock_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/patchdock_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/patchdock_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/patchdock_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Ko\'rinish</string>
     <string name="settings_advanced_patch_options_custom_header_description">Bosh logotipni o‘zgartirish</string>
@@ -720,8 +720,8 @@ Papka quyidagi papkalardan birini yoki bir nechta o'z ichiga olishi kerak, bu qu
 - drawable-xxxhdpi
 
 Har bir papkada quyidagi fayllar bo'lishi kerak:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+patchdock_header_custom_light.png
+patchdock_header_custom_dark.png
 
 Rasm o'lchamlari quyidagicha bo'lishi kerak:
 - drawable-hdpi: 194x72 px
@@ -751,7 +751,7 @@ Rasm o'lchamlari quyidagicha bo'lishi kerak:
     <string name="installer_status_not_supported">Ushbu harakat uchun qo\'llab-quvvatlanmaydi</string>
     <string name="installer_status_shizuku_not_installed">Ushbu variantdan foydalanish uchun Shizuku yoki Sui o\'rnating</string>
     <string name="installer_status_shizuku_not_running">Shizuku yoki Sui ishga tushiring va yana urinib ko\'ring</string>
-    <string name="installer_status_shizuku_permission">Morphe dan Shizuku ilovasidan ruxsat bering</string>
+    <string name="installer_status_shizuku_permission">PatchDock dan Shizuku ilovasidan ruxsat bering</string>
     <string name="installer_mount_warning_install">Sizning asosiy o\'rnatuvchingiz ildizga asoslangan o\'rnatuvchi sifatida belgilangan. Ushbu saqlangan ilova mount orqali o\'rnatilmagan</string>
     <string name="mount_version_mismatch_message">Versiyalar mos kelmaydi (%2$s) saqlangan ilova versiyasi (%1$s). Mount mos keladigan saqlangan versiyani, so\'ngra yana urinib ko\'ring</string>
     <string name="mount_stock_restore_failed_message">Android saqlangan original APK-ni rad etdi. Mos keladigan stock versiyasini oʻrnating, keyin yana Mount qilishga harakat qiling</string>
@@ -779,7 +779,7 @@ Rasm o'lchamlari quyidagicha bo'lishi kerak:
     <string name="settings_auto_uninstall_with_shizuku">Ziddiyat yuzaga kelganda avtomatik ravishda o‘chirib tashlash</string>
     <string name="settings_auto_uninstall_with_shizuku_description">Shizuku bilan avtomatik o‘rnatishda, agar Android imzo ziddiyati haqida xabar berarsa, mavjud ilovani avval o‘chirib tashlang. Bu ilova ma’lumotlarini o‘chirib tashlashi mumkin</string>
     <string name="settings_auto_uninstall_warning_title">Avtomatik o‘chirib tashlashni yoqish kerakmi?</string>
-    <string name="settings_auto_uninstall_warning_message">Agar Shizuku avtomatik o‘rnatish paytida Android imzo ziddiyati haqida xabar bersa, Morphe o‘zgartirilgan APK-ni o‘rnatishdan oldin mavjud ilovani o‘chirib tashlaydi</string>
+    <string name="settings_auto_uninstall_warning_message">Agar Shizuku avtomatik o‘rnatish paytida Android imzo ziddiyati haqida xabar bersa, PatchDock o‘zgartirilgan APK-ni o‘rnatishdan oldin mavjud ilovani o‘chirib tashlaydi</string>
     <string name="settings_auto_uninstall_warning_risk">Bu ilova ma’lumotlarini o‘chirib tashlashi mumkin. Agar o‘zgartirilgan APK-ni o‘chirib tashlashdan so‘ng o‘rnatish muvaffaqiyatsiz bo‘lsa, oldingi ilova allaqachon o‘chirilgan bo‘lishi mumkin</string>
     <string name="installer_shizuku_status_action">Shizuku maqomini tekshiring</string>
     <string name="installer_shizuku_status_title">Shizuku maqomi</string>
@@ -797,7 +797,7 @@ Rasm o'lchamlari quyidagicha bo'lishi kerak:
     <string name="installer_shizuku_install_fail_with_details">"Shizuku o‘rnatish muvaffaqiyatsiz yakunlandi: %1$s
 
 Ma’lumotlar: %2$s"</string>
-    <string name="installer_shizuku_error_permission">Shizuku ruxsati yo‘q. Morphe ga ruxsat bering va yana urinib ko‘ring</string>
+    <string name="installer_shizuku_error_permission">Shizuku ruxsati yo‘q. PatchDock ga ruxsat bering va yana urinib ko‘ring</string>
     <string name="installer_shizuku_error_timeout">Shizuku o‘rnatish natijasini qaytarmadi. U hali ham ishlayotganligiga ishonch hosil qiling va yana urinib ko‘ring</string>
     <string name="installer_shizuku_error_downgrade">Android bu amalatni bajarishni blokladi, chunki u o‘rnatilgan ilovani pasaytiradi</string>
     <string name="installer_shizuku_error_signature">Android bu amalatni bajarishni blokladi, chunki o‘rnatilgan ilova boshqa imzolarga ega</string>
@@ -846,11 +846,11 @@ Ma’lumotlar: %2$s"</string>
     <string name="settings_system_export_keystore_failed">Keystore eksport qila olmadi</string>
     <string name="settings_system_show_password_field">Parolni ko\'rsatish</string>
     <string name="settings_system_hide_password_field">Parolni yashirish</string>
-    <string name="settings_system_morphe_settings">Morphe sozlamalari</string>
-    <string name="settings_system_import_manager_settings_description">Morphe sozlamalaringizni saqlab qolish va tiklash</string>
-    <string name="settings_system_import_manager_settings_fail">Morphe sozlamalarini import qilishda xatolik: %s</string>
-    <string name="settings_system_import_manager_settings_success">Morphe sozlamalari import qilindi</string>
-    <string name="settings_system_import_manager_settings_mode_title">Morphe sozlamalarini import qilish</string>
+    <string name="settings_system_patchdock_settings">PatchDock sozlamalari</string>
+    <string name="settings_system_import_manager_settings_description">PatchDock sozlamalaringizni saqlab qolish va tiklash</string>
+    <string name="settings_system_import_manager_settings_fail">PatchDock sozlamalarini import qilishda xatolik: %s</string>
+    <string name="settings_system_import_manager_settings_success">PatchDock sozlamalari import qilindi</string>
+    <string name="settings_system_import_manager_settings_mode_title">PatchDock sozlamalarini import qilish</string>
     <string name="settings_system_import_manager_settings_mode_description">Import qilingan sozlamalar va manbalar qanday qo\'llanilishini tanlang</string>
     <string name="settings_system_import_selections_mode_title">Patch tanlovlarini import qilish</string>
     <string name="settings_system_import_selections_mode_description">Import qilingan tanlovlar va patch opsiyalari qanday qo\'llanilishini tanlang</string>
@@ -858,8 +858,8 @@ Ma’lumotlar: %2$s"</string>
     <string name="import_mode_replace_description">Zaxiradan aniq o\'lchovni moslashtirish. Zaxiradan o\'chirilgan elementlar o\'chirib tashlanadi</string>
     <string name="import_mode_merge_title">Mavjud bilan birlashtirish</string>
     <string name="import_mode_merge_description">Zaxiradan o\'chirilgan elementlarni qo\'shish. Mavjud elementlar o\'zgarishsiz qoldiriladi</string>
-    <string name="settings_system_export_manager_settings_fail">Morphe sozlamalarini eksport qilishda xatolik: %s</string>
-    <string name="settings_system_export_manager_settings_success">Morphe sozlamalari eksport qilindi</string>
+    <string name="settings_system_export_manager_settings_fail">PatchDock sozlamalarini eksport qilishda xatolik: %s</string>
+    <string name="settings_system_export_manager_settings_success">PatchDock sozlamalari eksport qilindi</string>
     <string name="settings_system_debug">Debug</string>
     <string name="settings_system_export_debug_logs_description">Aniqlash uchun tizim jurnalini saqlab qolish</string>
     <string name="settings_system_export_debug_logs_export_read_failed">Jurnallarni o‘qishda xato (xato kodi %s)</string>
@@ -894,7 +894,7 @@ Ma’lumotlar: %2$s"</string>
     <string name="settings_system_storage_cleared">%s dibebaskan</string>
     <string name="settings_system_storage_nothing_to_clear">Tidak ada yang bisa dibersihkan</string>
     <string name="settings_system_storage_open_app_info_title">Buka penyimpanan aplikasi Android</string>
-    <string name="settings_system_storage_open_app_info_description">Kelola atau bersihkan semua data Morphe melalui pengaturan sistem</string>
+    <string name="settings_system_storage_open_app_info_description">Kelola atau bersihkan semua data PatchDock melalui pengaturan sistem</string>
     <string name="settings_system_save_original_apks_title">Asl APK fayllarni saqlab qoling</string>
     <string name="settings_system_save_original_apks_description">Qayta tuzash uchun faylni yana tanlashni oldini olish uchun tuzashdan oldingi APK ni saqlang</string>
     <string name="settings_system_save_patched_apks_title">Tuzatilgan APK fayllarni saqlab qoling</string>
@@ -964,7 +964,7 @@ Ma’lumotlar: %2$s"</string>
     <!-- Settings - System Tab - About Section -->
     <string name="settings_system_about">Haqida</string>
     <string name="settings_system_share_website">O\'chirish</string>
-    <string name="settings_system_share_website_description">Rasmiy Morphe veb-sayti bilan baham ko‘rish</string>
+    <string name="settings_system_share_website_description">Rasmiy PatchDock veb-sayti bilan baham ko‘rish</string>
     <string name="settings_system_manager_description">Zamonaviy, soddalashtirilgan Android ilovalarini patchlash uchun mo‘ljallangan ochiq kodli loyiha, hamjamiyatning fikr-mulohazalari va hissalariga asoslangan</string>
     <string name="credits">Mualliflar</string>
     <string name="credits_current_development">Hozirgi rivojlanish</string>
@@ -1104,7 +1104,7 @@ Davom etmoqchimisiz?"</string>
     <string name="onboarding_sources_desc">Patch manbalaringizni boshqaring. Har bir manba ilovalaringizga qo\'llanilishi mumkin bo\'lgan patchlarni taqdim etadi</string>
     <string name="onboarding_swipe_title">Jaraylarga su\'rishing</string>
     <string name="onboarding_swipe_desc">Ilovani kortkasida o\'ngga surish orqali mavjud patchlarni ko\'ring. Bosh ekrandan kartkani yashirish uchun chapga suring</string>
-    <string name="onboarding_settings_desc">Morphe ni moslashtiring: ko\'rinish, kengaytirilgan opsiyalar va tizim vositalari</string>
+    <string name="onboarding_settings_desc">PatchDock ni moslashtiring: ko\'rinish, kengaytirilgan opsiyalar va tizim vositalari</string>
     <string name="onboarding_sources_patches_desc">Ushbu manbadan mavjud barcha patchlarni ko\'rish uchun bosish</string>
     <string name="onboarding_sources_version_desc">Ushbu manba uchun to\'liq o\'zgarishlar jurnallarini ko\'rish uchun versiyaga bosish</string>
     <string name="onboarding_sources_prerelease_desc">Ushbu manbadan oldindan chiqarish patch versiyalarini olishni yoqish</string>
@@ -1119,8 +1119,8 @@ Davom etmoqchimisiz?"</string>
     <string name="onboarding_system_file_picker_desc">APK yoki Keystore tanlaganda tizim tanlash moslamasidan foydalanish uchun yoqing</string>
     <!-- Tour prompt dialog shown after first successful patch install -->
     <string name="tour_prompt_title">Qisqa xususiyatlar sayohati</string>
-    <string name="tour_prompt_desc">Morphe ning asosiy funksiyalarini qisqacha ko\'rib chiqmoqchisiz?</string>
+    <string name="tour_prompt_desc">PatchDock ning asosiy funksiyalarini qisqacha ko\'rib chiqmoqchisiz?</string>
     <string name="tour_prompt_confirm">Mengani ko\'rsat</string>
     <string name="onboarding_restart_title">Funksiyalar sayohati</string>
-    <string name="onboarding_restart_desc">Morphe ning asosiy funksiyalarini ko\'rib chiqing</string>
+    <string name="onboarding_restart_desc">PatchDock ning asosiy funksiyalarini ko\'rib chiqing</string>
 </resources>

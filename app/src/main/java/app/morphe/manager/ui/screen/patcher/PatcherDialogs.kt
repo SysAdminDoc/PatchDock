@@ -41,7 +41,7 @@ import androidx.compose.ui.unit.sp
 import androidx.core.net.toUri
 import app.morphe.manager.R
 import app.morphe.manager.ui.screen.shared.*
-import app.morphe.manager.util.MORPHE_WEBSITE_URL
+import app.morphe.manager.util.MANAGER_REPO_URL
 import app.morphe.manager.util.PathValidationResult
 import app.morphe.manager.util.htmlAnnotatedString
 import app.morphe.manager.util.toast
@@ -70,7 +70,7 @@ fun IncompatiblePatcherVersionDialog(
                 MorpheDialogButton(
                     text = stringResource(R.string.patcher_incompatible_patcher_update_button),
                     onClick = {
-                        val intent = Intent(Intent.ACTION_VIEW, MORPHE_WEBSITE_URL.toUri())
+                        val intent = Intent(Intent.ACTION_VIEW, MANAGER_REPO_URL.toUri())
                         context.startActivity(intent)
                     },
                     icon = Icons.Outlined.SystemUpdate,

@@ -5,13 +5,11 @@
 
 package app.morphe.manager.ui.screen.home
 
-import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.outlined.Sort
 import androidx.compose.material.icons.outlined.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -30,12 +28,15 @@ import androidx.compose.ui.semantics.*
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import app.morphe.manager.R
-import app.morphe.manager.domain.manager.HomeAppSortMode
 import app.morphe.manager.ui.screen.shared.*
 
 /**
- * Section 5: Bottom action bar.
- * Sources | Search (optional) | Sort (optional) | Settings.
+ * Section 5: persistent home navigation.
+ *
+ * Home used to hide labels as soon as search or sort appeared, which left compact-screen
+ * users with a row of unrelated icons and no indication of their current destination. This
+ * follows the platform navigation-bar pattern instead: every item stays labelled and Home is
+ * always selected as the orientation anchor.
  */
 @Composable
 fun HomeBottomActionBar(
@@ -43,100 +44,64 @@ fun HomeBottomActionBar(
     onBundlesClick: () -> Unit,
     onSettingsClick: () -> Unit,
     isExpertModeEnabled: Boolean = false,
-    showSearchButton: Boolean = false,
-    showSortButton: Boolean = false,
-    sortMode: HomeAppSortMode = HomeAppSortMode.MANUAL,
-    searchActive: Boolean = false,
-    onSearchClick: () -> Unit = {},
-    onSortClick: () -> Unit = {},
     onSourcesPositioned: ((Rect) -> Unit)? = null,
     onSettingsPositioned: ((Rect) -> Unit)? = null
 ) {
-    // Show labels when there are 2 buttons, or on wider screens where 3 buttons still have room.
-    // Four actions stay icon-only to avoid cramped labels
-    val windowSize = rememberWindowSize()
-    val actionCount = 2 + (if (showSearchButton) 1 else 0) + (if (showSortButton) 1 else 0)
-    val showLabels = actionCount <= 2 ||
-            (actionCount <= 3 && windowSize.widthSizeClass != WindowWidthSizeClass.Compact)
-
     Box(
         modifier = modifier.fillMaxWidth(),
         contentAlignment = Alignment.Center
     ) {
-        Row(
+        NavigationBar(
             modifier = Modifier
-                .widthIn(max = 540.dp)
+                .widthIn(max = 600.dp)
                 .fillMaxWidth()
-                .padding(bottom = 8.dp)
-                .padding(horizontal = 16.dp),
-            horizontalArrangement = Arrangement.spacedBy(16.dp),
-            verticalAlignment = Alignment.CenterVertically
+                .padding(horizontal = 8.dp, vertical = 4.dp),
+            containerColor = MaterialTheme.colorScheme.surfaceContainer.copy(alpha = 0.96f),
+            tonalElevation = 0.dp,
+            windowInsets = WindowInsets(0, 0, 0, 0)
         ) {
-            // Left: Sources button
-            BottomActionButton(
+            NavigationBarItem(
+                selected = false,
                 onClick = onBundlesClick,
-                icon = Icons.Outlined.Source,
-                text = stringResource(R.string.sources),
-                showLabel = showLabels,
-                modifier = Modifier
-                    .weight(1f)
-                    .then(
-                        if (onSourcesPositioned != null) Modifier.onGloballyPositioned { coords ->
-                            onSourcesPositioned(coords.boundsInWindow())
-                        } else Modifier
+                icon = {
+                    Icon(
+                        imageVector = Icons.Outlined.Source,
+                        contentDescription = null
                     )
+                },
+                label = { Text(stringResource(R.string.sources)) },
+                modifier = Modifier
+                    .then(if (onSourcesPositioned != null) Modifier.onGloballyPositioned { coords ->
+                        onSourcesPositioned(coords.boundsInWindow())
+                    } else Modifier)
             )
 
-            // Center: Search button
-            AnimatedVisibility(
-                visible = showSearchButton,
-                modifier = Modifier.weight(1f),
-                enter = MorpheAnimations.expandHorizFadeIn,
-                exit = MorpheAnimations.shrinkHorizFadeOut
-            ) {
-                val searchExpandedLabel = stringResource(R.string.expanded)
-                val searchCollapsedLabel = stringResource(R.string.collapsed)
-                BottomActionButton(
-                    onClick = onSearchClick,
-                    icon = if (searchActive) Icons.Outlined.SearchOff else Icons.Outlined.Search,
-                    text = stringResource(R.string.home_search_apps),
-                    showLabel = showLabels,
-                    stateDescription = if (searchActive) searchExpandedLabel else searchCollapsedLabel,
-                    modifier = Modifier.fillMaxWidth()
-                )
-            }
-
-            // Sort button
-            AnimatedVisibility(
-                visible = showSortButton,
-                modifier = Modifier.weight(1f),
-                enter = MorpheAnimations.expandHorizFadeIn,
-                exit = MorpheAnimations.shrinkHorizFadeOut
-            ) {
-                BottomActionButton(
-                    onClick = onSortClick,
-                    icon = Icons.AutoMirrored.Outlined.Sort,
-                    text = stringResource(R.string.sort),
-                    showLabel = showLabels,
-                    stateDescription = stringResource(sortMode.labelRes),
-                    modifier = Modifier.fillMaxWidth()
-                )
-            }
-
-            // Right: Settings button with expert mode indicator
-            BottomActionButton(
-                onClick = onSettingsClick,
-                icon = if (isExpertModeEnabled) Icons.Outlined.Engineering else Icons.Outlined.Settings,
-                text = stringResource(R.string.settings),
-                showLabel = showLabels,
-                isExpertMode = isExpertModeEnabled,
-                modifier = Modifier
-                    .weight(1f)
-                    .then(
-                        if (onSettingsPositioned != null) Modifier.onGloballyPositioned { coords ->
-                            onSettingsPositioned(coords.boundsInWindow())
-                        } else Modifier
+            NavigationBarItem(
+                selected = true,
+                onClick = {},
+                icon = {
+                    Icon(
+                        imageVector = Icons.Outlined.Home,
+                        contentDescription = null
                     )
+                },
+                label = { Text(stringResource(R.string.home)) }
+            )
+
+            NavigationBarItem(
+                selected = false,
+                onClick = onSettingsClick,
+                icon = {
+                    Icon(
+                        imageVector = if (isExpertModeEnabled) Icons.Outlined.Engineering else Icons.Outlined.Settings,
+                        contentDescription = null
+                    )
+                },
+                label = { Text(stringResource(R.string.settings)) },
+                modifier = Modifier
+                    .then(if (onSettingsPositioned != null) Modifier.onGloballyPositioned { coords ->
+                        onSettingsPositioned(coords.boundsInWindow())
+                    } else Modifier)
             )
         }
     }

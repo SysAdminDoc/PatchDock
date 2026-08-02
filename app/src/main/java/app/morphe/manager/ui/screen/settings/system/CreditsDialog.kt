@@ -32,13 +32,18 @@ private data class Contributor(
 
 private val currentContributors = listOf(
     Contributor(
-        name = "Morphe",
-        organisation = "MorpheApp",
-        url = "https://github.com/MorpheApp/morphe-manager/graphs/contributors"
+        name = "PatchDock",
+        organisation = "SysAdminDoc",
+        url = "https://github.com/SysAdminDoc/patchdock-manager/graphs/contributors"
     )
 )
 
 private val priorContributors = listOf(
+    Contributor(
+        name = "Morphe Manager",
+        organisation = "MorpheApp",
+        url = "https://github.com/MorpheApp/morphe-manager/graphs/contributors"
+    ),
     Contributor(
         name = "URV",
         organisation = "Jman-Github",

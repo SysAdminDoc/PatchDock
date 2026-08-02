@@ -5,8 +5,11 @@
 
 package app.morphe.manager.ui.screen.home
 
+import android.app.Activity
 import android.os.Build
 import android.widget.Toast
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.basicMarquee
 import androidx.compose.foundation.clickable
@@ -45,12 +48,14 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import app.morphe.manager.R
+import app.morphe.manager.domain.catalog.PatchDockCatalog
 import app.morphe.manager.domain.bundles.BundleSourceType
 import app.morphe.manager.domain.bundles.BundledAppTarget
 import app.morphe.manager.domain.bundles.PatchBundleSource.Extensions.sourceType
 import app.morphe.manager.domain.bundles.RemotePatchBundle
 import app.morphe.manager.domain.repository.PatchBundleRepository
 import app.morphe.manager.ui.model.HomeAppItem
+import app.morphe.manager.ui.download.ApkMirrorDownloadActivity
 import app.morphe.manager.ui.screen.shared.*
 import app.morphe.manager.ui.viewmodel.*
 import app.morphe.manager.util.*
@@ -76,6 +81,23 @@ fun HomeDialogs(
     val uriHandler = LocalUriHandler.current
     val scope = rememberCoroutineScope()
     val context = LocalContext.current
+
+    val apkMirrorLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.StartActivityForResult(),
+    ) { result ->
+        val downloadedUri = result.data?.data
+        if (result.resultCode == Activity.RESULT_OK && downloadedUri != null) {
+            homeViewModel.handleApkSelection(downloadedUri)
+        } else {
+            result.data?.getStringExtra(ApkMirrorDownloadActivity.EXTRA_ERROR)
+                ?.takeIf { it.isNotBlank() }
+                ?.let(context::toast)
+            if (homeViewModel.pendingPackageName != null) {
+                homeViewModel.showFilePickerPromptDialog = false
+                homeViewModel.showDownloadInstructionsDialog = true
+            }
+        }
+    }
 
     // APK selection processing overlay - blocks interaction while APK is loaded/validated in background
     MorpheOverlay(visible = homeViewModel.processingApkSelection) {
@@ -172,12 +194,46 @@ fun HomeDialogs(
                 homeViewModel.cleanupPendingData()
             }
         ) {
-            homeViewModel.handleDownloadInstructionsContinue { url ->
-                try {
-                    uriHandler.openUri(url)
+            val packageName = homeViewModel.pendingPackageName
+            val versionName = (
+                homeViewModel.pendingSelectedDownloadVersion
+                    ?: homeViewModel.pendingRecommendedVersion
+                )?.version
+            val metadata = packageName?.let { bundleMetadata[it] }
+            val downloadSpec = packageName?.let {
+                PatchDockCatalog.downloadSpec(
+                    displayName = metadata?.displayName ?: homeViewModel.pendingAppName,
+                    packageName = it,
+                    versionName = versionName,
+                    signingCertificateSha256 = metadata?.signatures,
+                    apkFileTypeName = metadata?.apkFileType?.name,
+                    resolvedDownloadUrl = homeViewModel.resolvedDownloadUrl,
+                )
+            }
+
+            if (downloadSpec != null) {
+                homeViewModel.handleDownloadInstructionsContinue(showFilePickerAfterOpen = false) {
+                    apkMirrorLauncher.launch(
+                        ApkMirrorDownloadActivity.createIntent(
+                            context = context,
+                            displayName = downloadSpec.displayName,
+                            packageName = downloadSpec.packageName,
+                            versionName = downloadSpec.versionName,
+                            signingCertificates = downloadSpec.signingCertificateSha256,
+                            apkFileTypeName = metadata?.apkFileType?.name,
+                            resolvedDownloadUrl = downloadSpec.downloadPageUrl,
+                        ),
+                    )
                     true
-                } catch (_: Exception) {
-                    false
+                }
+            } else {
+                homeViewModel.handleDownloadInstructionsContinue { url ->
+                    try {
+                        uriHandler.openUri(url)
+                        true
+                    } catch (_: Exception) {
+                        false
+                    }
                 }
             }
         }
@@ -1539,7 +1595,7 @@ fun ExperimentalVersionWarningDialog(
 ) {
     MorpheDialog(
         onDismissRequest = onDismiss,
-        title = stringResource(R.string.morphe_experimental_app_version_dialog_title),
+        title = stringResource(R.string.patchdock_experimental_app_version_dialog_title),
         footer = {
             MorpheDialogButtonRow(
                 primaryText = stringResource(R.string.home_dialog_unsupported_version_dialog_proceed),
@@ -1556,7 +1612,7 @@ fun ExperimentalVersionWarningDialog(
         ) {
             Text(
                 text = htmlAnnotatedString(
-                    stringResource(R.string.morphe_experimental_app_version_dialog_message, appName)
+                    stringResource(R.string.patchdock_experimental_app_version_dialog_message, appName)
                 ),
                 style = MaterialTheme.typography.bodyLarge,
                 color = LocalDialogSecondaryTextColor.current,

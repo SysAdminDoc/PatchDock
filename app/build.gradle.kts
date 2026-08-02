@@ -11,7 +11,6 @@ plugins {
     alias(libs.plugins.devtools)
     alias(libs.plugins.about.libraries)
     alias(libs.plugins.about.libraries.android)
-    alias(libs.plugins.google.services)
     signing
 }
 
@@ -97,9 +96,6 @@ dependencies {
     implementation(libs.ktor.content.negotiation)
     implementation(libs.ktor.serialization)
 
-    // Firebase Cloud Messaging
-    implementation(platform(libs.firebase.bom))
-    implementation(libs.firebase.messaging)
     implementation(libs.play.services.base)
 
     // Markdown
@@ -120,6 +116,15 @@ dependencies {
 
     // Semantic versioning parser
     implementation(libs.semver.parser)
+
+    testImplementation(kotlin("test"))
+    testImplementation("junit:junit:4.13.2")
+
+    androidTestImplementation(platform(libs.compose.bom))
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
+    androidTestImplementation("androidx.test.ext:junit:1.2.1")
+    androidTestImplementation("androidx.test:runner:1.6.2")
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
 }
 
 android {
@@ -127,19 +132,17 @@ android {
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "app.morphe.manager"
+        applicationId = "app.patchdock.manager"
         minSdk = 26
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         versionName = version.toString()
 
         // VersionCode derived from current time (1-minute intervals) + offset.
         val nowMillis = System.currentTimeMillis()
         val timestampVersionCode = (nowMillis / (60 * 1000)).toInt()
-        // Offset of the prior v1.1.1 version code to ensure the code is always newer for old installations.
-        // If a new app is used this offset should be changed to zero.
-        // 1 minute rounding and this offset still gives ~4,000 years of valid version codes
-        // and still fall into Play store max version code range.
-        val versionCodeOffset = 10010100
+        // PatchDock is a distinct application, so it does not inherit Morphe's version-code offset.
+        val versionCodeOffset = 0
         versionCode = timestampVersionCode + versionCodeOffset
 
         // Expose the resolved morphe-patcher version so PatcherViewModel can compare it
@@ -156,6 +159,10 @@ android {
         }
 
         release {
+            // Used only for the one-time local keystore provisioning build. The distributed APK
+            // is always built without this property and is therefore not debuggable.
+            isDebuggable = project.hasProperty("provisionDebuggable")
+
             if (!project.hasProperty("noProguard")) {
                 isMinifyEnabled = true
                 isShrinkResources = true

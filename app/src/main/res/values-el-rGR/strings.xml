@@ -13,10 +13,10 @@
     <string name="android_11_bug_dialog_title">Σφάλμα Android 11</string>
     <string name="android_11_bug_dialog_description">Πρέπει να χορηγηθεί εκ των προτέρων η άδεια εγκατάστασης της εφαρμογής, προκειμένου να αποφευχθεί ένα σφάλμα στο σύστημα Android 11 που θα επηρεάσει αρνητικά την εμπειρία του χρήστη</string>
     <string name="deep_link_add_source_title">Προσθήκη πηγής</string>
-    <string name="deep_link_add_source_message">Θέλετε να προσθέσετε αυτή την πηγή τροποποιήσεων στο Morphe;</string>
+    <string name="deep_link_add_source_message">Θέλετε να προσθέσετε αυτή την πηγή τροποποιήσεων στο PatchDock;</string>
     <string name="deep_link_add_source_warning">Προσθέστε μόνο πηγές που εμπιστεύεστε</string>
     <!-- Home Screen - Update Notifications -->
-    <string name="home_update_available">Διαθέσιμη ενημέρωση του Morphe</string>
+    <string name="home_update_available">Διαθέσιμη ενημέρωση του PatchDock</string>
     <string name="home_update_available_subtitle">Νέα έκδοση έτοιμη για εγκατάσταση</string>
     <string name="home_blocked_source_title">Ανιχνεύτηκε αποκλεισμένη πηγή ενημερώσεων</string>
     <string name="home_blocked_source_subtitle">Πατήστε για να ελέγξετε και να καταργήσετε</string>
@@ -179,11 +179,11 @@
     <string name="home_download_instructions_download_button_toast_3">Η εξάσκηση φέρνει την τελειότητα και πλησιάζεις 💪</string>
     <string name="home_download_instructions_download_button_toast_4">Κι όχι εδώ… κι όχι εδώ… 🙈</string>
     <string name="home_download_instructions_download_button_toast_5">Εντάξει, σέβομαι την αφοσίωση 🫡</string>
-    <string name="home_download_instructions_download_button_toast_6">Είσαι πλέον επίσημος δοκιμαστής κουμπιού Morphe 🏅</string>
+    <string name="home_download_instructions_download_button_toast_6">Είσαι πλέον επίσημος δοκιμαστής κουμπιού PatchDock 🏅</string>
     <string name="home_download_instructions_step3">Περιμένετε μέχρι να ολοκληρωθεί η λήψη, και &lt;b&gt;μην εγκαταστήσετε&lt;/b&gt; το APK</string>
     <string name="home_download_instructions_step3_mount">Περιμένετε μέχρι να ολοκληρωθεί η λήψη, και μετά &lt;b&gt;εγκαταστήστε το APK&lt;/b&gt;</string>
-    <string name="home_download_instructions_step4">Μετά την ολοκλήρωση της λήψης, επιστρέψτε στο Morphe</string>
-    <string name="home_download_instructions_step4_mount">Μετά την εγκατάσταση του πρωτότυπου APK, επιστρέψτε στο Morphe</string>
+    <string name="home_download_instructions_step4">Μετά την ολοκλήρωση της λήψης, επιστρέψτε στο PatchDock</string>
+    <string name="home_download_instructions_step4_mount">Μετά την εγκατάσταση του πρωτότυπου APK, επιστρέψτε στο PatchDock</string>
     <string name="home_download_instructions_continue">Συνέχεια στο APKMirror.com</string>
     <!-- Home Screen - Dialog 3: File Picker Prompt -->
     <string name="home_file_picker_prompt_title">Επιλογή ληφθέντος APK</string>
@@ -236,8 +236,8 @@
     <string name="home_split_apk_warning_pick_another">Επιλέξτε ένα άλλο APK</string>
     <string name="home_dialog_unsupported_version_experimental_label">Πειραματική </string>
     <string name="home_dialog_unsupported_version_experimental_description">Αυτή η έκδοση έχει πειραματική υποστήριξη και μπορεί να είναι ασταθής ή ελλιπής</string>
-    <string name="morphe_experimental_app_version_dialog_title">Θέλετε να πειραματιστείτε; 🧪</string>
-    <string name="morphe_experimental_app_version_dialog_message">Αυτή η έκδοση του &lt;b&gt;%s&lt;/b&gt; έχει πρώιμη πειραματική υποστήριξη&lt;br/&gt;&lt;br/&gt;🔧 Αναμένετε ιδιόρρυθμη συμπεριφορά της εφαρμογής ή μη προσδιορισμένα σφάλματα καθώς οι τροποποιήσεις βελτιώνονται για αυτήν την έκδοση της εφαρμογής</string>
+    <string name="patchdock_experimental_app_version_dialog_title">Θέλετε να πειραματιστείτε; 🧪</string>
+    <string name="patchdock_experimental_app_version_dialog_message">Αυτή η έκδοση του &lt;b&gt;%s&lt;/b&gt; έχει πρώιμη πειραματική υποστήριξη&lt;br/&gt;&lt;br/&gt;🔧 Αναμένετε ιδιόρρυθμη συμπεριφορά της εφαρμογής ή μη προσδιορισμένα σφάλματα καθώς οι τροποποιήσεις βελτιώνονται για αυτήν την έκδοση της εφαρμογής</string>
     <string name="home_dialog_unsupported_version_dialog_title">Μη υποστηριγμένη έκδοση</string>
     <string name="home_dialog_unsupported_version_dialog_description">Αυτό το APK δεν είναι μια συνιστώμενη έκδοση εφαρμογής. Η συνέχεια μπορεί να οδηγήσει σε μη λειτουργική εφαρμογή</string>
     <string name="home_dialog_unsupported_version_dialog_proceed">Συνέχεια παρ’ όλα αυτά</string>
@@ -367,7 +367,7 @@
     <string name="home_app_info_patch_update_available">Διαθέσιμη ενημέρωση τροποποιήσεων</string>
     <string name="home_app_info_patch_update_available_description">Μια καινούρια έκδοση τροποποιήσεων είναι διαθέσιμη. Τροποποιήσετε ξανά την εφαρμογή για να λάβετε τις τελευταίες βελτιώσεις και διορθώσεις</string>
     <string name="home_app_info_app_deleted_warning">Η εφαρμογή έχει απεγκατασταθεί</string>
-    <string name="home_app_info_app_deleted_description">Η εφαρμογή αυτή απεγκαταστάθηκε εκτός του Morphe. Τροποποιήστε την ξανά για την επαναφορά λειτουργικότητά της</string>
+    <string name="home_app_info_app_deleted_description">Η εφαρμογή αυτή απεγκαταστάθηκε εκτός του PatchDock. Τροποποιήστε την ξανά για την επαναφορά λειτουργικότητά της</string>
     <string name="home_app_info_apk_size">Μέγεθος APK</string>
     <string name="home_app_info_cpu_arch">Αρχιτεκτονική CPU</string>
     <!-- Home Screen - Root Mode -->
@@ -377,7 +377,7 @@
     <string name="root_pre_patch_installer_description">Η συσκευή σας έχει πρόσβαση root. Επιλέξτε αν η εφαρμογή θα ενημερωθεί για προσάρτηση root ή τυπική εγκατάσταση</string>
     <string name="root_pre_patch_installer_mount_title">Λειτουργία προσάρτησης root</string>
     <string name="root_pre_patch_installer_mount_description">Ενημερώσεις για προσάρτηση root, στη συνέχεια προσαρτά το APK πάνω από την αντίστοιχη εργοστασιακή εφαρμογή. Δεν απαιτείται GmsCore</string>
-    <string name="root_mount_module_unmount_warning">Εάν το KernelSU έχει ενεργοποιημένα από προεπιλογή modules Αποσυναρμολόγησης, ανοίξτε το KernelSU > Superuser > την εφαρμογή που τοποθετήσατε > Profile > Custom και απενεργοποιήστε τα modules Αποσυναρμολόγησης. Διαφορετικά, το τοποθετημένο τροποποιημένο APK ενδέχεται να μην έχει αποτέλεσμα, ακόμη και αν το Morphe το εμφανίζει ως τοποθετημένο</string>
+    <string name="root_mount_module_unmount_warning">Εάν το KernelSU έχει ενεργοποιημένα από προεπιλογή modules Αποσυναρμολόγησης, ανοίξτε το KernelSU > Superuser > την εφαρμογή που τοποθετήσατε > Profile > Custom και απενεργοποιήστε τα modules Αποσυναρμολόγησης. Διαφορετικά, το τοποθετημένο τροποποιημένο APK ενδέχεται να μην έχει αποτέλεσμα, ακόμη και αν το PatchDock το εμφανίζει ως τοποθετημένο</string>
     <string name="root_pre_patch_installer_standard_title">Τυπική Εγκατάσταση</string>
     <string name="root_pre_patch_installer_standard_description">Εφαρμογές ενημέρωσης ως ένα κανονικό APK με υποστήριξη GmsCore. Η ρύθμιση του εγκαταστάτη σας χρησιμοποιείται μετά την ενημέρωση</string>
     <string name="root_pre_patch_installer_hint">Αυτή η λειτουργία ενημέρωσης είναι ανεξάρτητη από τις Ρυθμίσεις > Σύστημα > Εγκαταστάτη και δεν μπορεί να αλλάξει μετά την ενημέρωση</string>
@@ -405,7 +405,7 @@
     <string name="patcher_conflict_subtitle">Πρέπει να απεγκαταστήσετε την υπάρχουσα έκδοση</string>
     <string name="patcher_conflict_hint">Η τροποποιημένη εφαρμογή χρησιμοποιεί διαφορετικό πιστοποιητικό από την εγκατεστημένη έκδοση. Η απεγκατάσταση θα διαγράψει όλα τα δεδομένα της εφαρμογής.</string>
     <string name="patcher_installed_conflict_title">Απαιτείται απεγκατάσταση</string>
-    <string name="patcher_installed_conflict_body">"Η Morphe υπογράφει τις τροποποιημένες εφαρμογές με το δικό της πιστοποιητικό, το οποίο διαφέρει από το αρχικό. Το Android απαιτεί την κατάργηση της υπάρχουσας έκδοσης πριν από την εγκατάσταση της τροποποιημένης εφαρμογής.
+    <string name="patcher_installed_conflict_body">"Η PatchDock υπογράφει τις τροποποιημένες εφαρμογές με το δικό της πιστοποιητικό, το οποίο διαφέρει από το αρχικό. Το Android απαιτεί την κατάργηση της υπάρχουσας έκδοσης πριν από την εγκατάσταση της τροποποιημένης εφαρμογής.
 
 Η απεγκατάσταση θα διαγράψει οριστικά όλα τα δεδομένα της εφαρμογής."</string>
     <string name="patcher_install_error_title">Σφάλμα εγκατάστασης</string>
@@ -414,16 +414,16 @@
     <string name="patcher_ready_to_mount_subtitle">Πατήστε το παρακάτω κουμπί για προσάρτηση</string>
     <string name="patcher_storage_permission_dialog_title">Δεν είναι δυνατή η πρόσβαση στη διαδρομή αποθηκευτικού χώρου</string>
     <string name="patcher_incompatible_patcher_title">Απαιτείται ενημέρωση</string>
-    <string name="patcher_incompatible_patcher_description">Το πακέτο &lt;b&gt;%1$s&lt;/b&gt; απαιτεί έκδοση επεξεργαστή &lt;b&gt;%2$s&lt;/b&gt; ή νεότερη. Παρακαλώ ενημερώστε το Morphe για να εφαρμόσετε αυτήν την εφαρμογή</string>
-    <string name="patcher_incompatible_patcher_update_button">Λήψη και ενημέρωση του Morphe</string>
-    <string name="patcher_storage_permission_description_api30">Μία ή περισσότερες επιλογές τροποποιήσεων πηγαίνουν σε διαδρομές που το Morphe δεν μπορεί να διαβάσει. Δώστε άδεια αποθήκευσης και πατήστε το κουμπί, στη συνέχεια η διαδικασία τροποποίησης θα ξεκινήσει αυτόματα</string>
+    <string name="patcher_incompatible_patcher_description">Το πακέτο &lt;b&gt;%1$s&lt;/b&gt; απαιτεί έκδοση επεξεργαστή &lt;b&gt;%2$s&lt;/b&gt; ή νεότερη. Παρακαλώ ενημερώστε το PatchDock για να εφαρμόσετε αυτήν την εφαρμογή</string>
+    <string name="patcher_incompatible_patcher_update_button">Λήψη και ενημέρωση του PatchDock</string>
+    <string name="patcher_storage_permission_description_api30">Μία ή περισσότερες επιλογές τροποποιήσεων πηγαίνουν σε διαδρομές που το PatchDock δεν μπορεί να διαβάσει. Δώστε άδεια αποθήκευσης και πατήστε το κουμπί, στη συνέχεια η διαδικασία τροποποίησης θα ξεκινήσει αυτόματα</string>
     <string name="patcher_storage_permission_description_legacy">Μία ή περισσότερες επιλογές τροποποιήσεων πηγαίνουν σε διαδρομές που δεν είναι προσβάσιμες. Ενημερώστε τις διαδρομές στις επιλογές τροποποιήσεων και δοκιμάστε ξανά</string>
     <string name="patcher_storage_permission_grant">Επιτρέψτε την πρόσβαση στον αποθηκευτικό χώρο</string>
     <string name="patcher_storage_permission_denied_warning">Δεν επιτράπηκε η άδεια αποθήκευσης. Δώστε την άδεια για να χρησιμοποιήσετε αυτήν τη διαδρομή, ή μετακίνησε τα αρχεία στον ιδιωτικό χώρο αποθήκευσης της εφαρμογής</string>
     <string name="patcher_storage_permission_open_settings">Άνοιγμα ρυθμίσεων αποθήκευσης χώρου</string>
     <string name="patcher_storage_badge_denied">Δεν επιτράπηκε η άδεια</string>
     <string name="patcher_storage_badge_missing">Δεν βρέθηκε</string>
-    <string name="patcher_storage_permission_hint">Συμβουλή: Μετακινήστε τα αρχεία στο /Android/data/app.morphe.manager/files/ - Δε χρειάζονται επιπλέον άδειες</string>
+    <string name="patcher_storage_permission_hint">Συμβουλή: Μετακινήστε τα αρχεία στο /Android/data/app.patchdock.manager/files/ - Δε χρειάζονται επιπλέον άδειες</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Προετοιμασία</string>
     <string name="patcher_step_load_patches">Φόρτωση τροποποιήσεων</string>
@@ -435,7 +435,7 @@
     <string name="patcher_step_sign_apk">Υπογραφή τροποποιημένου αρχείου APK</string>
     <!-- Battery optimization pre-flight dialog -->
     <string name="battery_optimization_dialog_title">Προστασία επισκευής παρασκηνίου</string>
-    <string name="battery_optimization_dialog_description">Ορισμένες συσκευές ενδέχεται να σταματήσουν το πρόγραμμα επισκευής όταν η εφαρμογή ελαχιστοποιηθεί. Επιτρέψτε στο Morphe να εκτελείται χωρίς περιορισμούς μπαταρίας για να διασφαλίσετε ότι η επισκευή ολοκληρώνεται αξιόπιστα</string>
+    <string name="battery_optimization_dialog_description">Ορισμένες συσκευές ενδέχεται να σταματήσουν το πρόγραμμα επισκευής όταν η εφαρμογή ελαχιστοποιηθεί. Επιτρέψτε στο PatchDock να εκτελείται χωρίς περιορισμούς μπαταρίας για να διασφαλίσετε ότι η επισκευή ολοκληρώνεται αξιόπιστα</string>
     <string name="battery_optimization_not_now">Όχι τώρα</string>
     <!-- Patcher Screen - Patcher Worker -->
     <string name="patcher_notification_title">Τροποποίηση σε εξέλιξη…</string>
@@ -451,7 +451,7 @@
     <string name="patcher_message_6">Κοίτα έξω, ο καιρός είναι ωραίος… 🌤️</string>
     <string name="patcher_message_7">Ρυθμίζοντας τα 1 και 0… 🤖</string>
     <string name="patcher_message_8">Ξεμπέρδεμα ψηφιακών σπαγγέτι… 🍝</string>
-    <!-- Morphe patches fix YouTube bugs that Google still has not fixed. -->
+    <!-- PatchDock patches fix YouTube bugs that Google still has not fixed. -->
     <string name="patcher_message_9">Διόρθωση σφαλμάτων στην μη τροποποιημένη εφαρμογή… 🪲</string>
     <string name="patcher_message_10">Οι σπουδαίες τροποποιήσεις αξίζουν την αναμονή… ⏳</string>
     <string name="patcher_message_11">Γυαλίζοντας τα πίξελ μέχρι να λάμψουν… 💎</string>
@@ -582,9 +582,9 @@
     <string name="settings_advanced_updates">Ενημερώσεις</string>
     <string name="settings_advanced_patcher">Εφαρμογέας</string>
     <string name="settings_advanced_updates_use_prereleases">Προ-κυκλοφοριακές ενημερώσεις</string>
-    <string name="settings_advanced_updates_use_prereleases_description">Πρόωρη πρόσβαση στις νέες εκδόσεις της εφαρμογής Morphe. Ενεργοποιήστε τις προ-κυκλοφοριακές ενημερώσεις ανά πηγή στις πηγές των αλλαγών</string>
+    <string name="settings_advanced_updates_use_prereleases_description">Πρόωρη πρόσβαση στις νέες εκδόσεις της εφαρμογής PatchDock. Ενεργοποιήστε τις προ-κυκλοφοριακές ενημερώσεις ανά πηγή στις πηγές των αλλαγών</string>
     <string name="settings_advanced_updates_allow_metered">Ενημερώσεις μέσω κινητής σύνδεσης</string>
-    <string name="settings_advanced_updates_allow_metered_description">Να επιτρέπεται η λήψη των ενημερώσεων του Morphe και των τροποποιήσεων μέσω δεδομένων κινητής τηλεφωνίας</string>
+    <string name="settings_advanced_updates_allow_metered_description">Να επιτρέπεται η λήψη των ενημερώσεων του PatchDock και των τροποποιήσεων μέσω δεδομένων κινητής τηλεφωνίας</string>
     <string name="settings_advanced_updates_background_notifications">Ειδοποιήσεις ενημερώσεων παρασκηνίου</string>
     <string name="settings_advanced_updates_background_notifications_description">Περιοδικός έλεγχος για ενημερώσεις στο παρασκήνιο και ειδοποίηση όταν υπάρχουν διαθέσιμες</string>
     <string name="settings_advanced_updates_background_notifications_description_fcm">Λάβετε άμεσες ειδοποιήσεις push για νέες εκδόσεις, ακόμα και όταν η εφαρμογή είναι κλειστή</string>
@@ -607,7 +607,7 @@
     <string name="settings_advanced_external_batch_patch">Επιτρέψτε εξωτερικούς ενεργοποιητές</string>
     <string name="settings_advanced_external_batch_patch_description">Επιτρέπει σε εφαρμογές αυτοματισμού να ξεκινήσουν την ομαδική διόρθωση με μια πρόθεση. Κάθε αίτημα επιβεβαιώνεται πριν από την εκτέλεση οποιασδήποτε ενέργειας</string>
     <string name="external_batch_patch_title">Έναρξη ομαδικής διόρθωσης;</string>
-    <string name="external_batch_patch_description">Το %s θέλει να κάνει το Morphe να διορθώσει και να εγκαταστήσει εφαρμογές</string>
+    <string name="external_batch_patch_description">Το %s θέλει να κάνει το PatchDock να διορθώσει και να εγκαταστήσει εφαρμογές</string>
     <string name="external_batch_patch_trust_caller">Να επιτρέπεται πάντα αυτήν την εφαρμογή</string>
     <string name="external_batch_patch_unknown_caller">Μια άγνωστη εφαρμογή</string>
     <!-- Notification content -->
@@ -618,21 +618,21 @@
     <string name="notification_auto_patch_blocked_foreground">Απέτυχε</string>
     <string name="notification_channel_auto_patch">Ακυρώθηκε</string>
     <string name="notification_channel_auto_patch_description">Έτοιμο</string>
-    <string name="notification_manager_update_title">Διαθέσιμη ενημέρωση του Morphe</string>
+    <string name="notification_manager_update_title">Διαθέσιμη ενημέρωση του PatchDock</string>
     <string name="notification_bundle_update_title">Νέες τροποποιήσεις διαθέσιμες</string>
     <string name="notification_update_text">Η έκδοση %s είναι έτοιμη για λήψη</string>
-    <string name="notification_bundle_update_text_unversioned">Πατήστε για να ανοίξετε το Morphe και να ενημερώσετε</string>
+    <string name="notification_bundle_update_text_unversioned">Πατήστε για να ανοίξετε το PatchDock και να ενημερώσετε</string>
     <string name="notification_permission_dialog_title">Να επιτρέπονται ειδοποιήσεις</string>
-    <string name="notification_permission_dialog_description">Το Morphe χρειάζεται άδεια ειδοποιήσεων για να σας ειδοποιεί όταν είναι διαθέσιμες ενημερώσεις στο παρασκήνιο</string>
+    <string name="notification_permission_dialog_description">Το PatchDock χρειάζεται άδεια ειδοποιήσεων για να σας ειδοποιεί όταν είναι διαθέσιμες ενημερώσεις στο παρασκήνιο</string>
     <string name="notification_post_patch_dialog_title">Θα θέλατε να ειδοποιηθείτε όταν υπάρξουν διαθέσιμες ενημερώσεις;</string>
     <string name="notification_channel_fcm_updates">Ειδοποιήσεις ενημερώσεων</string>
-    <string name="notification_channel_fcm_updates_description">Ειδοποιήσεις σχετικά με νέες εκδόσεις του Morphe και τροποποιήσεων</string>
+    <string name="notification_channel_fcm_updates_description">Ειδοποιήσεις σχετικά με νέες εκδόσεις του PatchDock και τροποποιήσεων</string>
     <string name="notification_channel_patcher">Τροποποίηση</string>
-    <string name="notification_channel_patcher_description">Εμφανίζεται όταν το Morphe ενημερώνει μια εφαρμογή στο παρασκήνιο</string>
+    <string name="notification_channel_patcher_description">Εμφανίζεται όταν το PatchDock ενημερώνει μια εφαρμογή στο παρασκήνιο</string>
     <!-- Settings - Advanced Tab - Expert settings Section -->
     <string name="settings_advanced_expert">Εξειδικευμένες ρυθμίσεις</string>
     <string name="settings_advanced_expert_mode">Εξειδικευμένη λειτουργία</string>
-    <string name="settings_advanced_expert_mode_description">Ενεργοποιήστε περίπλοκες ρυθμίσεις τροποποιήσεων του Morphe και προσαρμοσμένες επιλογές</string>
+    <string name="settings_advanced_expert_mode_description">Ενεργοποιήστε περίπλοκες ρυθμίσεις τροποποιήσεων του PatchDock και προσαρμοσμένες επιλογές</string>
     <string name="settings_advanced_expert_mode_dialog_title">Ενεργοποίηση της λειτουργίας εξειδικευμένου χρήστη;</string>
     <string name="settings_advanced_expert_mode_dialog_message">Η λειτουργία εξειδικευμένου χρήστη δίνει περισσότερο έλεγχο για την εφαρμογή των τροποποιήσεων, αλλά η λάθος ρύθμιση στη λειτουργία αυτή μπορεί να προκαλέσει τη δυσλειτουργικότητα της εφαρμογής</string>
     <string name="settings_advanced_strip_unused_libs">Βελτιστοποίηση για αρχιτεκτονική συσκευής</string>
@@ -654,7 +654,7 @@
     <string name="settings_advanced_github_pat_dialog_description">"Ορίστε ένα PAT στο GitHub για να μπορείτε να προσθέσετε pull requests ως εξωτερικές πηγές. Δημιουργήστε ένα PAT με πρόθεση το public_repo 
 %s"</string>
     <string name="settings_advanced_github_pat_export_include_label">Συμπερίληψη στις ρυθμίσεις εξαγωγής</string>
-    <string name="settings_advanced_github_pat_export_include_supporting">Προσθέτει αυτό το PAT στις εξαγόμενες ρυθμίσεις του Morphe</string>
+    <string name="settings_advanced_github_pat_export_include_supporting">Προσθέτει αυτό το PAT στις εξαγόμενες ρυθμίσεις του PatchDock</string>
     <string name="settings_advanced_github_pat_export_warning">Δεν πρέπει να μοιράζεστε το PAT. Εάν το συμπεριλάβετε στις εξαγόμενες ρυθμίσεις, διατηρήστε το αρχείο ιδιωτικό διότι περιέχει το κλειδί</string>
     <!-- Settings - Advanced Tab - Patch Options Section -->
     <string name="settings_advanced_patch_options">Επιλογές τροποποιήσεων</string>
@@ -687,8 +687,8 @@
 - mipmap-xxxhdpi
 
 Καθένας από τους φακέλους πρέπει να περιέχει όλα τα ακόλουθα αρχεία:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+patchdock_adaptive_background_custom.png
+patchdock_adaptive_foreground_custom.png
 
 Οι διαστάσεις της εικόνας πρέπει να είναι οι εξής:
 - mipmap-mdpi: 108x108 px
@@ -698,17 +698,17 @@ morphe_adaptive_foreground_custom.png
 - mipmap-xxxhdpi: 432x432 px
 
 Προαιρετικά, η διαδρομή περιέχει έναν φάκελο 'drawable' με ένα μονοχρωματικό αρχείο εικονιδίου:
-morphe_adaptive_monochrome_custom.xml
+patchdock_adaptive_monochrome_custom.xml
 
 Προαιρετικά, η διαδρομή περιέχει ένα εικονίδιο ειδοποίησης σε μία από τις ακόλουθες μορφές:
 - XML vector drawable στο 'drawable':
-  morphe_notification_icon_custom.xml
+  patchdock_notification_icon_custom.xml
 - PNG raster images στους φακέλους 'drawable-dpi':
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/patchdock_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/patchdock_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/patchdock_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/patchdock_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/patchdock_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Προσαρμοσμένο λογότυπο επικεφαλίδας</string>
     <string name="settings_advanced_patch_options_custom_header_description">Αλλαγή λογότυπου επικεφαλίδας</string>
@@ -721,8 +721,8 @@ morphe_adaptive_monochrome_custom.xml
 - drawable-xxxhdpi
 
 Κάθε ένας από τους φακέλους πρέπει να περιέχει όλα τα ακόλουθα αρχεία:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+patchdock_header_custom_light.png
+patchdock_header_custom_dark.png
 
 Οι διαστάσεις της εικόνας πρέπει να είναι οι εξής:
 - drawable-hdpi: 194x72 px
@@ -752,7 +752,7 @@ morphe_header_custom_dark.png
     <string name="installer_status_not_supported">Δεν υποστηρίζεται για αυτή την ενέργεια.</string>
     <string name="installer_status_shizuku_not_installed">Εγκαταστήστε το Shizuku ή Sui για να χρησιμοποιήσετε αυτή την επιλογή.</string>
     <string name="installer_status_shizuku_not_running">Εκκινήστε το Shizuku ή Sui και προσπαθήστε ξανά.</string>
-    <string name="installer_status_shizuku_permission">Δώστε άδεια στο Morphe από την εφαρμογή Shizuku</string>
+    <string name="installer_status_shizuku_permission">Δώστε άδεια στο PatchDock από την εφαρμογή Shizuku</string>
     <string name="installer_mount_warning_install">Ο πρωταρχικός εγκαταστάτης σας είναι ορισμένος με τον rooted προσαρτημένο εγκαταστάτη. Αυτή η αποθηκευμένη εφαρμογή δεν εγκαταστάθηκε με προσάρτηση</string>
     <string name="mount_version_mismatch_message">Η έκδοση της αρχικής ανεπεξέργαστης εφαρμογής (%2$s) δεν ταιριάζει με την έκδοση της τροποποιημένης εφαρμογής (%1$s). Προσαρτήστε την αρχική ανεπεξέργαστη έκδοση της εφαρμογής, και μετά προσπαθήστε ξανά.</string>
     <string name="mount_stock_restore_failed_message">Το Android απέρριψε το αρχικό APK που αποθηκεύτηκε. Εγκαταστήστε την αντίστοιχη αρχική έκδοση, στη συνέχεια δοκιμάστε να προσαρτήσετε ξανά</string>
@@ -780,7 +780,7 @@ morphe_header_custom_dark.png
     <string name="settings_auto_uninstall_with_shizuku">Αυτόματη απεγκατάσταση σε περίπτωση σύγκρουσης</string>
     <string name="settings_auto_uninstall_with_shizuku_description">Όταν γίνεται αυτόματη εγκατάσταση με το Shizuku, απεγκαταστήστε πρώτα την υπάρχουσα εφαρμογή εάν το Android αναφέρει μια σύγκρουση υπογραφών. Αυτό μπορεί να αφαιρέσει δεδομένα της εφαρμογής.</string>
     <string name="settings_auto_uninstall_warning_title">Ενεργοποίηση αυτόματης απεγκατάστασης;</string>
-    <string name="settings_auto_uninstall_warning_message">Εάν το Android αναφέρει μια σύγκρουση υπογραφών κατά την αυτόματη εγκατάσταση του Shizuku, το Morphe θα απεγκαταστήσει την υπάρχουσα εφαρμογή πριν εγκαταστήσει το διορθωμένο APK.</string>
+    <string name="settings_auto_uninstall_warning_message">Εάν το Android αναφέρει μια σύγκρουση υπογραφών κατά την αυτόματη εγκατάσταση του Shizuku, το PatchDock θα απεγκαταστήσει την υπάρχουσα εφαρμογή πριν εγκαταστήσει το διορθωμένο APK.</string>
     <string name="settings_auto_uninstall_warning_risk">Αυτό μπορεί να αφαιρέσει δεδομένα της εφαρμογής. Εάν το διορθωμένο APK αποτύχει να εγκατασταθεί μετά την απεγκατάσταση, η προηγούμενη εφαρμογή ενδέχεται να έχει ήδη διαγραφεί.</string>
     <string name="installer_shizuku_status_action">Έλεγχος κατάστασης Shizuku</string>
     <string name="installer_shizuku_status_title">Κατάσταση Shizuku</string>
@@ -798,7 +798,7 @@ morphe_header_custom_dark.png
     <string name="installer_shizuku_install_fail_with_details">"Η εγκατάσταση Shizuku απέτυχε: %1$s
 
 Λεπτομέρειες: %2$s"</string>
-    <string name="installer_shizuku_error_permission">Λείπει άδεια Shizuku. Χορηγήστε άδεια στο Morphe και δοκιμάστε ξανά.</string>
+    <string name="installer_shizuku_error_permission">Λείπει άδεια Shizuku. Χορηγήστε άδεια στο PatchDock και δοκιμάστε ξανά.</string>
     <string name="installer_shizuku_error_timeout">Το Shizuku δεν επέστρεψε αποτέλεσμα εγκατάστασης. Βεβαιωθείτε ότι εξακολουθεί να εκτελείται και δοκιμάστε ξανά.</string>
     <string name="installer_shizuku_error_downgrade">Το Android μπλόκαρε αυτό επειδή θα υποβάθμιζε την εγκατεστημένη εφαρμογή</string>
     <string name="installer_shizuku_error_signature">Το Android μπλόκαρε αυτό επειδή η εγκατεστημένη εφαρμογή έχει διαφορετική υπογραφή</string>
@@ -847,11 +847,11 @@ morphe_header_custom_dark.png
     <string name="settings_system_export_keystore_failed">Απέτυχε η εξαγωγή χώρου αποθήκευσης κλειδιών</string>
     <string name="settings_system_show_password_field">Εμφάνιση κωδικού πρόσβασης</string>
     <string name="settings_system_hide_password_field">Απόκρυψη κωδικού πρόσβασης</string>
-    <string name="settings_system_morphe_settings">Ρυθμίσεις Morphe</string>
-    <string name="settings_system_import_manager_settings_description">Δημιουργεί αντίγραφα ασφαλείας και επαναφέρει τις ρυθμίσεις του Morphe</string>
-    <string name="settings_system_import_manager_settings_fail">Αποτυχία εισαγωγής των ρυθμίσεων του Morphe: %s</string>
-    <string name="settings_system_import_manager_settings_success">Επιτυχής εισαγωγή ρυθμίσεων του Morphe</string>
-    <string name="settings_system_import_manager_settings_mode_title">Εισαγωγή ρυθμίσεων του Morphe</string>
+    <string name="settings_system_patchdock_settings">Ρυθμίσεις PatchDock</string>
+    <string name="settings_system_import_manager_settings_description">Δημιουργεί αντίγραφα ασφαλείας και επαναφέρει τις ρυθμίσεις του PatchDock</string>
+    <string name="settings_system_import_manager_settings_fail">Αποτυχία εισαγωγής των ρυθμίσεων του PatchDock: %s</string>
+    <string name="settings_system_import_manager_settings_success">Επιτυχής εισαγωγή ρυθμίσεων του PatchDock</string>
+    <string name="settings_system_import_manager_settings_mode_title">Εισαγωγή ρυθμίσεων του PatchDock</string>
     <string name="settings_system_import_manager_settings_mode_description">Επιλέξτε πώς θα εφαρμοστούν οι εισαγόμενες ρυθμίσεις και οι πηγές</string>
     <string name="settings_system_import_selections_mode_title">Εισαγωγή επιλεγμένων τροποποιήσεων</string>
     <string name="settings_system_import_selections_mode_description">Επιλέξτε τον τρόπο με τον οποίο θα εφαρμοστούν οι εισαγόμενες επιλογές και οι επιλογές επιδιόρθωσης</string>
@@ -859,8 +859,8 @@ morphe_header_custom_dark.png
     <string name="import_mode_replace_description">Ακριβής αντιστοίχιση με το αντίγραφο ασφαλείας. Τα στοιχεία που λείπουν από το αντίγραφο ασφαλείας θα διαγραφούν</string>
     <string name="import_mode_merge_title">Συγχώνευση με υπάρχοντα</string>
     <string name="import_mode_merge_description">Προσθήκη στοιχείων που λείπουν από το αντίγραφο ασφαλείας. Τα υπάρχοντα στοιχεία θα παραμείνουν χωρίς αλλαγές</string>
-    <string name="settings_system_export_manager_settings_fail">Αποτυχία εξαγωγής των ρυθμίσεων του Morphe: %s</string>
-    <string name="settings_system_export_manager_settings_success">Επιτυχής εξαγωγή ρυθμίσεων του Morphe</string>
+    <string name="settings_system_export_manager_settings_fail">Αποτυχία εξαγωγής των ρυθμίσεων του PatchDock: %s</string>
+    <string name="settings_system_export_manager_settings_success">Επιτυχής εξαγωγή ρυθμίσεων του PatchDock</string>
     <string name="settings_system_debug">Εντοπισμός σφαλμάτων</string>
     <string name="settings_system_export_debug_logs_description">Αποθηκεύει τα αρχεία καταγραφής σφαλμάτων του συστήματος για την αντιμετώπιση προβλημάτων</string>
     <string name="settings_system_export_debug_logs_export_read_failed">Αποτυχία ανάγνωσης αρχείων καταγραφής (κωδικός εξόδου %s)</string>
@@ -895,7 +895,7 @@ morphe_header_custom_dark.png
     <string name="settings_system_storage_cleared">Απελευθερώθηκαν %s</string>
     <string name="settings_system_storage_nothing_to_clear">Δεν υπάρχουν στοιχεία για διαγραφή</string>
     <string name="settings_system_storage_open_app_info_title">Άνοιγμα αποθήκευσης εφαρμογής Android</string>
-    <string name="settings_system_storage_open_app_info_description">Διαχείριση ή εκκαθάριση όλων των δεδομένων του Morphe μέσω των ρυθμίσεων του συστήματος</string>
+    <string name="settings_system_storage_open_app_info_description">Διαχείριση ή εκκαθάριση όλων των δεδομένων του PatchDock μέσω των ρυθμίσεων του συστήματος</string>
     <string name="settings_system_save_original_apks_title">Διατήρηση αρχικών APK</string>
     <string name="settings_system_save_original_apks_description">Αποθηκεύστε το αρχείο APK πριν την εφαρμογή της ενημέρωσης, ώστε να μπορεί να χρησιμοποιηθεί ξανά για επανεφαρμογή χωρίς να χρειαστεί να επιλέξετε το αρχείο ξανά</string>
     <string name="settings_system_save_patched_apks_title">Διατήρηση τροποποιημένων APK</string>
@@ -947,7 +947,7 @@ morphe_header_custom_dark.png
     <string name="copy_selection_same_source">Ίδια πηγή</string>
     <!-- Settings - System Tab - Custom file picker -->
     <string name="settings_system_custom_file_picker">Προσαρμοσμένη επιλογή αρχείων</string>
-    <string name="settings_system_custom_file_picker_description">Χρησιμοποιήστε την ενσωματωμένη επιλογή αρχείων του Morphe αντί για την προεπιλεγμένη του συστήματος</string>
+    <string name="settings_system_custom_file_picker_description">Χρησιμοποιήστε την ενσωματωμένη επιλογή αρχείων του PatchDock αντί για την προεπιλεγμένη του συστήματος</string>
     <!-- File Picker -->
     <string name="file_picker_previous_directory">Προηγούμενος κατάλογος</string>
     <string name="file_picker_no_files">Δεν υπάρχουν αρχεία εδώ</string>
@@ -965,7 +965,7 @@ morphe_header_custom_dark.png
     <!-- Settings - System Tab - About Section -->
     <string name="settings_system_about">Πληροφορίες</string>
     <string name="settings_system_share_website">Κοινοποίηση ιστότοπου</string>
-    <string name="settings_system_share_website_description">Κοινοποίηση του επίσημου ιστότοπου του Morphe</string>
+    <string name="settings_system_share_website_description">Κοινοποίηση του επίσημου ιστότοπου του PatchDock</string>
     <string name="settings_system_manager_description">Ένα έργο ανοικτού κώδικα για σύγχρονη, βελτιστοποιημένη ενημέρωση δημοφιλών εφαρμογών Android, που υποστηρίζεται από την κοινότητα και τις συνεισφορές της</string>
     <string name="credits">Εύσημα</string>
     <string name="credits_current_development">Τρέχουσα ανάπτυξη</string>
@@ -1105,7 +1105,7 @@ morphe_header_custom_dark.png
     <string name="onboarding_sources_desc">Διαχείριση των πηγών ενημερώσεων. Κάθε πηγή παρέχει ενημερώσεις που μπορούν να εφαρμοστούν στις εφαρμογές σας</string>
     <string name="onboarding_swipe_title">Ζεστοί χειρισμοί</string>
     <string name="onboarding_swipe_desc">Σύρετε προς τα δεξιά σε μια κάρτα εφαρμογής για να δείτε τις διαθέσιμες ενημερώσεις της. Σύρετε προς τα αριστερά για να αποκρύψετε την κάρτα από την αρχική οθόνη</string>
-    <string name="onboarding_settings_desc">Προσαρμόστε το Morphe: εμφάνιση, προχωρημένες επιλογές και εργαλεία συστήματος</string>
+    <string name="onboarding_settings_desc">Προσαρμόστε το PatchDock: εμφάνιση, προχωρημένες επιλογές και εργαλεία συστήματος</string>
     <string name="onboarding_sources_patches_desc">Πατήστε για να δείτε όλες τις ενημερώσεις που είναι διαθέσιμες από αυτήν την πηγή</string>
     <string name="onboarding_sources_version_desc">Πατήστε στην έκδοση για να δείτε το πλήρες αρχείο αλλαγών για αυτήν την πηγή</string>
     <string name="onboarding_sources_prerelease_desc">Ενεργοποιήστε το για να λαμβάνετε εκδόσεις ενημερώσεων πριν από την επίσημη κυκλοφορία από αυτήν την πηγή</string>
@@ -1120,8 +1120,8 @@ morphe_header_custom_dark.png
     <string name="onboarding_system_file_picker_desc">Ενεργοποιήστε το για να χρησιμοποιήσετε τον ενσωματωμένο διαχειριστή αρχείων αντί για το πρόγραμμα επιλογής του συστήματος κατά την επιλογή αρχείων APK ή καταλόγων κλειδιών</string>
     <!-- Tour prompt dialog shown after first successful patch install -->
     <string name="tour_prompt_title">Γρήγορη περιήγηση λειτουργιών</string>
-    <string name="tour_prompt_desc">Θέλετε μια γρήγορη περιήγηση στις βασικές λειτουργίες του Morphe;</string>
+    <string name="tour_prompt_desc">Θέλετε μια γρήγορη περιήγηση στις βασικές λειτουργίες του PatchDock;</string>
     <string name="tour_prompt_confirm">Δείξτε μου γύρω</string>
     <string name="onboarding_restart_title">Περιήγηση λειτουργιών</string>
-    <string name="onboarding_restart_desc">Κάντε μια καθοδηγούμενη περιήγηση στις βασικές λειτουργίες του Morphe</string>
+    <string name="onboarding_restart_desc">Κάντε μια καθοδηγούμενη περιήγηση στις βασικές λειτουργίες του PatchDock</string>
 </resources>

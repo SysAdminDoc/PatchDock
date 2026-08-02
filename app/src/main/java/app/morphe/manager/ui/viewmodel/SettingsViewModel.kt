@@ -30,8 +30,6 @@ import app.morphe.manager.worker.AutoPatchWorker
 import app.morphe.manager.worker.UpdateCheckInterval
 import app.morphe.manager.worker.UpdateCheckWorker
 import app.morphe.patcher.dex.BytecodeMode
-import com.google.android.gms.common.ConnectionResult
-import com.google.android.gms.common.GoogleApiAvailability
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
@@ -48,9 +46,8 @@ class SettingsViewModel(
     private val appDataResolver: AppDataResolver,
     private val appContext: Context,
 ) : ViewModel() {
-    /** True when Google Play Services is available; FCM handles notifications on these devices. */
-    val hasGms: Boolean = GoogleApiAvailability.getInstance()
-        .isGooglePlayServicesAvailable(appContext) == ConnectionResult.SUCCESS
+    /** PatchDock uses WorkManager on every device and intentionally has no Firebase channel. */
+    val hasGms: Boolean = false
 
     /** True when POST_NOTIFICATIONS is granted (always true below Android 13). */
     fun hasNotificationPermission(): Boolean =

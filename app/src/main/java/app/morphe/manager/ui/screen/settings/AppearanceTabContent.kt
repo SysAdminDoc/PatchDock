@@ -181,7 +181,7 @@ fun AppearanceTabContent(
                 R.string.settings_appearance_translations_info_text,
                 stringResource(R.string.settings_appearance_translations_info_url)
             ),
-            urlLink = "https://morphe.software/translate",
+            urlLink = "https://github.com/SysAdminDoc/patchdock-manager/issues",
             onDismiss = {
                 showTranslationInfoDialog.value = false
                 scope.launch {

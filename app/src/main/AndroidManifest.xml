@@ -60,10 +60,15 @@
         android:localeConfig="@xml/locales_config"
         android:largeHeap="true"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MorpheManager"
+        android:theme="@style/Theme.PatchDockManager"
         android:requestLegacyExternalStorage="true"
         tools:targetApi="34"
         tools:ignore="MissingTvBanner">
+
+        <activity
+            android:name="app.morphe.manager.ui.download.ApkMirrorDownloadActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PatchDock.Web" />
 
         <provider
             android:name="rikka.shizuku.ShizukuProvider"
@@ -79,7 +84,7 @@
             android:exported="true"
             android:launchMode="singleTask"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|keyboard|keyboardHidden"
-            android:theme="@style/Theme.MorpheManager">
+            android:theme="@style/Theme.PatchDockManager">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -114,20 +119,10 @@
 
             <!-- Batch patching triggered by another app -->
             <intent-filter>
-                <action android:name="app.morphe.manager.action.BATCH_PATCH" />
+                <action android:name="app.patchdock.manager.action.BATCH_PATCH" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 
-            <!-- Add-source deep link. Website acts as the gateway for repo validation -->
-            <intent-filter android:autoVerify="false">
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data
-                    android:scheme="https"
-                    android:host="morphe.software"
-                    android:pathPrefix="/add-source" />
-            </intent-filter>
         </activity>
 
         <!-- Default launcher icon -->
@@ -257,20 +252,6 @@
                 android:value="androidx.startup"
                 tools:node="remove" />
         </provider>
-
-        <!-- Firebase Cloud Messaging - receives push notifications bypassing Doze mode -->
-        <service
-            android:name="app.morphe.manager.service.MorpheFcmService"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
-
-        <!-- Disable Firebase Analytics -->
-        <meta-data
-            android:name="firebase_analytics_collection_enabled"
-            android:value="false" />
 
         <!-- Root service for privileged file system operations via libsu -->
         <service

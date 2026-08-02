@@ -44,6 +44,16 @@ private const val NOTICE_UNIQUE_ID = "app.morphe.manager"
 private val urlRegex = Regex("(https?://[\\w./?=&%-]+)")
 // Copied verbatim from NOTICE in project root. Update manually if NOTICE changes.
 private const val NOTICE_TEXT = """
+PatchDock NOTICE
+
+https://github.com/SysAdminDoc/patchdock-manager
+
+PatchDock is a distinctly branded modified version of Morphe Manager. It is not
+endorsed by, sponsored by, or affiliated with MorpheApp, TikTok, ByteDance,
+APKMirror, ReVanced, or Shizuku.
+
+=============
+
 Morphe NOTICE
 
 https://github.com/MorpheApp/morphe-manager

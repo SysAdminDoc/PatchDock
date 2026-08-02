@@ -31,7 +31,8 @@ import kotlin.time.Duration.Companion.seconds
 
 /**
  * Patcher bottom action bar.
- * Left: Cancel Patching | Center: Home | Right: Save / Error button.
+ * Actions are rendered only when available and always keep their text labels. The previous
+ * fixed three-slot layout left blank holes and reduced every action to an unexplained icon.
  */
 @Composable
 fun PatcherBottomActionBar(
@@ -66,7 +67,7 @@ fun PatcherBottomActionBar(
             .fillMaxWidth()
             .padding(bottom = 8.dp)
             .padding(horizontal = 16.dp),
-        horizontalArrangement = Arrangement.spacedBy(32.dp),
+        horizontalArrangement = Arrangement.spacedBy(12.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
         // Left: Install / Cancel / Logs button
@@ -75,6 +76,7 @@ fun PatcherBottomActionBar(
                 onClick = onInstallClick,
                 icon = Icons.Outlined.InstallMobile,
                 text = stringResource(R.string.install),
+                showLabel = true,
                 modifier = Modifier.weight(1f),
                 containerColor = MaterialTheme.colorScheme.primaryContainer,
                 contentColor = MaterialTheme.colorScheme.onPrimaryContainer
@@ -84,6 +86,7 @@ fun PatcherBottomActionBar(
                 onClick = onCancelClick,
                 icon = Icons.Default.Close,
                 text = stringResource(android.R.string.cancel),
+                showLabel = true,
                 modifier = Modifier.weight(1f),
                 containerColor = MaterialTheme.colorScheme.errorContainer,
                 contentColor = MaterialTheme.colorScheme.onErrorContainer
@@ -93,21 +96,23 @@ fun PatcherBottomActionBar(
                 onClick = onLogsClick,
                 icon = Icons.AutoMirrored.Outlined.Article,
                 text = stringResource(R.string.logs),
+                showLabel = true,
                 modifier = Modifier.weight(1f),
                 containerColor = MaterialTheme.colorScheme.secondaryContainer,
                 contentColor = MaterialTheme.colorScheme.onSecondaryContainer
             )
-        } else Spacer(Modifier.weight(1f))
+        }
 
-        // Center: Home button
-        if (showHomeButton && !showInstallButton) {
+        // Home remains available alongside Install so completing a patch never becomes a trap.
+        if (showHomeButton) {
             BottomActionButton(
                 onClick = onHomeClick,
                 icon = Icons.Default.Home,
                 text = stringResource(R.string.home),
+                showLabel = true,
                 modifier = Modifier.weight(1f)
             )
-        } else Spacer(Modifier.weight(1f))
+        }
 
         // Right: Save / Error / Copy logs button
         if (showCopyLogsButton) {
@@ -123,6 +128,7 @@ fun PatcherBottomActionBar(
                 icon = Icons.Default.ContentCopy,
                 text = if (copied.value) stringResource(android.R.string.copy) + "  ✓"
                 else stringResource(android.R.string.copy),
+                showLabel = true,
                 modifier = Modifier.weight(1f),
                 containerColor = if (copied.value)
                     MaterialTheme.colorScheme.tertiaryContainer
@@ -139,6 +145,7 @@ fun PatcherBottomActionBar(
                 icon = if (showErrorButton) Icons.Default.Error else Icons.Outlined.Save,
                 text = if (showErrorButton) stringResource(R.string.error_)
                 else stringResource(R.string.save),
+                showLabel = true,
                 modifier = Modifier.weight(1f),
                 containerColor = if (showErrorButton)
                     MaterialTheme.colorScheme.errorContainer
@@ -149,6 +156,6 @@ fun PatcherBottomActionBar(
                 enabled = !isSaving,
                 showProgress = isSaving && !showErrorButton
             )
-        } else Spacer(Modifier.weight(1f))
+        }
     }
 }

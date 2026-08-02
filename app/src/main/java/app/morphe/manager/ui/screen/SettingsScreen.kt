@@ -8,13 +8,10 @@ package app.morphe.manager.ui.screen
 import android.net.Uri
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.LocalActivity
-import androidx.activity.compose.LocalOnBackPressedDispatcherOwner
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.animateColorAsState
-import androidx.compose.animation.animateContentSize
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
@@ -47,8 +44,6 @@ import app.morphe.manager.ui.screen.settings.AdvancedTabContent
 import app.morphe.manager.ui.screen.settings.AppearanceTabContent
 import app.morphe.manager.ui.screen.settings.SystemTabContent
 import app.morphe.manager.ui.screen.settings.system.*
-import app.morphe.manager.ui.screen.shared.GlassButton
-import app.morphe.manager.ui.screen.shared.GlassButtonDefaults
 import app.morphe.manager.ui.screen.shared.ListScrollbar
 import app.morphe.manager.ui.screen.shared.MorpheAnimations
 import app.morphe.manager.ui.screen.shared.isLandscape
@@ -58,8 +53,8 @@ import kotlinx.coroutines.launch
 import org.koin.androidx.compose.koinViewModel
 import org.koin.core.parameter.parametersOf
 
-/** Settings tabs for bottom navigation. */
-private enum class SettingsTab(
+/** Settings sections shown in the portrait tab row and landscape navigation rail. */
+internal enum class SettingsTab(
     val titleRes: Int,
     val icon: ImageVector
 ) {
@@ -69,11 +64,12 @@ private enum class SettingsTab(
 }
 
 /**
- * Settings screen with bottom navigation and swipeable tabs.
+ * Settings screen with a visible parent header and swipeable, fully labelled tabs.
  */
 @Composable
 fun SettingsScreen(
     homeViewModel: HomeViewModel,
+    onBackClick: () -> Unit,
     themeViewModel: ThemeSettingsViewModel = koinViewModel(),
     importExportViewModel: ImportExportViewModel = koinViewModel(),
     patchOptionsViewModel: PatchOptionsViewModel = koinViewModel(
@@ -324,9 +320,6 @@ fun SettingsScreen(
         }
     }
 
-    val backPressedDispatcher = LocalOnBackPressedDispatcherOwner.current?.onBackPressedDispatcher
-    val backLabel = stringResource(R.string.back)
-
     Box(modifier = Modifier.fillMaxSize()) {
         if (landscape) {
             // Landscape: sidebar navigation + content panel
@@ -339,7 +332,7 @@ fun SettingsScreen(
                 LandscapeNavPanel(
                     currentTab = currentTab,
                     onTabSelected = { tab -> selectedTabIndex = tab.ordinal },
-                    onBack = { backPressedDispatcher?.onBackPressed() },
+                    onBack = onBackClick,
                     onAppearanceTabPositioned = { globalOnboardingState?.appearanceTabBounds = it },
                     onSystemTabPositioned = { globalOnboardingState?.systemTabBounds = it }
                 )
@@ -356,22 +349,26 @@ fun SettingsScreen(
                 }
             }
         } else {
-            // Portrait: horizontal pager + bottom navigation
+            // Portrait: visible hierarchy + tabs + horizontal pager
             Column(
                 modifier = Modifier
                     .fillMaxSize()
                     .statusBarsPadding()
             ) {
-                // Invisible back button for TalkBack - must be first in column so it's announced first
-                Box(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .height(1.dp)
-                        .semantics {
-                            contentDescription = backLabel
-                            onClick(action = { backPressedDispatcher?.onBackPressed(); true })
-                        }
+                SettingsTopBar(
+                    currentTab = currentTab,
+                    onBackClick = onBackClick
                 )
+
+                SettingsTabRow(
+                    currentTab = currentTab,
+                    onTabSelected = { tab ->
+                        coroutineScope.launch { pagerState.animateScrollToPage(tab.ordinal) }
+                    },
+                    onAppearanceTabPositioned = { globalOnboardingState?.appearanceTabBounds = it },
+                    onSystemTabPositioned = { globalOnboardingState?.systemTabBounds = it }
+                )
+
                 // Overlay sits outside the pager, which clips each page to its own bounds
                 Box(
                     modifier = Modifier
@@ -385,20 +382,86 @@ fun SettingsScreen(
 
                     ListScrollbar(scrollState = currentScrollState)
                 }
-
-                MorpheBottomNavigation(
-                    currentTab = currentTab,
-                    onTabSelected = { tab ->
-                        coroutineScope.launch { pagerState.animateScrollToPage(tab.ordinal) }
-                    },
-                    onAppearanceTabPositioned = { globalOnboardingState?.appearanceTabBounds = it },
-                    onSystemTabPositioned = { globalOnboardingState?.systemTabBounds = it }
-                )
             }
         }
     }
 }
-
+/** Visible hierarchy for portrait settings: Back -> Settings -> selected section. */
+@Composable
+internal fun SettingsTopBar(
+    currentTab: SettingsTab,
+    onBackClick: () -> Unit
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .heightIn(min = 64.dp)
+            .padding(horizontal = 8.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        IconButton(onClick = onBackClick) {
+            Icon(
+                imageVector = Icons.AutoMirrored.Outlined.ArrowBack,
+                contentDescription = stringResource(R.string.back)
+            )
+        }
+        Column(modifier = Modifier.padding(horizontal = 8.dp)) {
+            Text(
+                text = stringResource(R.string.settings),
+                style = MaterialTheme.typography.titleLarge,
+                fontWeight = FontWeight.Bold
+            )
+            Text(
+                text = stringResource(currentTab.titleRes),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+        }
+    }
+}
+/** All settings sections remain labelled instead of collapsing inactive tabs to mystery icons. */
+@Composable
+internal fun SettingsTabRow(
+    currentTab: SettingsTab,
+    onTabSelected: (SettingsTab) -> Unit,
+    onAppearanceTabPositioned: ((Rect) -> Unit)? = null,
+    onSystemTabPositioned: ((Rect) -> Unit)? = null
+) {
+    PrimaryTabRow(
+        selectedTabIndex = currentTab.ordinal,
+        containerColor = Color.Transparent,
+        divider = {}
+    ) {
+        SettingsTab.entries.forEach { tab ->
+            val positionedModifier = when (tab) {
+                SettingsTab.APPEARANCE if onAppearanceTabPositioned != null ->
+                    Modifier.onGloballyPositioned { onAppearanceTabPositioned(it.boundsInWindow()) }
+                SettingsTab.SYSTEM if onSystemTabPositioned != null ->
+                    Modifier.onGloballyPositioned { onSystemTabPositioned(it.boundsInWindow()) }
+                else -> Modifier
+            }
+            Tab(
+                selected = currentTab == tab,
+                onClick = { onTabSelected(tab) },
+                text = {
+                    Text(
+                        text = stringResource(tab.titleRes),
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
+                    )
+                },
+                icon = {
+                    Icon(
+                        imageVector = tab.icon,
+                        contentDescription = null,
+                        modifier = Modifier.size(20.dp)
+                    )
+                },
+                modifier = positionedModifier
+            )
+        }
+    }
+}
 /**
  * Landscape sidebar navigation panel.
  */
@@ -417,6 +480,14 @@ private fun LandscapeNavPanel(
             .fillMaxHeight()
             .padding(horizontal = 12.dp, vertical = 24.dp)
     ) {
+        Text(
+            text = stringResource(R.string.settings),
+            style = MaterialTheme.typography.titleLarge,
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier
+                .align(Alignment.TopStart)
+                .padding(horizontal = 16.dp, vertical = 8.dp)
+        )
         Column(
             modifier = Modifier
                 .fillMaxWidth()
@@ -541,83 +612,4 @@ private fun LandscapeNavItem(
             )
         }
     }
-}
-
-/**
- * Bottom navigation bar.
- */
-@Composable
-private fun MorpheBottomNavigation(
-    currentTab: SettingsTab,
-    onTabSelected: (SettingsTab) -> Unit,
-    onAppearanceTabPositioned: ((Rect) -> Unit)? = null,
-    onSystemTabPositioned: ((Rect) -> Unit)? = null
-) {
-    Box(
-        modifier = Modifier
-            .fillMaxWidth()
-            .navigationBarsPadding(),
-        contentAlignment = Alignment.Center
-    ) {
-        Row(
-            modifier = Modifier
-                .widthIn(max = 448.dp)
-                .fillMaxWidth()
-                .padding(horizontal = 16.dp, vertical = 12.dp)
-                .animateContentSize(),
-            horizontalArrangement = Arrangement.spacedBy(16.dp),
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-            SettingsTab.entries.forEach { tab ->
-                val isSelected = currentTab == tab
-                NavigationItem(
-                    tab = tab,
-                    isSelected = isSelected,
-                    onClick = { onTabSelected(tab) },
-                    modifier = Modifier
-                        .then(if (isSelected) Modifier.weight(1f) else Modifier.width(64.dp))
-                        .then(
-                            when (tab) {
-                                SettingsTab.APPEARANCE if onAppearanceTabPositioned != null ->
-                                    Modifier.onGloballyPositioned { coords ->
-                                        onAppearanceTabPositioned(coords.boundsInWindow())
-                                    }
-
-                                SettingsTab.SYSTEM if onSystemTabPositioned != null ->
-                                    Modifier.onGloballyPositioned { coords ->
-                                        onSystemTabPositioned(coords.boundsInWindow())
-                                    }
-
-                                else -> Modifier
-                            }
-                        )
-                )
-            }
-        }
-    }
-}
-
-/**
- * Individual navigation item.
- */
-@Composable
-private fun NavigationItem(
-    tab: SettingsTab,
-    isSelected: Boolean,
-    onClick: () -> Unit,
-    modifier: Modifier = Modifier
-) {
-    GlassButton(
-        icon = tab.icon,
-        label = stringResource(tab.titleRes),
-        selected = isSelected,
-        onClick = onClick,
-        modifier = modifier,
-        containerColor = GlassButtonDefaults.containerColor(isSelected),
-        contentColor = GlassButtonDefaults.contentColor(isSelected),
-        shape = RoundedCornerShape(20.dp),
-        border = BorderStroke(1.dp, GlassButtonDefaults.borderColor(isSelected)),
-        pressScale = true,
-        hapticFeedback = true
-    )
 }

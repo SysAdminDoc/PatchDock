@@ -1,5 +1,7 @@
 package app.morphe.manager.domain.bundles
 
+import app.morphe.manager.domain.catalog.PatchDockCatalog
+import app.morphe.manager.domain.catalog.sha256Hex
 import app.morphe.manager.domain.bundles.RemotePatchBundle.Companion.CHANGELOG_CACHE_TTL
 import app.morphe.manager.domain.manager.PreferencesManager
 import app.morphe.manager.network.api.MorpheAPI
@@ -85,7 +87,20 @@ sealed class RemotePatchBundle(
                     builder = { url(info.downloadUrl) },
                     onProgress = onProgress
                 )
-                patchesFile.setReadOnly()
+                if (PatchDockCatalog.patchSource(endpoint) != null) {
+                    val expectedDigest = PatchDockCatalog.expectedPatchBundleSha256(endpoint, info.version)
+                        ?: error("Patch bundle ${info.version} is not in PatchDock's trusted catalog")
+                    val actualDigest = patchesFile.sha256Hex()
+                    check(actualDigest.equals(expectedDigest, ignoreCase = true)) {
+                        "Patch bundle digest mismatch for ${info.version}"
+                    }
+                }
+                check(patchesFile.setReadOnly() || !patchesFile.canWrite()) {
+                    "Patch bundle could not be made read-only for secure DEX loading"
+                }
+                check(!patchesFile.canWrite()) {
+                    "Patch bundle remained writable after download"
+                }
                 requireNonEmptyPatchesFile("Downloading patch bundle")
             } catch (t: Throwable) {
                 runCatching { patchesFile.setWritable(true, true) }

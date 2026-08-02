@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Single-color mask used by Android themed icons. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <path
+        android:fillColor="#000000"
+        android:pathData="M148,116 H364 L396,148 V244 H278 L246,212 H116 V148 Z" />
+
+    <path
+        android:fillColor="#000000"
+        android:pathData="M116,268 H234 L266,300 H396 V364 L364,396 H148 L116,364 Z" />
+</vector>

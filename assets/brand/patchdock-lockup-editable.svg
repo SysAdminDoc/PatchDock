@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1081 320" role="img" aria-labelledby="title desc">
+  <title id="title">PatchDock editable horizontal lockup</title>
+  <desc id="desc">Editable text source for the PatchDock horizontal logo.</desc>
+  <g transform="translate(-9 -64) scale(.75)"><path fill="#005FAC" d="M148 116H364L396 148V244H278L246 212H116V148Z"/><path fill="#FF6B35" d="M116 268H234L266 300H396V364L364 396H148L116 364Z"/></g><text x="338" y="208" font-family="Segoe UI Semibold, Segoe UI, sans-serif" font-size="148" font-weight="600" letter-spacing="-2.5"><tspan fill="#102A43">Patch</tspan><tspan fill="#005FAC">Dock</tspan></text>
+</svg>

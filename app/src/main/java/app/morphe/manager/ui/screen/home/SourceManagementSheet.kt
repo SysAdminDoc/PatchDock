@@ -188,70 +188,14 @@ fun BundleManagementSheet(
 
         Box {
             Column(Modifier.fillMaxWidth()) {
-                // Header - outside scrollable area
-                Column(modifier = Modifier.padding(horizontal = 16.dp)) {
-                    Row(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(vertical = 8.dp),
-                        horizontalArrangement = Arrangement.SpaceBetween,
-                        verticalAlignment = Alignment.CenterVertically
-                    ) {
-                        Column {
-                            Text(
-                                text = stringResource(R.string.sources_management_title),
-                                style = MaterialTheme.typography.titleLarge,
-                                fontWeight = FontWeight.Bold
-                            )
-                            Text(
-                                text = pluralStringResource(
-                                    R.plurals.sources_management_subtitle,
-                                    sources.size,
-                                    sources.size
-                                ),
-                                style = MaterialTheme.typography.bodySmall,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant
-                            )
-                        }
-
-                        Row(
-                            horizontalArrangement = Arrangement.spacedBy(8.dp),
-                            verticalAlignment = Alignment.CenterVertically
-                        ) {
-                            AnimatedVisibility(visible = sources.size >= 2) {
-                                val activeSortLabel = stringResource(sourceSortMode.labelRes)
-                                FilledIconButton(
-                                    onClick = { showSortDialog = true },
-                                    modifier = Modifier.semantics {
-                                        role = Role.Button
-                                        stateDescription = activeSortLabel
-                                    },
-                                    colors = IconButtonDefaults.filledIconButtonColors(
-                                        containerColor = MaterialTheme.colorScheme.primaryContainer
-                                    )
-                                ) {
-                                    Icon(
-                                        imageVector = Icons.AutoMirrored.Outlined.Sort,
-                                        contentDescription = stringResource(R.string.sort)
-                                    )
-                                }
-                            }
-                            FilledIconButton(
-                                onClick = onAddSource,
-                                colors = IconButtonDefaults.filledIconButtonColors(
-                                    containerColor = MaterialTheme.colorScheme.primaryContainer
-                                )
-                            ) {
-                                Icon(
-                                    imageVector = Icons.Default.Add,
-                                    contentDescription = stringResource(R.string.add)
-                                )
-                            }
-                        }
-                    }
-
-                    Spacer(Modifier.height(8.dp))
-                }
+                SourceManagementHeader(
+                    sourceCount = sources.size,
+                    showSort = sources.size >= 2,
+                    sortModeLabel = stringResource(sourceSortMode.labelRes),
+                    onSortClick = { showSortDialog = true },
+                    onAddSource = onAddSource,
+                    onDismissRequest = onDismissRequest
+                )
 
                 // Bundle cards
                 Box(
@@ -443,6 +387,98 @@ fun BundleManagementSheet(
                 onDismissRequest = { bundleToShowChangelogUid = null }
             )
         }
+    }
+}
+
+/**
+ * Non-scrolling source-sheet header with explicit exit and creation actions.
+ * Keeping this as a small component makes the navigation contract testable without loading
+ * repositories or opening the modal sheet.
+ */
+@Composable
+internal fun SourceManagementHeader(
+    sourceCount: Int,
+    showSort: Boolean,
+    sortModeLabel: String,
+    onSortClick: () -> Unit,
+    onAddSource: () -> Unit,
+    onDismissRequest: () -> Unit,
+    modifier: Modifier = Modifier
+) {
+    Column(modifier = modifier.padding(horizontal = 16.dp)) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(vertical = 8.dp),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text(
+                text = stringResource(R.string.sources_management_title),
+                style = MaterialTheme.typography.titleLarge,
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier.weight(1f)
+            )
+            IconButton(onClick = onDismissRequest) {
+                Icon(
+                    imageVector = Icons.Outlined.Close,
+                    contentDescription = stringResource(R.string.close)
+                )
+            }
+        }
+
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(8.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text(
+                text = pluralStringResource(
+                    R.plurals.sources_management_subtitle,
+                    sourceCount,
+                    sourceCount
+                ),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier.weight(1f)
+            )
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                AnimatedVisibility(visible = showSort) {
+                    FilledIconButton(
+                        onClick = onSortClick,
+                        modifier = Modifier.semantics {
+                            role = Role.Button
+                            stateDescription = sortModeLabel
+                        },
+                        colors = IconButtonDefaults.filledIconButtonColors(
+                            containerColor = MaterialTheme.colorScheme.primaryContainer
+                        )
+                    ) {
+                        Icon(
+                            imageVector = Icons.AutoMirrored.Outlined.Sort,
+                            contentDescription = stringResource(R.string.sort)
+                        )
+                    }
+                }
+                FilledTonalButton(
+                    onClick = onAddSource,
+                    contentPadding = ButtonDefaults.ButtonWithIconContentPadding
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Add,
+                        contentDescription = null,
+                        modifier = Modifier.size(ButtonDefaults.IconSize)
+                    )
+                    Spacer(Modifier.size(ButtonDefaults.IconSpacing))
+                    Text(stringResource(R.string.add))
+                }
+            }
+        }
+
+        Spacer(Modifier.height(8.dp))
     }
 }
 

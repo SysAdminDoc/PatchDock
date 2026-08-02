@@ -4,13 +4,10 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.outlined.Article
 import androidx.compose.material.icons.outlined.Language
 import androidx.compose.material.icons.outlined.Public
-import androidx.compose.material.icons.outlined.Translate
 import androidx.lifecycle.ViewModel
 import compose.icons.FontAwesomeIcons
 import compose.icons.fontawesomeicons.Brands
 import compose.icons.fontawesomeicons.brands.Github
-import compose.icons.fontawesomeicons.brands.RedditAlien
-import compose.icons.fontawesomeicons.brands.XTwitter
 
 data class SocialLink(
     val name: String,
@@ -22,34 +19,24 @@ class AboutViewModel : ViewModel() {
     companion object {
         val socials: List<SocialLink> = listOf(
             SocialLink(
-                name = "Website",
-                url = "https://morphe.software",
+                name = "Manager source",
+                url = "https://github.com/SysAdminDoc/patchdock-manager",
                 preferred = true
             ),
             SocialLink(
-                name = "Changelog",
-                url = "https://morphe.software/changelog"
+                name = "Patch source",
+                url = "https://github.com/icysymmetra/tiktok-patches-for-morphe"
             ),
             SocialLink(
-                name = "GitHub",
-                url = "https://github.com/MorpheApp"
-            ),
-            SocialLink(
-                name = "Reddit",
-                url = "https://reddit.com/r/MorpheApp"
-            ),
-            SocialLink(
-                name = "Crowdin",
-                url = "https://morphe.software/translate"
+                name = "Upstream",
+                url = "https://github.com/MorpheApp/morphe-manager"
             )
         )
 
         private val socialIcons = mapOf(
-            "Website" to Icons.Outlined.Public,
-            "GitHub" to FontAwesomeIcons.Brands.Github,
-            "Changelog" to Icons.AutoMirrored.Outlined.Article,
-            "Reddit" to FontAwesomeIcons.Brands.RedditAlien,
-            "Crowdin" to Icons.Outlined.Translate,
+            "Manager source" to FontAwesomeIcons.Brands.Github,
+            "Patch source" to Icons.AutoMirrored.Outlined.Article,
+            "Upstream" to Icons.Outlined.Public,
         )
 
         fun getSocialIcon(name: String) = socialIcons[name] ?: Icons.Outlined.Language

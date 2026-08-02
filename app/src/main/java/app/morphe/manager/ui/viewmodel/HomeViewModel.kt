@@ -850,6 +850,7 @@ class HomeViewModel(
      * the banner is shown immediately; otherwise we wait out the remaining time.
      */
     suspend fun checkForManagerUpdates() {
+        if (!MANAGER_UPDATES_ENABLED) return
         uiSafe(app, R.string.failed_to_check_updates, "Failed to check for updates") {
             val update = morpheAPI.getAppUpdate() ?: return@uiSafe
 
@@ -2946,12 +2947,15 @@ class HomeViewModel(
     /**
      * Handle download instructions continue.
      */
-    fun handleDownloadInstructionsContinue(onOpenUrl: (String) -> Boolean) {
+    fun handleDownloadInstructionsContinue(
+        showFilePickerAfterOpen: Boolean = true,
+        onOpenUrl: (String) -> Boolean,
+    ) {
         val urlToOpen = resolvedDownloadUrl!!
 
         if (onOpenUrl(urlToOpen)) {
             showDownloadInstructionsDialog = false
-            showFilePickerPromptDialog = true
+            showFilePickerPromptDialog = showFilePickerAfterOpen
         } else {
             Log.w(tag, "Failed to open URL")
             app.toast(app.getString(R.string.sources_management_failed_to_open_url))

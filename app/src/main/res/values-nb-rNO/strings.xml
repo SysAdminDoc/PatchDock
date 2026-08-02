@@ -13,10 +13,10 @@
     <string name="android_11_bug_dialog_title">Android 11-feil</string>
     <string name="android_11_bug_dialog_description">Appinstallasjonstillatelse må gis på forhånd for å unngå en feil i Android 11-systemet som vil påvirke brukeropplevelsen negativt</string>
     <string name="deep_link_add_source_title">Legg til kilde</string>
-    <string name="deep_link_add_source_message">Vil du legge til denne patch-kilden til Morphe?</string>
+    <string name="deep_link_add_source_message">Vil du legge til denne patch-kilden til PatchDock?</string>
     <string name="deep_link_add_source_warning">Bruk kun betrodde kilder</string>
     <!-- Home Screen - Update Notifications -->
-    <string name="home_update_available">Morphe-oppdatering er tilgjengelig</string>
+    <string name="home_update_available">PatchDock-oppdatering er tilgjengelig</string>
     <string name="home_update_available_subtitle">Ny versjon klar for installasjon</string>
     <string name="home_blocked_source_title">Blokkert kilde for oppdateringer oppdaget</string>
     <string name="home_blocked_source_subtitle">Trykk for å se og fjerne</string>
@@ -179,11 +179,11 @@
     <string name="home_download_instructions_download_button_toast_3">Øvelse gjør mester, og du er på vei 💪</string>
     <string name="home_download_instructions_download_button_toast_4">Fortsatt ikke her… fortsatt ikke her… 🙈</string>
     <string name="home_download_instructions_download_button_toast_5">OK, jeg respekterer dedikasjonen 🫡</string>
-    <string name="home_download_instructions_download_button_toast_6">Du er nå en offisiell Morphe-knapptester 🏅</string>
+    <string name="home_download_instructions_download_button_toast_6">Du er nå en offisiell PatchDock-knapptester 🏅</string>
     <string name="home_download_instructions_step3">Vent til nedlastingen er fullført, og &lt;b&gt;ikke installer&lt;/b&gt; APK-filen</string>
     <string name="home_download_instructions_step3_mount">Vent til nedlastingen er fullført, og &lt;b&gt;installer APK-filen&lt;/b&gt;</string>
-    <string name="home_download_instructions_step4">Etter at nedlastingen er fullført, gå tilbake til Morphe</string>
-    <string name="home_download_instructions_step4_mount">Etter installasjon av den originale APK-filen, gå tilbake til Morphe</string>
+    <string name="home_download_instructions_step4">Etter at nedlastingen er fullført, gå tilbake til PatchDock</string>
+    <string name="home_download_instructions_step4_mount">Etter installasjon av den originale APK-filen, gå tilbake til PatchDock</string>
     <string name="home_download_instructions_continue">Fortsett til APKMirror.com</string>
     <!-- Home Screen - Dialog 3: File Picker Prompt -->
     <string name="home_file_picker_prompt_title">Velg nedlastet APK-fil</string>
@@ -236,8 +236,8 @@ For de beste resultatene anbefaler denne appen å patche en &lt;b&gt;full APK-fi
     <string name="home_split_apk_warning_pick_another">Velg en annen APK-fil</string>
     <string name="home_dialog_unsupported_version_experimental_label">Eksperimentell</string>
     <string name="home_dialog_unsupported_version_experimental_description">Denne versjonen har eksperimentell støtte og kan være ustabil eller ufullstendig</string>
-    <string name="morphe_experimental_app_version_dialog_title">Vil du eksperimentere? 🧪</string>
-    <string name="morphe_experimental_app_version_dialog_message">Denne versjonen av &lt;b&gt;%s&lt;/b&gt; har tidlig eksperimentell støtte&lt;br/&gt;&lt;br/&gt;🔧 Forvent underlige app-oppførsel eller uidentifiserte feil ettersom patchene raffineres for denne appversjonen</string>
+    <string name="patchdock_experimental_app_version_dialog_title">Vil du eksperimentere? 🧪</string>
+    <string name="patchdock_experimental_app_version_dialog_message">Denne versjonen av &lt;b&gt;%s&lt;/b&gt; har tidlig eksperimentell støtte&lt;br/&gt;&lt;br/&gt;🔧 Forvent underlige app-oppførsel eller uidentifiserte feil ettersom patchene raffineres for denne appversjonen</string>
     <string name="home_dialog_unsupported_version_dialog_title">Ugyldig versjon</string>
     <string name="home_dialog_unsupported_version_dialog_description">Denne APK-en er ikke en anbefalt applikasjonsversjon. Fortsettelse kan føre til en ikke-funksjonell app</string>
     <string name="home_dialog_unsupported_version_dialog_proceed">Fortsett uansett</string>
@@ -367,7 +367,7 @@ Ytre sone (stiplet): kan bli beskåret av launcher-masken – hold viktig inform
     <string name="home_app_info_patch_update_available">Patch-oppdatering tilgjengelig</string>
     <string name="home_app_info_patch_update_available_description">En nyere versjon av patcher er tilgjengelig. Patch appen din på nytt for å få de nyeste forbedringene og reparasjonene</string>
     <string name="home_app_info_app_deleted_warning">Appen ble avinstallert</string>
-    <string name="home_app_info_app_deleted_description">Denne appen ble avinstallert utenfor Morphe. Patch den på nytt for å gjenopprette funksjonaliteten</string>
+    <string name="home_app_info_app_deleted_description">Denne appen ble avinstallert utenfor PatchDock. Patch den på nytt for å gjenopprette funksjonaliteten</string>
     <string name="home_app_info_apk_size">APK-størrelse</string>
     <string name="home_app_info_cpu_arch">CPU-arkitektur</string>
     <!-- Home Screen - Root Mode -->
@@ -377,7 +377,7 @@ Ytre sone (stiplet): kan bli beskåret av launcher-masken – hold viktig inform
     <string name="root_pre_patch_installer_description">Enheten din har root-tilgang. Velg om denne appen skal patches for root-montering eller standardinstallasjon</string>
     <string name="root_pre_patch_installer_mount_title">Root-monteringsmodus</string>
     <string name="root_pre_patch_installer_mount_description">Patches for root-montering og monterer deretter APK-en over den tilsvarende standardappen. Ingen GmsCore nødvendig</string>
-    <string name="root_mount_module_unmount_warning">Hvis KernelSU har Unmount-moduler aktivert som standard, åpne KernelSU > Superuser > appen du monterte > Profil > Egendefinert og deaktiver Unmount-moduler. Ellers kan den monterte patchede APK-en kanskje ikke tre i kraft, selv om Morphe viser at den er montert.</string>
+    <string name="root_mount_module_unmount_warning">Hvis KernelSU har Unmount-moduler aktivert som standard, åpne KernelSU > Superuser > appen du monterte > Profil > Egendefinert og deaktiver Unmount-moduler. Ellers kan den monterte patchede APK-en kanskje ikke tre i kraft, selv om PatchDock viser at den er montert.</string>
     <string name="root_pre_patch_installer_standard_title">Standard installasjonsmodus</string>
     <string name="root_pre_patch_installer_standard_description">Installerer som en vanlig APK med GmsCore-støtte. Dine installasjonsinnstillinger brukes etter installasjonen.</string>
     <string name="root_pre_patch_installer_hint">Denne installasjonsmodusen er separat fra Innstillinger > System > Installasjon og kan ikke endres etter installasjonen.</string>
@@ -405,7 +405,7 @@ Ytre sone (stiplet): kan bli beskåret av launcher-masken – hold viktig inform
     <string name="patcher_conflict_subtitle">Du må avinstallere den eksisterende versjonen</string>
     <string name="patcher_conflict_hint">Den patchede appen bruker et annet sertifikat enn den installerte versjonen. Avinstallering vil slette alle appdata</string>
     <string name="patcher_installed_conflict_title">Avinstallasjon kreves</string>
-    <string name="patcher_installed_conflict_body">"Morphe signerer patched apper med sitt eget sertifikat, som er forskjellig fra det originale. Android krever at du fjerner den eksisterende versjonen før den patched appen kan installeres.
+    <string name="patcher_installed_conflict_body">"PatchDock signerer patched apper med sitt eget sertifikat, som er forskjellig fra det originale. Android krever at du fjerner den eksisterende versjonen før den patched appen kan installeres.
 
 Avinstallering vil permanent slette alle appdata"</string>
     <string name="patcher_install_error_title">Installeringsfeil</string>
@@ -414,16 +414,16 @@ Avinstallering vil permanent slette alle appdata"</string>
     <string name="patcher_ready_to_mount_subtitle">Trykk på knappen nedenfor for å montere</string>
     <string name="patcher_storage_permission_dialog_title">Kan ikke få tilgang til lagringsbane</string>
     <string name="patcher_incompatible_patcher_title">Oppdatering kreves</string>
-    <string name="patcher_incompatible_patcher_description">Pakken &lt;b&gt;%1$s&lt;/b&gt; krever patcher-versjon &lt;b&gt;%2$s&lt;/b&gt; eller nyere. Oppdater Morphe for å patche denne appen</string>
-    <string name="patcher_incompatible_patcher_update_button">Last ned og oppdater Morphe</string>
-    <string name="patcher_storage_permission_description_api30">Én eller flere patch-alternativer peker til baner som Morphe ikke kan lese. Gi tilgang til lagring og trykk på knappen, så starter patching automatisk</string>
+    <string name="patcher_incompatible_patcher_description">Pakken &lt;b&gt;%1$s&lt;/b&gt; krever patcher-versjon &lt;b&gt;%2$s&lt;/b&gt; eller nyere. Oppdater PatchDock for å patche denne appen</string>
+    <string name="patcher_incompatible_patcher_update_button">Last ned og oppdater PatchDock</string>
+    <string name="patcher_storage_permission_description_api30">Én eller flere patch-alternativer peker til baner som PatchDock ikke kan lese. Gi tilgang til lagring og trykk på knappen, så starter patching automatisk</string>
     <string name="patcher_storage_permission_description_legacy">Ett eller flere patch-alternativer peker til baner som ikke kan nås. Oppdater banene i patch-alternativene og prøv igjen</string>
     <string name="patcher_storage_permission_grant">Gi lagringstillatelse</string>
     <string name="patcher_storage_permission_denied_warning">Lagringstillatelsen ble nektet. Gi tillatelsen for å bruke denne banen, eller flytt filene til appens private katalog</string>
     <string name="patcher_storage_permission_open_settings">Åpne lagringsinnstillinger</string>
     <string name="patcher_storage_badge_denied">Tillatelse nektet</string>
     <string name="patcher_storage_badge_missing">Ikke funnet</string>
-    <string name="patcher_storage_permission_hint">Tips: Flytt filer til /Android/data/app.morphe.manager/files/ - ingen ekstra tillatelser nødvendig</string>
+    <string name="patcher_storage_permission_hint">Tips: Flytt filer til /Android/data/app.patchdock.manager/files/ - ingen ekstra tillatelser nødvendig</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">Forbereder</string>
     <string name="patcher_step_load_patches">Laster patcher</string>
@@ -435,7 +435,7 @@ Avinstallering vil permanent slette alle appdata"</string>
     <string name="patcher_step_sign_apk">Signerer patchad APK-fil</string>
     <!-- Battery optimization pre-flight dialog -->
     <string name="battery_optimization_dialog_title">Beskyttelse mot bakgrunnsoppdatering</string>
-    <string name="battery_optimization_dialog_description">Noen enheter kan stoppe oppdateringsprogrammet når appen minimeres. La Morphe kjøre uten batteribegrensninger for å sikre at oppdateringen fullføres pålitelig.</string>
+    <string name="battery_optimization_dialog_description">Noen enheter kan stoppe oppdateringsprogrammet når appen minimeres. La PatchDock kjøre uten batteribegrensninger for å sikre at oppdateringen fullføres pålitelig.</string>
     <string name="battery_optimization_not_now">Ikke nå</string>
     <!-- Patcher Screen - Patcher Worker -->
     <string name="patcher_notification_title">Patching pågår…</string>
@@ -451,7 +451,7 @@ Avinstallering vil permanent slette alle appdata"</string>
     <string name="patcher_message_6">Se ut, det er fint vær der ute… 🌤️</string>
     <string name="patcher_message_7">Justerer 1-ere og 0-ere… 🤖</string>
     <string name="patcher_message_8">Løser ut digital spaghetti… 🍝</string>
-    <!-- Morphe patches fix YouTube bugs that Google still has not fixed. -->
+    <!-- PatchDock patches fix YouTube bugs that Google still has not fixed. -->
     <string name="patcher_message_9">Fikser feil i den upatchade appen… 🪲</string>
     <string name="patcher_message_10">Flotte patcher er verdt ventetiden… ⏳</string>
     <string name="patcher_message_11">Polerer piksler til de skinner… 💎</string>
@@ -582,9 +582,9 @@ Avinstallering vil permanent slette alle appdata"</string>
     <string name="settings_advanced_updates">Deaktiver</string>
     <string name="settings_advanced_patcher">Patcner</string>
     <string name="settings_advanced_updates_use_prereleases">Forhåndsutgitte oppdateringer</string>
-    <string name="settings_advanced_updates_use_prereleases_description">Tidlig tilgang til nye Morphe-appversjoner. Aktiver forhåndsutgitt per kilde i oppdateringskildene</string>
+    <string name="settings_advanced_updates_use_prereleases_description">Tidlig tilgang til nye PatchDock-appversjoner. Aktiver forhåndsutgitt per kilde i oppdateringskildene</string>
     <string name="settings_advanced_updates_allow_metered">Mobildataoppdateringer</string>
-    <string name="settings_advanced_updates_allow_metered_description">Lar Morphe og oppdateringer laste ned over mobildata</string>
+    <string name="settings_advanced_updates_allow_metered_description">Lar PatchDock og oppdateringer laste ned over mobildata</string>
     <string name="settings_advanced_updates_background_notifications">Bakgrunnsoppdateringsvarsler</string>
     <string name="settings_advanced_updates_background_notifications_description">Sjekk periodisk etter oppdateringer i bakgrunnen og varsle når de er tilgjengelige</string>
     <string name="settings_advanced_updates_background_notifications_description_fcm">Push-varsler for nye utgivelser, selv når appen er lukket</string>
@@ -607,7 +607,7 @@ Avinstallering vil permanent slette alle appdata"</string>
     <string name="settings_advanced_external_batch_patch">Tillat eksterne utløsere</string>
     <string name="settings_advanced_external_batch_patch_description">Lar automatiseringsapper starte batch-patching med en intensjon. Hver forespørsel bekreftes før noe kjøres</string>
     <string name="external_batch_patch_title">Start batch-patching?</string>
-    <string name="external_batch_patch_description">%s vil at Morphe skal patche og installere apper</string>
+    <string name="external_batch_patch_description">%s vil at PatchDock skal patche og installere apper</string>
     <string name="external_batch_patch_trust_caller">Tillat alltid denne appen</string>
     <string name="external_batch_patch_unknown_caller">En ukjent app</string>
     <!-- Notification content -->
@@ -615,24 +615,24 @@ Avinstallering vil permanent slette alle appdata"</string>
     <string name="notification_auto_patch_running_title">Repatcher apper</string>
     <string name="notification_auto_patch_blocked_title">Automatisk repatching ble ikke kjørt</string>
     <string name="notification_auto_patch_blocked_battery">Systemet blokkerte denne installasjonen. På Xiaomi og lignende enheter, slå på \"Installer via USB\" i utvikleralternativer. På en arbeidsprofil kan installasjoner være begrenset av policy</string>
-    <string name="notification_auto_patch_blocked_foreground">Android tillot ikke patching å starte i bakgrunnen. Åpne Morphe og patch fra appen</string>
+    <string name="notification_auto_patch_blocked_foreground">Android tillot ikke patching å starte i bakgrunnen. Åpne PatchDock og patch fra appen</string>
     <string name="notification_channel_auto_patch">Automatisk repatching</string>
     <string name="notification_channel_auto_patch_description">Stille fremdrifts- og resultatvarsler for planlagt repatching</string>
-    <string name="notification_manager_update_title">Morphe-oppdatering er tilgjengelig</string>
+    <string name="notification_manager_update_title">PatchDock-oppdatering er tilgjengelig</string>
     <string name="notification_bundle_update_title">Nye patcher tilgjengelig</string>
     <string name="notification_update_text">Versjon %s er klar for nedlasting</string>
-    <string name="notification_bundle_update_text_unversioned">Trykk for å åpne Morphe og oppdatere</string>
+    <string name="notification_bundle_update_text_unversioned">Trykk for å åpne PatchDock og oppdatere</string>
     <string name="notification_permission_dialog_title">Tillat varsler</string>
-    <string name="notification_permission_dialog_description">Morphe trenger tillatelse til varsler for å varsle deg når oppdateringer er tilgjengelige i bakgrunnen</string>
+    <string name="notification_permission_dialog_description">PatchDock trenger tillatelse til varsler for å varsle deg når oppdateringer er tilgjengelige i bakgrunnen</string>
     <string name="notification_post_patch_dialog_title">Vil du bli varslet når oppdateringer er tilgjengelige?</string>
     <string name="notification_channel_fcm_updates">Oppdateringsvarsler</string>
-    <string name="notification_channel_fcm_updates_description">Varsler om nye Morphe- og patch-utgivelser</string>
+    <string name="notification_channel_fcm_updates_description">Varsler om nye PatchDock- og patch-utgivelser</string>
     <string name="notification_channel_patcher">Patching</string>
-    <string name="notification_channel_patcher_description">Vises mens Morphe patcher en app i bakgrunnen</string>
+    <string name="notification_channel_patcher_description">Vises mens PatchDock patcher en app i bakgrunnen</string>
     <!-- Settings - Advanced Tab - Expert settings Section -->
     <string name="settings_advanced_expert">Oppdateringer</string>
     <string name="settings_advanced_expert_mode">Ekspertinnstillinger</string>
-    <string name="settings_advanced_expert_mode_description">Aktiverer komplekse Morphe-innstillinger for oppdatering og tilpasningsmuligheter</string>
+    <string name="settings_advanced_expert_mode_description">Aktiverer komplekse PatchDock-innstillinger for oppdatering og tilpasningsmuligheter</string>
     <string name="settings_advanced_expert_mode_dialog_title">Aktiver ekspertmodus?</string>
     <string name="settings_advanced_expert_mode_dialog_message">Ekspertmodus gir mer kontroll over hvordan patcher brukes, men feilkonfigurering av innstillinger i ekspertmodus kan føre til en ikke-funksjonell app</string>
     <string name="settings_advanced_strip_unused_libs">Optimaliser for enhetsarkitektur</string>
@@ -654,7 +654,7 @@ Avinstallering vil permanent slette alle appdata"</string>
     <string name="settings_advanced_github_pat_dialog_description">"Angi et GitHub Personal Access Token for å legge til pull requests som eksterne kilder. Opprett en PAT med scope public_repo på
 %s"</string>
     <string name="settings_advanced_github_pat_export_include_label">Inkluder i eksport av innstillinger</string>
-    <string name="settings_advanced_github_pat_export_include_supporting">Legger denne PAT-en til eksporterte Morphe-innstillinger</string>
+    <string name="settings_advanced_github_pat_export_include_supporting">Legger denne PAT-en til eksporterte PatchDock-innstillinger</string>
     <string name="settings_advanced_github_pat_export_warning">Ikke del din PAT. Hvis du inkluderer den i en eksport av innstillinger, må du holde den filen privat, da den inneholder tokenet</string>
     <!-- Settings - Advanced Tab - Patch Options Section -->
     <string name="settings_advanced_patch_options">Patch-alternativer</string>
@@ -687,8 +687,8 @@ Mappen må inneholde en eller flere av følgende mapper, avhengig av enhetens DP
 - mipmap-xxxhdpi
 
 Hver av mappene må inneholde alle følgende filer:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+patchdock_adaptive_background_custom.png
+patchdock_adaptive_foreground_custom.png
 
 Bilde dimensjoner må være som følger:
 - mipmap-mdpi: 108x108 px
@@ -698,17 +698,17 @@ Bilde dimensjoner må være som følger:
 - mipmap-xxxhdpi: 432x432 px
 
 Eventuelt inneholder banen en 'drawable'-mappe med et monokromt ikonfil:
-morphe_adaptive_monochrome_custom.xml
+patchdock_adaptive_monochrome_custom.xml
 
 Eventuelt inneholder banen et varslingsikon i et av følgende formater:
 - XML vector drawable i 'drawable':
-  morphe_notification_icon_custom.xml
+  patchdock_notification_icon_custom.xml
 - PNG raster images i 'drawable-dpi'-mapper:
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/patchdock_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/patchdock_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/patchdock_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/patchdock_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/patchdock_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">Egendefinert header-logo</string>
     <string name="settings_advanced_patch_options_custom_header_description">Endrer header-logoen</string>
@@ -721,8 +721,8 @@ Eventuelt inneholder banen et varslingsikon i et av følgende formater:
 - drawable-xxxhdpi
 
 Hver av mappene må inneholde alle følgende filer:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+patchdock_header_custom_light.png
+patchdock_header_custom_dark.png
 
  Bilde dimensjoner må være som følger:
 - drawable-hdpi: 194x72 px
@@ -752,7 +752,7 @@ morphe_header_custom_dark.png
     <string name="installer_status_not_supported">Ikke støttet for denne handlingen</string>
     <string name="installer_status_shizuku_not_installed">Installer Shizuku eller Sui for å bruke dette alternativet</string>
     <string name="installer_status_shizuku_not_running">Start Shizuku eller Sui og prøv igjen</string>
-    <string name="installer_status_shizuku_permission">Gi Morphe tillatelse fra Shizuku-appen</string>
+    <string name="installer_status_shizuku_permission">Gi PatchDock tillatelse fra Shizuku-appen</string>
     <string name="installer_mount_warning_install">Din primære installasjonsprogram er satt til den rooted mount-installasjonsprogrammet. Denne lagrede appen ble ikke installert ved hjelp av mount</string>
     <string name="mount_version_mismatch_message">Aksjeversjonen (%2$s) stemmer ikke overens med den patchede appversjonen (%1$s). Mount den matchende aksjeversjonen og prøv igjen</string>
     <string name="mount_stock_restore_failed_message">Android avviste den lagrede originale APK-en. Installer den matchende standardversjonen, og prøv å montere igjen.</string>
@@ -780,7 +780,7 @@ morphe_header_custom_dark.png
     <string name="settings_auto_uninstall_with_shizuku">Automatisk avinstallasjon ved konflikt</string>
     <string name="settings_auto_uninstall_with_shizuku_description">Når du installerer automatisk med Shizuku, avinstaller den eksisterende appen først hvis Android rapporterer en signaturkonflikt. Dette kan fjerne appdata</string>
     <string name="settings_auto_uninstall_warning_title">Aktiver automatisk avinstallasjon?</string>
-    <string name="settings_auto_uninstall_warning_message">Hvis Android rapporterer en signaturkonflikt under Shizuku-autoinstallasjon, vil Morphe avinstallere den eksisterende appen før den installerer den patchede APK-en</string>
+    <string name="settings_auto_uninstall_warning_message">Hvis Android rapporterer en signaturkonflikt under Shizuku-autoinstallasjon, vil PatchDock avinstallere den eksisterende appen før den installerer den patchede APK-en</string>
     <string name="settings_auto_uninstall_warning_risk">Dette kan fjerne appdata. Hvis den patchede APK-en ikke klarer å installere etter avinstallasjon, kan den forrige appen allerede være borte</string>
     <string name="installer_shizuku_status_action">Sjekk Shizuku-status</string>
     <string name="installer_shizuku_status_title">Shizuku-status</string>
@@ -798,7 +798,7 @@ morphe_header_custom_dark.png
     <string name="installer_shizuku_install_fail_with_details">"Shizuku-installasjon mislyktes: %1$s
 
 Detaljer: %2$s"</string>
-    <string name="installer_shizuku_error_permission">Shizuku-tillatelse mangler. Gi tillatelse til Morphe og prøv igjen</string>
+    <string name="installer_shizuku_error_permission">Shizuku-tillatelse mangler. Gi tillatelse til PatchDock og prøv igjen</string>
     <string name="installer_shizuku_error_timeout">Shizuku returnerte ikke et installasjonsresultat. Sørg for at den fortsatt kjører og prøv igjen</string>
     <string name="installer_shizuku_error_downgrade">Android blokkerte dette fordi det ville nedgradere den installerte appen</string>
     <string name="installer_shizuku_error_signature">Android blokkerte dette fordi den installerte appen har en annen signatur</string>
@@ -847,11 +847,11 @@ Detaljer: %2$s"</string>
     <string name="settings_system_export_keystore_failed">Kunne ikke eksportere nøkkelregister</string>
     <string name="settings_system_show_password_field">Vis passord</string>
     <string name="settings_system_hide_password_field">Skjul passord</string>
-    <string name="settings_system_morphe_settings">Morphe-innstillinger</string>
-    <string name="settings_system_import_manager_settings_description">Sikkerhetskopierer og gjenoppretter Morphe-innstillingene dine</string>
-    <string name="settings_system_import_manager_settings_fail">Kunne ikke importere Morphe-innstillinger: %s</string>
-    <string name="settings_system_import_manager_settings_success">Morphe-innstillinger importert</string>
-    <string name="settings_system_import_manager_settings_mode_title">Importer Morphe-innstillinger</string>
+    <string name="settings_system_patchdock_settings">PatchDock-innstillinger</string>
+    <string name="settings_system_import_manager_settings_description">Sikkerhetskopierer og gjenoppretter PatchDock-innstillingene dine</string>
+    <string name="settings_system_import_manager_settings_fail">Kunne ikke importere PatchDock-innstillinger: %s</string>
+    <string name="settings_system_import_manager_settings_success">PatchDock-innstillinger importert</string>
+    <string name="settings_system_import_manager_settings_mode_title">Importer PatchDock-innstillinger</string>
     <string name="settings_system_import_manager_settings_mode_description">Velg hvordan de importerte innstillingene og kildene skal brukes</string>
     <string name="settings_system_import_selections_mode_title">Importer utvalg av endringer</string>
     <string name="settings_system_import_selections_mode_description">Velg hvordan de importerte utvalgene og patch-alternativene skal brukes</string>
@@ -859,8 +859,8 @@ Detaljer: %2$s"</string>
     <string name="import_mode_replace_description">Samsvar nøyaktig med sikkerhetskopien. Elementer som mangler fra sikkerhetskopien vil bli fjernet</string>
     <string name="import_mode_merge_title">Slå sammen med eksisterende</string>
     <string name="import_mode_merge_description">Legg til manglende elementer fra sikkerhetskopien. Eksisterende elementer forblir uendret</string>
-    <string name="settings_system_export_manager_settings_fail">Kunne ikke eksportere Morphe-innstillinger: %s</string>
-    <string name="settings_system_export_manager_settings_success">Morphe-innstillinger eksportert</string>
+    <string name="settings_system_export_manager_settings_fail">Kunne ikke eksportere PatchDock-innstillinger: %s</string>
+    <string name="settings_system_export_manager_settings_success">PatchDock-innstillinger eksportert</string>
     <string name="settings_system_debug">Feilsøking</string>
     <string name="settings_system_export_debug_logs_description">Lagrer systemlogger for feilsøking</string>
     <string name="settings_system_export_debug_logs_export_read_failed">Kunne ikke lese logger (exit-kode %s)</string>
@@ -895,7 +895,7 @@ Detaljer: %2$s"</string>
     <string name="settings_system_storage_cleared">Frigjort %s</string>
     <string name="settings_system_storage_nothing_to_clear">Ingenting å tømme</string>
     <string name="settings_system_storage_open_app_info_title">Åpne Android-applagring</string>
-    <string name="settings_system_storage_open_app_info_description">Administrer eller tøm alle Morphe-data via systeminnstillinger</string>
+    <string name="settings_system_storage_open_app_info_description">Administrer eller tøm alle PatchDock-data via systeminnstillinger</string>
     <string name="settings_system_save_original_apks_title">Behold originale APK-filer</string>
     <string name="settings_system_save_original_apks_description">Lagre APK-en før oppdatering, slik at den kan brukes på nytt for oppdatering uten å måtte velge filen på nytt</string>
     <string name="settings_system_save_patched_apks_title">Behold oppdaterte APK-filer</string>
@@ -965,7 +965,7 @@ Detaljer: %2$s"</string>
     <!-- Settings - System Tab - About Section -->
     <string name="settings_system_about">Om</string>
     <string name="settings_system_share_website">Del nettsiden</string>
-    <string name="settings_system_share_website_description">Deler den offisielle Morphe-nettsiden</string>
+    <string name="settings_system_share_website_description">Deler den offisielle PatchDock-nettsiden</string>
     <string name="settings_system_manager_description">Et åpen kildekode-prosjekt for moderne, strømlinjeformet patching av populære Android-apper, drevet av fellesskapets tilbakemeldinger og bidrag</string>
     <string name="credits">Credits</string>
     <string name="credits_current_development">Nåværende utvikling</string>
@@ -1105,7 +1105,7 @@ Vil du likevel fortsette?"</string>
     <string name="onboarding_sources_desc">Administrer kildeinnstillingene dine. Hver kilde gir oppdateringer som kan brukes på appene dine.</string>
     <string name="onboarding_swipe_title">Sveipbevegelser</string>
     <string name="onboarding_swipe_desc">Sveip mot høyre på et app-kort for å se tilgjengelige oppdateringer. Sveip mot venstre for å skjule kortet fra startskjermen.</string>
-    <string name="onboarding_settings_desc">Tilpass Morphe: utseende, avanserte innstillinger og systemverktøy</string>
+    <string name="onboarding_settings_desc">Tilpass PatchDock: utseende, avanserte innstillinger og systemverktøy</string>
     <string name="onboarding_sources_patches_desc">Trykk for å se alle oppdateringer som er tilgjengelige fra denne kilden.</string>
     <string name="onboarding_sources_version_desc">Trykk på versjonen for å se hele endringsloggen for denne kilden.</string>
     <string name="onboarding_sources_prerelease_desc">Aktiver dette for å motta tidlige versjoner av oppdateringer fra denne kilden.</string>
@@ -1120,8 +1120,8 @@ Vil du likevel fortsette?"</string>
     <string name="onboarding_system_file_picker_desc">Aktiver dette for å bruke den innebygde filbehandleren i stedet for systemvelgeren når du velger APK-er eller nøkkel lagre.</string>
     <!-- Tour prompt dialog shown after first successful patch install -->
     <string name="tour_prompt_title">Rask omvisning</string>
-    <string name="tour_prompt_desc">Vil du ha en rask omvisning i Morphes nøkkelfunksjoner?</string>
+    <string name="tour_prompt_desc">Vil du ha en rask omvisning i PatchDocks nøkkelfunksjoner?</string>
     <string name="tour_prompt_confirm">Vis meg rundt</string>
     <string name="onboarding_restart_title">Omvisning i funksjoner</string>
-    <string name="onboarding_restart_desc">Ta en veiledet omvisning i Morphes nøkkelfunksjoner.</string>
+    <string name="onboarding_restart_desc">Ta en veiledet omvisning i PatchDocks nøkkelfunksjoner.</string>
 </resources>

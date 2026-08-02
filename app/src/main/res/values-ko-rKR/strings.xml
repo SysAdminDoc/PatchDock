@@ -13,16 +13,16 @@
     <string name="android_11_bug_dialog_title">Android 11 버그</string>
     <string name="android_11_bug_dialog_description">사용자 환경에 부정적인 영향을 미치는 Android 11 시스템 버그를 방지하려면 앱 설치 권한을 미리 부여해야 합니다</string>
     <string name="deep_link_add_source_title">소스 추가</string>
-    <string name="deep_link_add_source_message">이 패치 소스를 Morphe에 추가하시겠습니까?</string>
+    <string name="deep_link_add_source_message">이 패치 소스를 PatchDock에 추가하시겠습니까?</string>
     <string name="deep_link_add_source_warning">신뢰할 수 있는 소스만 추가하세요</string>
     <!-- Home Screen - Update Notifications -->
-    <string name="home_update_available">Morphe 업데이트 사용 가능</string>
+    <string name="home_update_available">PatchDock 업데이트 사용 가능</string>
     <string name="home_update_available_subtitle">새 버전 설치 준비 완료</string>
     <string name="home_blocked_source_title">차단된 패치 소스가 감지됨</string>
     <string name="home_blocked_source_subtitle">검토 및 제거하려면 탭하세요</string>
     <string name="home_metadata_errors_title">일부 패치 소스를 사용할 수 없음</string>
     <string name="home_metadata_errors_subtitle">소스를 검토하려면 탭하세요</string>
-    <string name="home_outdated_manager_title">Morphe가 구버전입니다</string>
+    <string name="home_outdated_manager_title">PatchDock가 구버전입니다</string>
     <string name="home_outdated_manager_subtitle">일부 패치 소스는 최신 버전이 필요합니다</string>
     <string name="home_metered_skipped_title">모바일 데이터에서 업데이트가 일시 중지됨</string>
     <string name="home_metered_skipped_subtitle">모바일 데이터에서 업데이트를 허용하려면 탭하세요</string>
@@ -124,8 +124,8 @@
     <string name="sources_management_metadata_unavailable">메타데이터 없음</string>
     <string name="sources_management_metadata_unavailable_hint">원격 메타데이터 파일을 사용할 수 없습니다. 설치된 번들로 패치는 계속 가능하지만, 이 소스에 대한 자동 업데이트는 비활성화됩니다</string>
     <string name="sources_management_metadata_unavailable_hint_missing">패치 번들을 다운로드할 수 없습니다. 소스 URL이 올바르지 않거나 파일이 존재하지 않을 수 있습니다</string>
-    <string name="sources_management_outdated_manager_badge">Morphe 업데이트</string>
-    <string name="sources_management_outdated_manager_hint">이 소스는 패처 %1$s용으로 빌드되었지만, Morphe %2$s에는 패처 %3$s가 포함되어 있습니다. 이를 사용하려면 Morphe를 업데이트하세요</string>
+    <string name="sources_management_outdated_manager_badge">PatchDock 업데이트</string>
+    <string name="sources_management_outdated_manager_hint">이 소스는 패처 %1$s용으로 빌드되었지만, PatchDock %2$s에는 패처 %3$s가 포함되어 있습니다. 이를 사용하려면 PatchDock를 업데이트하세요</string>
     <string name="sources_management_source_enabled">소스를 활성화하였습니다</string>
     <string name="sources_management_source_disabled">소스를 비활성화하였습니다</string>
     <string name="sources_management_source_updating">소스를 업데이트하는 중</string>
@@ -183,11 +183,11 @@
     <string name="home_download_instructions_download_button_toast_3">연습할수록 실력이 늘고, 당신도 잘하고 있어요 💪</string>
     <string name="home_download_instructions_download_button_toast_4">여기는 아니예요… 여기는 아니예요… 🙈</string>
     <string name="home_download_instructions_download_button_toast_5">좋아요, 그 끈기는 인정합니다 🫡</string>
-    <string name="home_download_instructions_download_button_toast_6">이제 당신은 공식 Morphe 버튼 테스터입니다 🏅</string>
+    <string name="home_download_instructions_download_button_toast_6">이제 당신은 공식 PatchDock 버튼 테스터입니다 🏅</string>
     <string name="home_download_instructions_step3">다운로드가 완료될 때까지 기다리세요&lt;br&gt;APK는 &lt;b&gt;설치하지 마세요&lt;/b&gt;</string>
     <string name="home_download_instructions_step3_mount">다운로드가 완료되면, &lt;b&gt;APK 파일을 설치하세요&lt;/b&gt;</string>
-    <string name="home_download_instructions_step4">다운로드가 완료되면 Morphe로 돌아오세요</string>
-    <string name="home_download_instructions_step4_mount">원본 APK를 설치한 후에 Morphe로 돌아오세요</string>
+    <string name="home_download_instructions_step4">다운로드가 완료되면 PatchDock로 돌아오세요</string>
+    <string name="home_download_instructions_step4_mount">원본 APK를 설치한 후에 PatchDock로 돌아오세요</string>
     <string name="home_download_instructions_continue">APKMirror.com으로 이동</string>
     <!-- Home Screen - Dialog 3: File Picker Prompt -->
     <string name="home_file_picker_prompt_title">다운로드된 APK 선택</string>
@@ -240,8 +240,8 @@
     <string name="home_split_apk_warning_pick_another">다른 APK를 선택하세요</string>
     <string name="home_dialog_unsupported_version_experimental_label">실험 버전</string>
     <string name="home_dialog_unsupported_version_experimental_description">이 버전은 실험적 지원이 포함되어 있으며, 불안정하거나 완전하지 않을 수 있습니다</string>
-    <string name="morphe_experimental_app_version_dialog_title">실험해 보시겠습니까? 🧪</string>
-    <string name="morphe_experimental_app_version_dialog_message">이 &lt;b&gt;%s&lt;/b&gt; 버전은 초기 실험적 지원이 제공됩니다&lt;br/&gt;&lt;br/&gt;🔧 이 앱 버전에 맞게 패치가 개선되는 과정이므로, 예상되지 않은 동작이나 확인되지 않은 버그가 발생할 수 있습니다</string>
+    <string name="patchdock_experimental_app_version_dialog_title">실험해 보시겠습니까? 🧪</string>
+    <string name="patchdock_experimental_app_version_dialog_message">이 &lt;b&gt;%s&lt;/b&gt; 버전은 초기 실험적 지원이 제공됩니다&lt;br/&gt;&lt;br/&gt;🔧 이 앱 버전에 맞게 패치가 개선되는 과정이므로, 예상되지 않은 동작이나 확인되지 않은 버그가 발생할 수 있습니다</string>
     <string name="home_dialog_unsupported_version_dialog_title">지원되지 않는 버전</string>
     <string name="home_dialog_unsupported_version_dialog_description">이 APK는 권장 앱 버전이 아닙니다. 계속 진행하면 앱이 제대로 작동하지 않을 수 있습니다</string>
     <string name="home_dialog_unsupported_version_dialog_proceed">계속 진행</string>
@@ -371,7 +371,7 @@
     <string name="home_app_info_patch_update_available">패치 업데이트 사용 가능</string>
     <string name="home_app_info_patch_update_available_description">새 버전의 패치가 있습니다. 최신 개선 사항 및 수정 사항을 적용하려면 앱을 다시 패치하세요</string>
     <string name="home_app_info_app_deleted_warning">앱이 제거되었습니다</string>
-    <string name="home_app_info_app_deleted_description">이 앱은 Morphe 외부에서 제거되었습니다. 기능을 복원하려면 다시 패치하세요</string>
+    <string name="home_app_info_app_deleted_description">이 앱은 PatchDock 외부에서 제거되었습니다. 기능을 복원하려면 다시 패치하세요</string>
     <string name="home_app_info_apk_size">APK 크기</string>
     <string name="home_app_info_cpu_arch">CPU 아키텍처</string>
     <!-- Home Screen - Root Mode -->
@@ -381,7 +381,7 @@
     <string name="root_pre_patch_installer_description">이 기기는 루팅되어 있습니다. 이 앱을 루트 마운트 모드로 설치할지, 일반 설치 모드로 설치할지 선택하세요</string>
     <string name="root_pre_patch_installer_mount_title">루트 마운트 모드</string>
     <string name="root_pre_patch_installer_mount_description">루트 마운트 모드로 패치한 후에 해당 APK를 동일한 순정 앱 위에 마운트합니다. GmsCore는 필요하지 않습니다</string>
-    <string name="root_mount_module_unmount_warning">KernelSU에서 \'모듈 마운트 해제를 기본값으로\'가 활성화되어 있다면, \'KernelSU &gt; 슈퍼유저 &gt; 마운트한 앱 &gt; 프로필 &gt; 사용자 지정\'으로 이동하여 \'모듈 마운트 해제\'를 비활성화하세요. 그렇지 않으면 Morphe에서 패치된 APK가 마운트된 것으로 표시되더라도, 실제로는 마운트가 적용되지 않아 패치된 APK가 제대로 작동하지 않을 수 있습니다</string>
+    <string name="root_mount_module_unmount_warning">KernelSU에서 \'모듈 마운트 해제를 기본값으로\'가 활성화되어 있다면, \'KernelSU &gt; 슈퍼유저 &gt; 마운트한 앱 &gt; 프로필 &gt; 사용자 지정\'으로 이동하여 \'모듈 마운트 해제\'를 비활성화하세요. 그렇지 않으면 PatchDock에서 패치된 APK가 마운트된 것으로 표시되더라도, 실제로는 마운트가 적용되지 않아 패치된 APK가 제대로 작동하지 않을 수 있습니다</string>
     <string name="root_pre_patch_installer_standard_title">일반 설치 모드</string>
     <string name="root_pre_patch_installer_standard_description">GmsCore를 지원하는 일반 APK로 패치합니다. 패치가 완료된 후에는 현재 설정된 설치 프로그램 설정을 사용하여 설치됩니다</string>
     <string name="root_pre_patch_installer_hint">이 패치 모드는 \'설정 &gt; 시스템 &gt; 설치 프로그램\' 설정과는 별개이며, 패치가 완료된 후에는 변경할 수 없습니다</string>
@@ -409,7 +409,7 @@
     <string name="patcher_conflict_subtitle">기존 버전을 제거해야 합니다</string>
     <string name="patcher_conflict_hint">패치된 앱은 설치된 버전과 다른 인증서를 사용합니다. 제거하면 앱 데이터가 모두 삭제됩니다</string>
     <string name="patcher_installed_conflict_title">제거가 필요합니다</string>
-    <string name="patcher_installed_conflict_body">"Morphe는 자체 인증서로 패치된 앱에 서명하므로 원본 앱과 인증서가 다릅니다. Android에서는 기존 버전을 제거해야 패치된 앱을 설치할 수 있습니다
+    <string name="patcher_installed_conflict_body">"PatchDock는 자체 인증서로 패치된 앱에 서명하므로 원본 앱과 인증서가 다릅니다. Android에서는 기존 버전을 제거해야 패치된 앱을 설치할 수 있습니다
 
 앱을 제거하면 모든 앱 데이터가 영구적으로 삭제됩니다"</string>
     <string name="patcher_install_error_title">설치 오류</string>
@@ -418,16 +418,16 @@
     <string name="patcher_ready_to_mount_subtitle">마운트하려면 아래 버튼을 탭하세요</string>
     <string name="patcher_storage_permission_dialog_title">저장소 경로에 접근할 수 없음</string>
     <string name="patcher_incompatible_patcher_title">업데이트 필요</string>
-    <string name="patcher_incompatible_patcher_description">번들 &lt;b&gt;%1$s&lt;/b&gt;는 패처 버전 &lt;b&gt;%2$s&lt;/b&gt; 이상이 필요합니다. 이 앱을 패치하려면 Morphe를 업데이트하세요</string>
-    <string name="patcher_incompatible_patcher_update_button">Morphe 다운로드 및 업데이트</string>
-    <string name="patcher_storage_permission_description_api30">하나 이상의 패치 옵션이 Morphe가 읽을 수 없는 경로를 가리키고 있습니다. 저장소 접근 권한을 부여하고 버튼을 탭하면 패치가 자동으로 시작됩니다</string>
+    <string name="patcher_incompatible_patcher_description">번들 &lt;b&gt;%1$s&lt;/b&gt;는 패처 버전 &lt;b&gt;%2$s&lt;/b&gt; 이상이 필요합니다. 이 앱을 패치하려면 PatchDock를 업데이트하세요</string>
+    <string name="patcher_incompatible_patcher_update_button">PatchDock 다운로드 및 업데이트</string>
+    <string name="patcher_storage_permission_description_api30">하나 이상의 패치 옵션이 PatchDock가 읽을 수 없는 경로를 가리키고 있습니다. 저장소 접근 권한을 부여하고 버튼을 탭하면 패치가 자동으로 시작됩니다</string>
     <string name="patcher_storage_permission_description_legacy">하나 이상의 패치 옵션이 접근할 수 없는 경로를 가리키고 있습니다. 패치 옵션에서 경로를 업데이트하고 다시 시도하세요</string>
     <string name="patcher_storage_permission_grant">저장소 권한 부여</string>
     <string name="patcher_storage_permission_denied_warning">저장소 권한이 거부되었습니다. 이 경로를 사용하려면 권한을 부여하거나, 파일을 앱 전용 디렉터리로 옮겨주세요</string>
     <string name="patcher_storage_permission_open_settings">저장소 설정 열기</string>
     <string name="patcher_storage_badge_denied">권한이 거부되었습니다</string>
     <string name="patcher_storage_badge_missing">찾을 수 없습니다</string>
-    <string name="patcher_storage_permission_hint">힌트: 파일을 \'/Android/data/app.morphe.manager/files/\' 로 옮기세요. 추가 권한이 필요 없습니다</string>
+    <string name="patcher_storage_permission_hint">힌트: 파일을 \'/Android/data/app.patchdock.manager/files/\' 로 옮기세요. 추가 권한이 필요 없습니다</string>
     <!-- Patcher Screen - Patcher Steps -->
     <string name="patcher_step_group_preparing">준비하는 중</string>
     <string name="patcher_step_load_patches">패치를 불러오는 중</string>
@@ -439,7 +439,7 @@
     <string name="patcher_step_sign_apk">패치된 APK 파일에 서명하는 중</string>
     <!-- Battery optimization pre-flight dialog -->
     <string name="battery_optimization_dialog_title">백그라운드 패치 보호</string>
-    <string name="battery_optimization_dialog_description">일부 기기에서는 앱이 최소화되면 패처가 중지될 수 있습니다. 패치가 안정적으로 완료되도록 Morphe가 배터리 제한 없이 실행되도록 허용하세요</string>
+    <string name="battery_optimization_dialog_description">일부 기기에서는 앱이 최소화되면 패처가 중지될 수 있습니다. 패치가 안정적으로 완료되도록 PatchDock가 배터리 제한 없이 실행되도록 허용하세요</string>
     <string name="battery_optimization_not_now">나중에</string>
     <!-- Patcher Screen - Patcher Worker -->
     <string name="patcher_notification_title">패치를 진행하는 중…</string>
@@ -455,7 +455,7 @@
     <string name="patcher_message_6">밖을 보세요, 날씨가 좋아요… 🌤️</string>
     <string name="patcher_message_7">1과 0을 조정 중… 🤖</string>
     <string name="patcher_message_8">스파게티 코드를 푸는 중… 🍝</string>
-    <!-- Morphe patches fix YouTube bugs that Google still has not fixed. -->
+    <!-- PatchDock patches fix YouTube bugs that Google still has not fixed. -->
     <string name="patcher_message_9">패치되지 않은 앱의 버그 수정 중… 🪲</string>
     <string name="patcher_message_10">훌륭한 패치는 기다릴 가치가 있습니다… ⏳</string>
     <string name="patcher_message_11">픽셀이 반짝일 때까지 연마 중… 💎</string>
@@ -585,9 +585,9 @@
     <string name="settings_advanced_updates">업데이트</string>
     <string name="settings_advanced_patcher">패처</string>
     <string name="settings_advanced_updates_use_prereleases">Pre-release 업데이트</string>
-    <string name="settings_advanced_updates_use_prereleases_description">새 Morphe 앱 버전에 미리 받아봅니다. 패치 소스는 소스별로 Pre-release 패치를 활성화하세요</string>
+    <string name="settings_advanced_updates_use_prereleases_description">새 PatchDock 앱 버전에 미리 받아봅니다. 패치 소스는 소스별로 Pre-release 패치를 활성화하세요</string>
     <string name="settings_advanced_updates_allow_metered">모바일 데이터에서 업데이트</string>
-    <string name="settings_advanced_updates_allow_metered_description">모바일 데이터를 사용하여 Morphe 및 패치 업데이트를 다운로드할 수 있도록 허용합니다</string>
+    <string name="settings_advanced_updates_allow_metered_description">모바일 데이터를 사용하여 PatchDock 및 패치 업데이트를 다운로드할 수 있도록 허용합니다</string>
     <string name="settings_advanced_updates_background_notifications">백그라운드 업데이트 알림</string>
     <string name="settings_advanced_updates_background_notifications_description">백그라운드에서 주기적으로 업데이트를 확인하고 업데이트가 있을 경우에 알림을 보냅니다</string>
     <string name="settings_advanced_updates_background_notifications_description_fcm">앱이 닫혀 있어도 새 릴리스에 대한 푸시 알림을 받습니다</string>
@@ -610,32 +610,32 @@
     <string name="settings_advanced_external_batch_patch">외부 트리거 허용</string>
     <string name="settings_advanced_external_batch_patch_description">자동화 앱이 인텐트를 사용하여 일괄 패치를 시작하도록 허용합니다. 실행되기 전에 모든 요청은 사용자 확인을 거칩니다</string>
     <string name="external_batch_patch_title">일괄 패치 시작</string>
-    <string name="external_batch_patch_description">\'%s\'가 Morphe를 사용하여 앱을 패치하고 설치하려고 합니다</string>
+    <string name="external_batch_patch_description">\'%s\'가 PatchDock를 사용하여 앱을 패치하고 설치하려고 합니다</string>
     <string name="external_batch_patch_trust_caller">이 앱을 항상 허용</string>
     <string name="external_batch_patch_unknown_caller">알 수 없는 앱</string>
     <!-- Notification content -->
     <string name="notification_auto_patch_title">자동 다시 패치 완료</string>
     <string name="notification_auto_patch_running_title">앱 다시 패치</string>
     <string name="notification_auto_patch_blocked_title">자동 다시 패치가 실행되지 않았습니다</string>
-    <string name="notification_auto_patch_blocked_battery">Morphe를 배터리 최적화 목록에서 제외하세요. 그렇지 않으면 Android가 시작되기 전에 실행을 중지합니다</string>
-    <string name="notification_auto_patch_blocked_foreground">Android에서 백그라운드로 패치를 시작할 수 없습니다. Morphe를 실행한 후 앱에서 패치를 진행하세요</string>
+    <string name="notification_auto_patch_blocked_battery">PatchDock를 배터리 최적화 목록에서 제외하세요. 그렇지 않으면 Android가 시작되기 전에 실행을 중지합니다</string>
+    <string name="notification_auto_patch_blocked_foreground">Android에서 백그라운드로 패치를 시작할 수 없습니다. PatchDock를 실행한 후 앱에서 패치를 진행하세요</string>
     <string name="notification_channel_auto_patch">자동 다시 패치</string>
     <string name="notification_channel_auto_patch_description">예약된 다시 패치에 대한 조용한 \'진행 상태\' 및 \'결과\' 알림</string>
-    <string name="notification_manager_update_title">Morphe 업데이트 사용 가능</string>
+    <string name="notification_manager_update_title">PatchDock 업데이트 사용 가능</string>
     <string name="notification_bundle_update_title">새 패치 사용 가능</string>
     <string name="notification_update_text">%s 버전 다운로드 준비 완료</string>
-    <string name="notification_bundle_update_text_unversioned">Morphe를 열고 업데이트하려면 탭하세요</string>
+    <string name="notification_bundle_update_text_unversioned">PatchDock를 열고 업데이트하려면 탭하세요</string>
     <string name="notification_permission_dialog_title">알림 허용</string>
-    <string name="notification_permission_dialog_description">Morphe는 백그라운드에서 업데이트가 있을 경우에 알림을 보내기 위해 알림 권한이 필요합니다</string>
+    <string name="notification_permission_dialog_description">PatchDock는 백그라운드에서 업데이트가 있을 경우에 알림을 보내기 위해 알림 권한이 필요합니다</string>
     <string name="notification_post_patch_dialog_title">업데이트가 있을 때 알림을 받으시겠습니까?</string>
     <string name="notification_channel_fcm_updates">업데이트 알림</string>
-    <string name="notification_channel_fcm_updates_description">새 Morphe 및 패치 릴리스에 대한 알림</string>
+    <string name="notification_channel_fcm_updates_description">새 PatchDock 및 패치 릴리스에 대한 알림</string>
     <string name="notification_channel_patcher">패치</string>
-    <string name="notification_channel_patcher_description">Morphe가 백그라운드에서 앱을 패치하는 동안에 표시되는 알림</string>
+    <string name="notification_channel_patcher_description">PatchDock가 백그라운드에서 앱을 패치하는 동안에 표시되는 알림</string>
     <!-- Settings - Advanced Tab - Expert settings Section -->
     <string name="settings_advanced_expert">전문가 설정</string>
     <string name="settings_advanced_expert_mode">전문가 모드</string>
-    <string name="settings_advanced_expert_mode_description">고급 Morphe 패치 설정과 커스텀 옵션을 활성화합니다</string>
+    <string name="settings_advanced_expert_mode_description">고급 PatchDock 패치 설정과 커스텀 옵션을 활성화합니다</string>
     <string name="settings_advanced_expert_mode_dialog_title">전문가 모드 활성화</string>
     <string name="settings_advanced_expert_mode_dialog_message">전문가 모드에서는 패치를 적용하는 방식을 더 세밀하게 조절할 수 있지만, 설정을 잘못 건드리면 앱이 정상적으로 작동하지 않을 수 있습니다</string>
     <string name="settings_advanced_strip_unused_libs">기기 아키텍처에 맞게 최적화</string>
@@ -656,7 +656,7 @@
     <string name="settings_advanced_github_pat_dialog_title">GitHub 개인 액세스 토큰 설정</string>
     <string name="settings_advanced_github_pat_dialog_description">"Pull Requests를 외부 소스로 사용하기 위해 GitHub 개인 액세스 토큰이 필요합니다. %s에서 public_repo 권한이 포함된 개인 액세스 토큰을 생성하세요"</string>
     <string name="settings_advanced_github_pat_export_include_label">설정 내보내기에 포함</string>
-    <string name="settings_advanced_github_pat_export_include_supporting">내보낼 Morphe 설정에 이 개인 액세스 토큰을 추가합니다</string>
+    <string name="settings_advanced_github_pat_export_include_supporting">내보낼 PatchDock 설정에 이 개인 액세스 토큰을 추가합니다</string>
     <string name="settings_advanced_github_pat_export_warning">개인 액세스 토큰을 공유하지 마세요. 설정 내보내기에 포함되는 경우에는 토큰이 포함되어 있으므로 해당 파일을 비공개로 유지하세요</string>
     <!-- Settings - Advanced Tab - Patch Options Section -->
     <string name="settings_advanced_patch_options">패치 옵션</string>
@@ -689,8 +689,8 @@
 - mipmap-xxxhdpi
 
 각 폴더에는 다음 파일이 모두 포함되어야 합니다:
-morphe_adaptive_background_custom.png
-morphe_adaptive_foreground_custom.png
+patchdock_adaptive_background_custom.png
+patchdock_adaptive_foreground_custom.png
 
 이미지 크기는 다음과 같아야 합니다:
 - mipmap-mdpi: 108x108 px
@@ -700,17 +700,17 @@ morphe_adaptive_foreground_custom.png
 - mipmap-xxxhdpi: 432x432 px
 
 선택적으로, 경로에는 모노크롬 아이콘 파일이 있는 'drawable' 폴더가 포함될 수 있습니다:
-morphe_adaptive_monochrome_custom.xml
+patchdock_adaptive_monochrome_custom.xml
 
 선택적으로, 경로에는 다음 형식 중 하나의 알림 아이콘이 포함될 수 있습니다:
 - 'drawable' 폴더의 XML 벡터 드로어블:
-  morphe_notification_icon_custom.xml
+  patchdock_notification_icon_custom.xml
 - 'drawable-dpi' 폴더의 PNG 래스터 이미지:
-  drawable-mdpi/morphe_notification_icon_custom.png (24x24 px)
-  drawable-hdpi/morphe_notification_icon_custom.png (36x36 px)
-  drawable-xhdpi/morphe_notification_icon_custom.png (48x48 px)
-  drawable-xxhdpi/morphe_notification_icon_custom.png (72x72 px)
-  drawable-xxxhdpi/morphe_notification_icon_custom.png (96x96 px)"</string>
+  drawable-mdpi/patchdock_notification_icon_custom.png (24x24 px)
+  drawable-hdpi/patchdock_notification_icon_custom.png (36x36 px)
+  drawable-xhdpi/patchdock_notification_icon_custom.png (48x48 px)
+  drawable-xxhdpi/patchdock_notification_icon_custom.png (72x72 px)
+  drawable-xxxhdpi/patchdock_notification_icon_custom.png (96x96 px)"</string>
     <!-- Settings - Advanced Tab - Patch Options Section: Custom Header -->
     <string name="settings_advanced_patch_options_custom_header">커스텀 헤더 로고</string>
     <string name="settings_advanced_patch_options_custom_header_description">헤더 로고를 변경해 보세요</string>
@@ -723,8 +723,8 @@ morphe_adaptive_monochrome_custom.xml
 - drawable-xxxhdpi
 
 각 폴더에는 다음 파일이 모두 포함되어야 합니다:
-morphe_header_custom_light.png
-morphe_header_custom_dark.png
+patchdock_header_custom_light.png
+patchdock_header_custom_dark.png
 
 이미지 크기는 다음과 같아야 합니다:
 - drawable-hdpi: 194x72 px
@@ -754,7 +754,7 @@ morphe_header_custom_dark.png
     <string name="installer_status_not_supported">이 작업에는 지원되지 않습니다</string>
     <string name="installer_status_shizuku_not_installed">이 옵션을 사용하려면 Shizuku 또는 Sui를 설치하세요</string>
     <string name="installer_status_shizuku_not_running">Shizuku 또는 Sui 을 시작하고 다시 시도하세요</string>
-    <string name="installer_status_shizuku_permission">Shizuku 앱에서 Morphe에 권한을 부여하세요</string>
+    <string name="installer_status_shizuku_permission">Shizuku 앱에서 PatchDock에 권한을 부여하세요</string>
     <string name="installer_mount_warning_install">기본 설치 프로그램이 루팅된 마운트 설치 프로그램으로 설정되어 있습니다. 이 저장된 앱은 마운트를 사용하여 설치되지 않았습니다</string>
     <string name="mount_version_mismatch_message">순정 앱 버전(%2$s)이 패치된 앱 버전(%1$s)과 일치하지 않습니다. 일치하는 순정 버전을 마운트한 다음에 다시 시도하세요</string>
     <string name="mount_stock_restore_failed_message">Android에서 저장된 원본 APK를 거부하였습니다. 해당 버전과 일치하는 순정 앱을 설치한 후에 다시 마운트를 시도하세요</string>
@@ -782,7 +782,7 @@ morphe_header_custom_dark.png
     <string name="settings_auto_uninstall_with_shizuku">충돌 시 자동 제거</string>
     <string name="settings_auto_uninstall_with_shizuku_description">Shizuku를 사용하여 자동 설치하는 경우에 Android에서 서명 충돌이 발생했다고 보고되면 기존 앱을 먼저 제거하세요. 이 과정에서 앱 데이터가 지워질 수 있습니다</string>
     <string name="settings_auto_uninstall_warning_title">자동 제거 활성화</string>
-    <string name="settings_auto_uninstall_warning_message">Shizuku를 사용하여 자동 설치하는 중에 Android에서 서명 충돌이 발생했다고 보고되면, Morphe는 패치된 APK를 설치하기 전에 기존 앱을 제거합니다</string>
+    <string name="settings_auto_uninstall_warning_message">Shizuku를 사용하여 자동 설치하는 중에 Android에서 서명 충돌이 발생했다고 보고되면, PatchDock는 패치된 APK를 설치하기 전에 기존 앱을 제거합니다</string>
     <string name="settings_auto_uninstall_warning_risk">이 과정에서 앱 데이터가 삭제될 수 있습니다. 기존 앱을 삭제한 후에 패치된 APK 설치에 실패하면 이전 앱을 복구하지 못할 수 있습니다</string>
     <string name="installer_shizuku_status_action">Shizuku 상태 확인</string>
     <string name="installer_shizuku_status_title">Shizuku 상태</string>
@@ -800,7 +800,7 @@ morphe_header_custom_dark.png
     <string name="installer_shizuku_install_fail_with_details">"Shizuku 설치할 수 없음: %1$s
 
 상세 정보: %2$s"</string>
-    <string name="installer_shizuku_error_permission">Shizuku 권한이 누락되었습니다. Morphe에 권한을 부여하고 다시 시도하세요</string>
+    <string name="installer_shizuku_error_permission">Shizuku 권한이 누락되었습니다. PatchDock에 권한을 부여하고 다시 시도하세요</string>
     <string name="installer_shizuku_error_timeout">Shizuku가 설치 결과를 반환하지 않았습니다. 여전히 실행 중인지 확인하고 다시 시도하세요</string>
     <string name="installer_shizuku_error_downgrade">Android가 설치된 앱을 다운그레이드할 수 있기 때문에 이 작업을 차단하였습니다</string>
     <string name="installer_shizuku_error_signature">Android가 설치된 앱에 다른 서명이 있기 때문에 이 작업을 차단하였습니다</string>
@@ -849,11 +849,11 @@ morphe_header_custom_dark.png
     <string name="settings_system_export_keystore_failed">키스토어를 내보낼 수 없습니다</string>
     <string name="settings_system_show_password_field">비밀번호 표시</string>
     <string name="settings_system_hide_password_field">비밀번호 숨기기</string>
-    <string name="settings_system_morphe_settings">Morphe 설정</string>
-    <string name="settings_system_import_manager_settings_description">Morphe 설정을 백업하고 복원합니다</string>
-    <string name="settings_system_import_manager_settings_fail">Morphe 설정을 가져올 수 없습니다: %s</string>
-    <string name="settings_system_import_manager_settings_success">Morphe 설정을 가져왔습니다</string>
-    <string name="settings_system_import_manager_settings_mode_title">Morphe 설정 가져오기</string>
+    <string name="settings_system_patchdock_settings">PatchDock 설정</string>
+    <string name="settings_system_import_manager_settings_description">PatchDock 설정을 백업하고 복원합니다</string>
+    <string name="settings_system_import_manager_settings_fail">PatchDock 설정을 가져올 수 없습니다: %s</string>
+    <string name="settings_system_import_manager_settings_success">PatchDock 설정을 가져왔습니다</string>
+    <string name="settings_system_import_manager_settings_mode_title">PatchDock 설정 가져오기</string>
     <string name="settings_system_import_manager_settings_mode_description">가져온 설정 및 소스를 적용하는 방식을 선택하세요</string>
     <string name="settings_system_import_selections_mode_title">패치 선택 목록 가져오기</string>
     <string name="settings_system_import_selections_mode_description">가져온 선택 목록 및 패치 옵션을 적용하는 방법을 선택하세요</string>
@@ -861,8 +861,8 @@ morphe_header_custom_dark.png
     <string name="import_mode_replace_description">백업과 정확히 일치합니다. 백업에 없는 항목은 제거됩니다</string>
     <string name="import_mode_merge_title">기존 항목과 병합</string>
     <string name="import_mode_merge_description">백업에서 누락된 항목을 추가합니다. 기존 항목은 변경되지 않습니다</string>
-    <string name="settings_system_export_manager_settings_fail">Morphe 설정을 내보낼 수 없습니다: %s</string>
-    <string name="settings_system_export_manager_settings_success">Morphe 설정을 내보냈습니다</string>
+    <string name="settings_system_export_manager_settings_fail">PatchDock 설정을 내보낼 수 없습니다: %s</string>
+    <string name="settings_system_export_manager_settings_success">PatchDock 설정을 내보냈습니다</string>
     <string name="settings_system_debug">디버그</string>
     <string name="settings_system_export_debug_logs_description">문제 해결을 위해 시스템 로그를 저장합니다</string>
     <string name="settings_system_export_debug_logs_export_read_failed">로그를 읽을 수 없습니다 (종료 코드 %s)</string>
@@ -897,7 +897,7 @@ morphe_header_custom_dark.png
     <string name="settings_system_storage_cleared">%s 확보됨</string>
     <string name="settings_system_storage_nothing_to_clear">삭제할 항목이 없습니다</string>
     <string name="settings_system_storage_open_app_info_title">Android 앱 저장소 열기</string>
-    <string name="settings_system_storage_open_app_info_description">시스템 설정을 통해 모든 Morphe 데이터를 관리하거나 지울 수 있습니다</string>
+    <string name="settings_system_storage_open_app_info_description">시스템 설정을 통해 모든 PatchDock 데이터를 관리하거나 지울 수 있습니다</string>
     <string name="settings_system_save_original_apks_title">원본 APK 보관</string>
     <string name="settings_system_save_original_apks_description">다시 패치할 경우에 파일을 다시 선택하지 않고 사용할 수 있도록 패치 전 APK를 저장합니다</string>
     <string name="settings_system_save_patched_apks_title">패치된 APK 보관</string>
@@ -949,7 +949,7 @@ morphe_header_custom_dark.png
     <string name="copy_selection_same_source">동일한 소스</string>
     <!-- Settings - System Tab - Custom file picker -->
     <string name="settings_system_custom_file_picker">사용자 정의 파일 선택기</string>
-    <string name="settings_system_custom_file_picker_description">시스템 기본 파일 선택기 대신 Morphe에 내장된 파일 선택기를 사용하여 저장소를 탐색합니다</string>
+    <string name="settings_system_custom_file_picker_description">시스템 기본 파일 선택기 대신 PatchDock에 내장된 파일 선택기를 사용하여 저장소를 탐색합니다</string>
     <!-- File Picker -->
     <string name="file_picker_previous_directory">이전 디렉터리</string>
     <string name="file_picker_no_files">파일이 없습니다</string>
@@ -967,7 +967,7 @@ morphe_header_custom_dark.png
     <!-- Settings - System Tab - About Section -->
     <string name="settings_system_about">정보</string>
     <string name="settings_system_share_website">웹사이트 공유</string>
-    <string name="settings_system_share_website_description">공식 Morphe 웹사이트를 공유해 보세요</string>
+    <string name="settings_system_share_website_description">공식 PatchDock 웹사이트를 공유해 보세요</string>
     <string name="settings_system_manager_description">커뮤니티 피드백과 기여를 기반으로 인기 있는 Android 앱을 현대적이고 간소화된 방식으로 패치하기 위한 오픈소스 프로젝트입니다</string>
     <string name="credits">크레딧</string>
     <string name="credits_current_development">현재 개발</string>
@@ -1107,7 +1107,7 @@ morphe_header_custom_dark.png
     <string name="onboarding_sources_desc">앱에 적용할 패치를 제공하는 패치 소스를 관리할 수 있습니다. 각 소스는 앱에 적용할 수 있는 패치를 제공합니다</string>
     <string name="onboarding_swipe_title">스와이프 제스처</string>
     <string name="onboarding_swipe_desc">앱 카드를 오른쪽으로 스와이프하여 사용 가능한 패치를 확인할 수 있고, 왼쪽으로 스와이프하여 홈 화면에서 카드를 숨길 수 있습니다</string>
-    <string name="onboarding_settings_desc">레이아웃, 고급 옵션 및 시스템 도구와 같은 Morphe 설정을 관리할 수 있습니다</string>
+    <string name="onboarding_settings_desc">레이아웃, 고급 옵션 및 시스템 도구와 같은 PatchDock 설정을 관리할 수 있습니다</string>
     <string name="onboarding_sources_patches_desc">패치 버튼을 탭하여 이 소스에서 사용할 수 있는 모든 패치를 볼 수 있습니다</string>
     <string name="onboarding_sources_version_desc">버전 버튼을 탭하여 이 소스의 전체 변경 사항을 볼 수 있습니다</string>
     <string name="onboarding_sources_prerelease_desc">이 옵션을 활성화하여 이 소스의 Pre-release 패치 버전을 수신할 수 있습니다</string>
@@ -1122,8 +1122,8 @@ morphe_header_custom_dark.png
     <string name="onboarding_system_file_picker_desc">APK 또는 키스토어를 선택 시 시스템 기본 파일 선택기 대신 앱에 내장된 파일 선택기를 사용할 수 있습니다</string>
     <!-- Tour prompt dialog shown after first successful patch install -->
     <string name="tour_prompt_title">빠른 기능 투어</string>
-    <string name="tour_prompt_desc">Morphe의 주요 기능을 빠르게 둘러보시겠습니까?</string>
+    <string name="tour_prompt_desc">PatchDock의 주요 기능을 빠르게 둘러보시겠습니까?</string>
     <string name="tour_prompt_confirm">안내해 드릴게요</string>
     <string name="onboarding_restart_title">기능 투어</string>
-    <string name="onboarding_restart_desc">Morphe의 주요 기능을 둘러보는 가이드 투어를 시작해 보세요</string>
+    <string name="onboarding_restart_desc">PatchDock의 주요 기능을 둘러보는 가이드 투어를 시작해 보세요</string>
 </resources>

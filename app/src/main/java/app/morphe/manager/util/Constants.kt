@@ -6,19 +6,23 @@
 package app.morphe.manager.util
 
 import androidx.compose.ui.graphics.Color
+import app.morphe.manager.domain.catalog.PatchDockCatalog
 import app.morphe.manager.util.KnownApps.DEFAULT_COLORS
 import app.morphe.manager.util.KnownApps.getAppName
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.minutes
 
-const val tag = "Morphe Manager"
+const val tag = "PatchDock Manager"
 
-const val SOURCE_NAME = "Morphe Patches"
-const val MANAGER_REPO_URL = "https://github.com/MorpheApp/morphe-manager"
-const val SOURCE_REPO_URL = "https://github.com/MorpheApp/morphe-patches"
+const val SOURCE_NAME = "TikTok Patches"
+const val MANAGER_REPO_URL = PatchDockCatalog.MANAGER_REPOSITORY_URL
+const val SOURCE_REPO_URL = "https://github.com/icysymmetra/tiktok-patches-for-morphe"
+const val SOURCE_BUNDLE_URL = "https://raw.githubusercontent.com/icysymmetra/tiktok-patches-for-morphe/main/patches-bundle.json"
 const val MORPHE_API_URL = "https://api.morphe.software"
-const val MORPHE_WEBSITE_URL = "https://morphe.software"
 const val BLOCKED_SOURCES_URL = "$MORPHE_API_URL/v2/blocked-sources"
+
+/** Enable only after the PatchDock repository publishes a signed release feed. */
+const val MANAGER_UPDATES_ENABLED = false
 
 /**
  * Delay before showing a manager update notification to the user.
@@ -27,10 +31,10 @@ const val BLOCKED_SOURCES_URL = "$MORPHE_API_URL/v2/blocked-sources"
 const val MANAGER_UPDATE_SHOW_DELAY_SECONDS = 7 * 60
 
 /** Raw GitHub URL for the stable manager release JSON (main branch) */
-const val MANAGER_RELEASE_JSON_URL = "https://raw.githubusercontent.com/MorpheApp/morphe-manager/refs/heads/main/app-release.json"
+const val MANAGER_RELEASE_JSON_URL = "https://raw.githubusercontent.com/SysAdminDoc/patchdock-manager/refs/heads/main/app-release.json"
 
 /** Raw GitHub URL for the pre-release manager release JSON (dev branch) */
-const val MANAGER_PRERELEASE_JSON_URL = "https://raw.githubusercontent.com/MorpheApp/morphe-manager/refs/heads/dev/app-release.json"
+const val MANAGER_PRERELEASE_JSON_URL = "https://raw.githubusercontent.com/SysAdminDoc/patchdock-manager/refs/heads/dev/app-release.json"
 
 /** Controls whether manager updates are fetched directly from JSON files in the repository instead of using the GitHub API */
 const val USE_MANAGER_DIRECT_JSON = true
@@ -42,16 +46,17 @@ const val USE_PATCHES_DIRECT_JSON = true
  * Registry of known patchable apps.
  */
 object KnownApps {
+    const val TIKTOK        = "com.zhiliaoapp.musically"
     const val YOUTUBE       = "com.google.android.youtube"
     const val YOUTUBE_MUSIC = "com.google.android.apps.youtube.music"
     const val REDDIT        = "com.reddit.frontpage"
     // const val X_TWITTER     = "com.twitter.android"
 
-    // Shared Morphe brand gradient tail
-    val GRADIENT_MID = Color(0xFF1E5AA8)
-    val GRADIENT_END = Color(0xFF00AFAE)
+    // PatchDock brand gradient tail
+    val GRADIENT_MID = Color(0xFF4F46E5)
+    val GRADIENT_END = Color(0xFF06B6D4)
 
-    val DEFAULT_DOWNLOAD_COLOR = Color(0xFF0E3F6E)
+    val DEFAULT_DOWNLOAD_COLOR = Color(0xFF312E81)
 
     // Default gradient for packages with no bundle-declared color
     val DEFAULT_COLORS = listOf(DEFAULT_DOWNLOAD_COLOR, GRADIENT_MID, GRADIENT_END)
@@ -73,10 +78,10 @@ object KnownApps {
 
     /** All known app entries in display order. */
     val all: List<Entry> = listOf(
-        Entry(REDDIT,        brandColor = Color(0xFFFF4500)),
-        Entry(YOUTUBE,       brandColor = Color(0xFFFF0033)),
+        Entry(TIKTOK, brandColor = Color(0xFFFF0050)),
+        Entry(YOUTUBE, brandColor = Color(0xFFFF0033)),
         Entry(YOUTUBE_MUSIC, brandColor = Color(0xFFFF0000)),
-        // Entry(X_TWITTER, brandColor = Color(0xFF000000)),  // Uncomment when release
+        Entry(REDDIT, brandColor = Color(0xFFFF4500)),
     )
 
     // Fast lookup map - built once at startup.
@@ -104,6 +109,7 @@ object KnownApps {
      * path is needed (bundle always provides the authoritative name anyway).
      */
     private val FALLBACK_NAMES = mapOf(
+        TIKTOK        to "TikTok",
         YOUTUBE       to "YouTube",
         YOUTUBE_MUSIC to "YouTube Music",
         REDDIT        to "Reddit",

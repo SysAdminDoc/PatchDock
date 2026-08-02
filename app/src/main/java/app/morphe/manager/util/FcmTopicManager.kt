@@ -5,9 +5,6 @@
 
 package app.morphe.manager.util
 
-import android.util.Log
-import com.google.firebase.messaging.FirebaseMessaging
-
 /**
  * FCM topic strings used for update push notifications.
  *
@@ -50,41 +47,12 @@ object FcmTopics {
  * - [app.morphe.manager.ManagerApplication] on every cold start
  * - [app.morphe.manager.ui.screen.settings.advanced.UpdatesSettingsItem] on preference toggle
  */
+@Suppress("UNUSED_PARAMETER")
 fun syncFcmTopics(
     notificationsEnabled: Boolean,
     useManagerPrereleases: Boolean,
     usePatchesPrereleases: Boolean = false,
 ) {
-    val messaging = FirebaseMessaging.getInstance()
-
-    if (!notificationsEnabled) {
-        FcmTopics.all.forEach { topic ->
-            messaging.unsubscribeFromTopic(topic)
-                .addOnCompleteListener { Log.d("FcmTopicSync", "Unsubscribed from $topic") }
-        }
-        return
-    }
-
-    // Stable topics: always subscribed when notifications are enabled
-    // Dev topics: only when user has explicitly enabled prereleases
-    messaging.syncTopic(FcmTopics.MANAGER_STABLE, subscribe = true)
-    messaging.syncTopic(FcmTopics.MANAGER_DEV,    subscribe = useManagerPrereleases)
-    messaging.syncTopic(FcmTopics.PATCHES_STABLE, subscribe = true)
-    messaging.syncTopic(FcmTopics.PATCHES_DEV,    subscribe = usePatchesPrereleases)
-}
-
-/**
- * Subscribes to or unsubscribes from a single FCM topic and logs the result.
- */
-private fun FirebaseMessaging.syncTopic(topic: String, subscribe: Boolean) {
-    val tag = "Morphe FcmTopicSync"
-    if (subscribe) {
-        subscribeToTopic(topic).addOnCompleteListener { task ->
-            Log.d(tag, if (task.isSuccessful) "Subscribed to $topic" else "Failed to subscribe to $topic")
-        }
-    } else {
-        unsubscribeFromTopic(topic).addOnCompleteListener {
-            Log.d(tag, "Unsubscribed from $topic")
-        }
-    }
+    // PatchDock does not use Morphe's Firebase project or notification topics. Update checks
+    // are handled by WorkManager for every device instead.
 }
