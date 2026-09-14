@@ -4,6 +4,16 @@
   <img src="assets/brand/patchdock-lockup.svg" alt="PatchDock" width="620" />
 </p>
 
+<p align="center">
+  <a href="https://ko-fi.com/X8K126YVER">
+    <img height="42" src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Buy me a coffee on Ko-fi" />
+  </a>
+</p>
+
+<p align="center">
+  <sub><em>If this project helps you, a coffee helps me keep working on it.</em></sub>
+</p>
+
 PatchDock is an Android manager for finding, verifying, patching, signing, and installing supported stock apps without moving the workflow to a PC. It ships with the TikTok patches from [`icysymmetra/tiktok-patches-for-morphe`](https://github.com/icysymmetra/tiktok-patches-for-morphe) and the official [`MorpheApp/morphe-patches`](https://github.com/MorpheApp/morphe-patches) bundle.
 
 PatchDock is a distinctly branded derivative of [Morphe Manager](https://github.com/MorpheApp/morphe-manager). It is not an official MorpheApp, Google, Reddit, TikTok, ByteDance, APKMirror, ReVanced, or Shizuku product.
